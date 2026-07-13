@@ -1,0 +1,24 @@
+### Evidence Table – Automated BDD, Gherkin, and LLM-based Test Generation Research
+
+**Evidence entries extracted:** 18
+
+| # | Paper (Title \| Year) | Tool / LLM | Research Focus | Key Results | Limitations |
+|---|---|---|---|---|---|
+| 1 | Building User Stories and Behavior Driven Development Scenarios with a Strict Set of Concepts \| 2023 | BDD Framework | User Story → BDD Scenario Transformation | Defines a structured concept model for generating BDD scenarios from user stories | No LLM support |
+| 2 | First Experiments on Automated Execution of Gherkin Test Specifications with Collaborating LLM Agents \| 2024 | LLM Agents | Gherkin-based Test Automation | Demonstrates automated execution of Gherkin specifications using collaborating LLM agents | Small-scale evaluation |
+| 3 | Increasing Test Coverage by Automating BDD Tests in Proofs of Concepts (POCs) using LLM \| 2024 | LLM | BDD Test Generation | Improved BDD test coverage through LLM-generated scenarios | Limited industrial validation |
+| 4 | AI-Driven Acceptance Testing: First Insights Exploring the Educational Potential for Test Analysts \| 2024 | AI-based Testing Tools | Acceptance Testing | Shows potential of AI assistance in acceptance testing activities | Educational context only |
+| 5 | LLM4Fin: Fully Automating LLM-Powered Test Case Generation for FinTech Software Acceptance Testing \| 2024 | LLM4Fin | Acceptance Test Generation | Automates acceptance test generation in FinTech systems | Domain-specific evaluation |
+| 6 | Large Language Models for Automated Web-Form-Test Generation: An Empirical Study \| 2024 | Large Language Models | Automated Test Generation | Empirical evidence that LLMs can generate web-form tests effectively | Limited application scope |
+| 7 | Automated Generation and Refinement of Agile User Stories from Game Design Documents Using Large Language Models \| 2024 | LLM | User Story Generation | Generates and refines agile user stories from design artifacts | Does not generate Gherkin directly |
+| 8 | A Behaviour-Driven Approach for Testing Requirements via User and System Stories in Agent Systems \| 2023 | BDD Methodology | Requirements-based Testing | Connects user and system stories with testing activities | No LLM integration |
+| 9 | Empirical Findings on BDD Story Parsing to Support Consistency Assurance between Requirements and Artifacts \| 2021 | BDD Parsing Framework | Requirements Consistency | Demonstrates automated parsing of BDD stories for consistency checking | Focuses on analysis rather than generation |
+| 10 | Leveraging Natural-Language Requirements for Deriving Better Acceptance Criteria from Models \| 2020 | Model-based Approach | Acceptance Criteria Generation | Improves derivation of acceptance criteria from requirements models | Limited evaluation dataset |
+| 11 | Ensuring the Consistency Between User Requirements and Task Models: A Behavior-Based Automated Approach \| 2020 | Automated Consistency Framework | Requirement Validation | Supports automated consistency verification between requirements and task models | Not focused on Gherkin |
+| 12 | User and System Stories: An Agile Approach for Managing Requirements in AOSE \| 2021 | Agile Requirements Method | Requirements Engineering | Introduces user/system stories for requirements management | No automated test generation |
+| 13 | Automated Derivation of UML Sequence Diagrams from User Stories: Unleashing the Power of Generative AI vs. a Rule-Based Approach \| 2024 | Generative AI | User Story Analysis | AI-based derivation outperforms rule-based approaches in several cases | UML-focused |
+| 14 | Promoting Quality in BDD Scenarios Using Checklist \| 2024 | Checklist-based Assessment | BDD Quality Assurance | Provides quality criteria for BDD scenario construction | Does not automate generation |
+| 15 | Architecting a Behavior-Driven Test Automation Framework for CI/CD Environments \| 2024 | BDD Automation Framework | Test Automation | Proposes architecture for integrating BDD into CI/CD pipelines | Framework-level contribution |
+| 16 | SS-BDD: Automated Acceptance Testing for Spreadsheets \| 2016 | SS-BDD | Acceptance Testing | Applies BDD principles to spreadsheet acceptance testing | Older study, no LLM support |
+| 17 | A Model-Driven Approach for Behavior-Driven GUI Testing \| 2019 | Model-driven Testing | GUI Test Generation | Generates GUI tests using BDD concepts | GUI-specific |
+| 18 | Towards Behavior-Driven Graphical User Interface Testing \| 2019 | BDD Testing Framework | GUI Testing | Explores behavior-driven approaches for GUI testing | Limited empirical validation |
