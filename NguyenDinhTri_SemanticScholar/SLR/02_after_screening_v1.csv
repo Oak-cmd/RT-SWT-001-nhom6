@@ -1,0 +1,97 @@
+id;title;authors;year;search_string;v1_decision;v1_reason
+1;FlowForge: Generating US & Gherkin...;Rosa Reska Riskiana et al.;2025;String A;INCLUDE;
+2;From BDD Scenarios to Test Generation;Tannaz Zameni et al.;2023;String A;INCLUDE;
+3;Symbolic prime generation...;Bill Lin et al.;1992;String A;EXCLUDE;EC4
+4;Integrating symbolic techniques...;Enrique San Mill\'an et al.;1999;String A;EXCLUDE;EC4
+5;GUI Test Automation Studies...;Rizal Broer Bahaweres et al.;2025;String A;INCLUDE;
+6;Narrative world creation...;Marijn Goedegebure;2018;String A;EXCLUDE;EC4
+7;Pattern-Based Automation of US...;Daniela Simancas Mateus et al.;2025;String A;INCLUDE;
+8;Automated Test Generation Using LLM...;Shexmo Ribeiro dos Santos et al.;2025;String A;INCLUDE;
+9;Cypress Copilot: AI Assistant...;Suresh Babu Nettur et al.;2025;String A;INCLUDE;
+10;VIBE Project Management Framework;Subramanian Palaniappan et al.;2026;String A;UNSURE;
+11;Comparative Study of LLMs for Gherkin;Hiago Fernandes et al.;2025;String A;INCLUDE;
+12;GenAI-based test case generation...;Denesa Zyberaj et al.;2025;String A;INCLUDE;
+13;Trojan localization using symbolic...;Farimah Farahmandi et al.;2019;String A;EXCLUDE;EC4
+14;Enhancing simulation with BDDs...;Malay K. Ganai et al.;1999;String A;EXCLUDE;EC4
+15;Improving Testing with RAG LLMs;Carol Joanna Bright M et al.;2026;String A;INCLUDE;
+16;Mobile App: Automated Test Input...;Hena Iqbal;2019;String A;INCLUDE;
+17;Computation of Reachable States...;;1994;String A;EXCLUDE;EC4
+18;AI-Augmented Test Automation: POM...;Vijai Anand Ramar et al.;2024;String A;INCLUDE;
+19;Generating US and AC via iStar;Laura Narv\'aez et al.;2025;String A;INCLUDE;
+20;Implementation of Well Delivery App;Veerawit Benjaboonyazit et al.;2022;String A;EXCLUDE;EC4
+21;Finite State Machine Sequences;June-Kyung Rho et al.;1993;String A;EXCLUDE;EC4
+22;Satisfiability Solvers for Synthesis;Ana Petkovska;2017;String A;EXCLUDE;EC4
+23;Acceptance Test Gen: Industrial Case;M. Herm\'inia Ferreira et al.;2025;String A;INCLUDE;
+24;Proceedings 2003 DAC;;2003;String A;EXCLUDE;EC4
+25;Evaluation of LLM in BDD Automation;Shanthi Karpurapu et al.;2024;String A;INCLUDE;
+26;Automating test oracles from US;Maryam Imtiaz Malik et al.;2020;String A;INCLUDE;
+27;Knowledge-based Acceptance Test;N. Asha et al.;2019;String A;INCLUDE;
+28;BddCut: Symbolic Cut Enumeration;Andrew C. Ling et al.;2007;String A;EXCLUDE;EC4
+29;Adaptive Scriptless BDD Framework;S. Senthil Murugan;2026;String A;INCLUDE;
+30;AI-Assisted Product Management;Anup Raja Sarabu;2025;String A;UNSURE;
+31;FEATURES OF MODERN WEB TESTING;Ruslan Bahrіi et al.;2022;String A;UNSURE;
+32;The ZSM Story: Power to Transform;Nurit Sprecher;2020;String A;EXCLUDE;EC4
+33;Integration of Maventa web service;Gavin Van Dok;2011;String A;EXCLUDE;EC4
+34;Boron-doped diamond electrode...;Vagner Bezerra dos Santos et al.;2014;String A;EXCLUDE;EC4
+35;BDD Scenario Gen with LLMs;Amila Rathnayake et al.;2026;String A;INCLUDE;
+36;Digital logic testing and simulation;Alexander Miczo;1986;String A;EXCLUDE;EC4
+37;Automating BDD with Generative AI;Sujeet Kumar Tiwari;2025;String A;INCLUDE;
+38;Comparative Analysis of LLM for BDD;Isela Mendoza et al.;2024;String A;INCLUDE;
+39;Multiplexer circuits for PTL;Christoph Scholl et al.;2000;String A;EXCLUDE;EC4
+40;Boolean Satisfiability Tutorial;Joao Marques-Silva et al.;2000;String A;EXCLUDE;EC4
+41;NLP Deep Learning US Generation;Khaled. M. Hany et al.;2025;String A;INCLUDE;
+42;Effectiveness of Models from BDD;Abhimanyu Gupta et al.;2022;String A;INCLUDE;
+43;AI-Generated User Stories Quality;Reine Santos et al.;2025;String A;INCLUDE;
+44;Chess and backgammon;Lee D. Erman;1976;String A;EXCLUDE;EC4
+45;Generating Robot Framework Scripts;Kritchawat Waitchasarn et al.;2023;String A;INCLUDE;
+46;Automated BDD Scenario Generation;Lada Ivanna Matveeva et al.;2025;String A;INCLUDE;
+47;Automation Software Development;Ivan Tosso Tacon;2017;String A;EXCLUDE;EC4
+48;TESTING STRATEGIES IN MVC;Elira Abduramani et al.;2025;String A;UNSURE;
+49;Evaluation of Logic Network Gen;Jair P\'erez Ram\'irez et al.;2023;String A;EXCLUDE;EC4
+50;Geração de testes a partir de U2TP;Nadjia Jandt Feller;2015;String A;EXCLUDE;EC4
+51;BHive: BDD Meets B-Method;John D. Carter et al.;2016;String A;EXCLUDE;EC4
+52;Bridging fault testability of BDD;Junhao Shi et al.;2005;String A;EXCLUDE;EC4
+53;PrivacyStory: Privacy Req from US;Guntur Budi Herwanto et al.;2022;String A;UNSURE;
+54;SMT-based stimuli generation;Robert Wille et al.;2009;String A;EXCLUDE;EC4
+55;BiTeS: BDD test pattern generator;Rolf Drechsler;1994;String A;EXCLUDE;EC4
+56;Electrochemical Measurement of NAG;Waraporn Rernglit et al.;2020;String A;EXCLUDE;EC4
+57;Bio Inspired Test Data from US;Et. al. A.Tamizharasi;2021;String A;INCLUDE;
+58;Role of ML/LLM in Testing;Yassine Hachaichi et al.;2025;String A;INCLUDE;
+59;Binary Decision Diagrams Implement;Jose S. Metos et al.;1983;String A;EXCLUDE;EC4
+60;Building US and BDD with Ontology;Samedi Heng et al.;2023;String A;INCLUDE;
+61;Scriptless BDD Testing Coverage;S. Murugan et al.;2025;String A;INCLUDE;
+62;PyTest-BDD with AI and Automation;Xiaofei Zhao et al.;2025;String A;INCLUDE;
+63;Series-Parallel Transistor Networks;Haoyang Wu et al.;2023;String A;EXCLUDE;EC4
+64;On-the-fly layout generation;Luca Macchiarulo et al.;2001;String A;EXCLUDE;EC4
+65;Class Diagram Generation from US;Monalisha Ojha et al.;2025;String A;UNSURE;
+66;Digital Work Environment for IMA;Bjoern Annighoefer et al.;2022;String A;UNSURE;
+67;Legend: agile DSL for acceptance;Tariq M. King et al.;2014;String A;EXCLUDE;EC4
+68;How Testers Perceive LLMs;Izabella Silva et al.;2025;String A;INCLUDE;
+69;AI-Augmented Test Automation;Varun Varma Sangaraju;2021;String A;INCLUDE;
+70;Aspect orientation for US Gherkin;Mike Christian Ara\'ujo;2017;String A;EXCLUDE;EC4
+71;QE Artefact Generation Baseline;Eitan Farchi et al.;2025;String A;INCLUDE;
+72;Utilization of User Sessions;Izzat Alsmadi;2008;String A;EXCLUDE;EC4
+73;Bi-decomposition of logic;Alan Mishchenko et al.;2001;String A;EXCLUDE;EC4
+74;Scenario generation from coverage;Melanie Diepenbeck et al.;2013;String A;EXCLUDE;EC4
+75;Methodologies for Intelligent Sys;Zbigniew W. Ras et al.;1994;String A;EXCLUDE;EC4
+76;Context for BDD Scenarios;Jir\'i Matula et al.;2016;String A;EXCLUDE;EC4
+77;Software Quality Assurance;A.D. Goel et al.;2023;String A;UNSURE;
+78;Interaction: IDEs and AI Assistants;Vladyslav Korol;;String A;UNSURE;
+79;FPGA architectures and CAD;Tsunemasa Hayashi et al.;1997;String A;EXCLUDE;EC4
+80;BDD Electrodes for Wastewater;Marco Panizza et al.;2008;String A;EXCLUDE;EC4
+81;Formal Verification AI Circuits;Rolf Drechsler et al.;2023;String A;EXCLUDE;EC4
+82;Human-Readable Proof Generation;Rolf Drechsler et al.;2023;String A;EXCLUDE;EC4
+83;Model-Driven GUI Test Gen from US;Maria Fernanda Granda et al.;2021;String A;INCLUDE;
+84;SpecFlow-Driven Test Suites;Udayan Verma;2025;String A;INCLUDE;
+85;LLM-Based Test Script Generation;Srikanth Kavuri;2022;String A;INCLUDE;
+86;Satisfiability in Electronic Design;Joao Marques-Silva et al.;2000;String A;EXCLUDE;EC4
+87;RAG to RichEs: Keynote Abstract;Chetan Arora;2025;String A;INCLUDE;
+88;ROLE OF TESTING FOR TEAMS;Anastasiia Vavilenkova;2021;String A;UNSURE;
+89;Verification of sequential circuits;Fulvio Corno et al.;1999;String A;EXCLUDE;EC4
+90;In-Memory Computing using SDD;Sven Thijssen et al.;2024;String A;EXCLUDE;EC4
+91;Real-Time Feedback for BDD;David Ferreira Brandão et al.;2025;String B;INCLUDE;
+92;Measuring firewall security;Saeed Al-Haj et al.;2011;String B;EXCLUDE;EC4
+93;Regression Test Selection in BDD;Jincheng Xu et al.;2021;String B;INCLUDE;
+94;Automated Test Generation Using LLM...;Shexmo Ribeiro dos Santos et al.;2025;String B;EXCLUDE;EC1
+95;BDD Scenario Gen with LLMs;Amila Rathnayake et al.;2026;String B;EXCLUDE;EC1
+96;Role of ML/LLM in Testing;Yassine Hachaichi et al.;2025;String B;EXCLUDE;EC1
