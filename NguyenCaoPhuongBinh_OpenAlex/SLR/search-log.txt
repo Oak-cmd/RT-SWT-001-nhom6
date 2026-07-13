@@ -1,0 +1,171 @@
+# Search Log - LLM for Acceptance Test Automation (BDD/Gherkin)
+**Thành viên:** Nguyễn Cao Phương Bình
+**Ngày thực hiện:** 2026-6-5
+
+---
+
+## Chuỗi tìm kiếm (Query Strings)
+
+### String A
+**Query nguyên văn:**
+("user story" OR "Connextra") AND ("automated generation" OR "LLM") AND ("Gherkin scenarios" OR "step definitions") AND ("syntax validation" OR "executable")
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:49
+**Số kết quả:** 2 papers
+
+---
+
+### String B
+**Query nguyên văn:**
+"LLM" AND "user story" AND ("Gherkin" OR "BDD")
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:50
+**Số kết quả:** 8 papers
+
+---
+
+### String C
+**Query nguyên văn:**
+"LLM" AND "Gherkin" AND "step definitions"
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:51
+**Số kết quả:** 4 papers
+
+---
+
+### String D
+**Query nguyên văn:**
+("Large Language Models" OR "LLM") AND "user stories" AND "Gherkin" AND ("evaluation" OR "accuracy" OR "quality")
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:51
+**Số kết quả:** 4 papers
+
+---
+
+### String E
+**Query nguyên văn:**
+"Large Language Models" AND "Behavior-Driven Development"
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:53
+**Số kết quả:** 21 papers
+
+---
+
+### String F
+**Query nguyên văn:**
+"LLM" AND ("user story" OR "agile requirements" OR "acceptance criteria") AND "Gherkin"
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:55
+**Số kết quả:** 10 papers
+
+---
+
+### String G
+**Query nguyên văn:**
+"LLM" AND "Gherkin" AND ("step definitions" OR "step implementations")
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:56
+**Số kết quả:** 4 papers
+
+---
+
+### String H
+**Query nguyên văn:**
+"automated test generation" AND "Gherkin" AND "executable"
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:57
+**Số kết quả:** 2 papers
+
+---
+
+### String I
+**Query nguyên văn:**
+("Agentic AI" OR "Agentic QA" OR "AI agents") AND "Gherkin"
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:57
+**Số kết quả:** 5 papers
+
+---
+
+### String J
+**Query nguyên văn:**
+("Large Language Models" OR "GPT") AND "BDD scenarios" AND ("semantic similarity" OR "lexical metrics")
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:59
+**Số kết quả:** 2 papers
+
+---
+
+### String K
+**Query nguyên văn:**
+"Large Language Models" AND "scenario generation" AND ("test adequacy" OR "coverage")
+**Database:** OpenAlex
+**Bộ lọc:** No filter
+**Ngày search:** 2026-06-5 18:59
+**Số kết quả:** 11 papers
+
+---
+
+# Tổng hợp trước dedup
+
+| Database | String | Kết quả |
+| :--- | :--- | :--- |
+| OpenAlex | String A | 2 |
+| OpenAlex | String B | 8 |
+| OpenAlex | String C | 4 |
+| OpenAlex | String D | 4 |
+| OpenAlex | String E | 21 |
+| OpenAlex | String F | 10 |
+| OpenAlex | String G | 4 |
+| OpenAlex | String H | 2 |
+| OpenAlex | String I | 5 |
+| OpenAlex | String J | 2 |
+| OpenAlex | String K | 11 |
+| **Tổng trước dedup** | | **73** |
+| **Sau dedup** | | **41** |
+| **Số bị loại (trùng lặp)** | | **32** |
+
+---
+
+## Phần S – Cross-reference Search (Snowballing)
+
+**Phương pháp:** Backward snowballing – đọc reference list của các paper đã pass V2 screen.
+**Thực hiện:** Sau khi có `03_final_included.csv`, đọc reference list của từng paper included.
+**Công cụ:** CrossRef (crossref.org) để lookup metadata từ DOI; Google Scholar để check formal publication.
+**Ngày thực hiện:** YYYY-MM-DD
+**Paper included đã scan:** 19 papers
+**Paper mới phát hiện:** 0 paper pass IC
+
+---
+
+## Ghi chú
+
+- **Paywalled papers:**
+    - ID 7: Reverse-Engineering and Automating BDD for Modern Software Development with LLMs https://doi.org/10.1109/icodse68111.2025.11351772
+    - ID 14: Unit Test Generation Multi-Agent AI System for Enhancing Software Documentation and Code Coverage https://ieeexplore.ieee.org/document/10819096
+    - ID 15: Exploring Large Language Models for Requirements on String Values https://doi.org/10.1109/mo2re66661.2025.00009
+    - ID 20: The Role of Machine Learning and Large Language Models in Software Testing and Validation https://doi.org/10.1109/sta66620.2025.11364940
+    - ID 21: SelfBehave, Generating a Synthetic Behaviour-Driven Development Dataset using SELF-INSTRUCT https://doi.org/10.1109/icstw64639.2025.10962479
+    - ID 26: Exploratory Study on Private GPTs for LLM-Driven Test Generation in Software and Machine Learning Development https://doi.org/10.1109/gaclm67198.2025.11232354
+    - ID 27: Functional test generation from UI test scenarios using reinforcement learning for android applications https://doi.org/10.1002/stvr.1752
+    - ID 28: Baseline Evaluation of LLM-Facilitated UI Test-Case Generation from Gherkin Specifications https://doi.org/10.1007/978-3-032-04288-0_3
+    - ID 29: Approach for Generating and Executing Acceptance Tests Based on Computer Vision and GPT-4 https://doi.org/10.1109/csecs69124.2026.11541611
+    - ID 33: Large Language Model and Behaviour Tree Based Real-World Test Scenario Generation for Autonomous Vehicles https://doi.org/10.1109/trustcom63139.2024.00243
+    - ID 36: LLM/VLM-Driven Integrated Testing Framework for Autonomous Driving Assistance Systems: From Requirements to Failure Attribution https://doi.org/10.1109/icmtim69588.2026.11525613
+    - ID 37: Risk2Scenario: LLM-Assisted Scenario Generation for Autonomous Driving Testing Based on Hierarchical Risk Analysis https://doi.org/10.1109/iccs67844.2025.11292126
+    - ID 40: AI-Driven Synthetic Test Data and Scenario Generation via GAN-LLM Integration: A Modular Approach for Web Application Testing https://doi.org/10.1109/ubmk67458.2025.11206764
+- **Phương pháp thực hiện dedup:** Thực hiện bằng **Excel** (Dựa trên tiêu chí Title, Authors và Year).
+- **Phát hiện trùng lặp:** 
+    - Paper trùng nhau nhiều nhất là của tác giả **Sujeet Kumar Tiwari** (xuất hiện 14 lần trên nhiều chuỗi tìm kiếm khác nhau) [1], [2], [3], [4], [5], [6], [7], [8].
+    - Các bài báo của **Lex, Sebastian** [2], [3], [9], [10] và **Rathnayake et al.** [2], [11] cũng xuất hiện lặp lại đáng kể giữa các kết quả của OpenAlex.
+- **Snowballing:** 0 paper mới tìm được, 0 pass V2

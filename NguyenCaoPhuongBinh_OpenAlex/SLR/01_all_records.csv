@@ -1,0 +1,42 @@
+ID,Title,Authors,Year,Venue
+1,Automating Behavior-Driven Development with Generative AI: Enhancing Efficiency in Test Automation,Sujeet Kumar Tiwari,2025,International Journal of Engineering and Architecture
+2,Acceptance Test Generation with Large Language Models: An Industrial Case Study,"Margarida Ferreira, Luís Viegas, João Pascoal Faria, Bruno Lima",2025,N/A
+3,Prompt Engineering for Analyzing Acceptance Criteria for Functional Requirements,"Lloyd Rutledge, Koen van der Kruk",2025,Lecture notes in business information processing
+4,Behaviour Driven Development Scenario Generation with Large Language Models,"Rathnayake, Amila, Shahin, Mojtaba, Abaei, Golnoush",2026,ArXiv.org
+5,From customer requirements to behavior driven development scenarios : a possible usecase of large language models in behavior driven development,"Lex, Sebastian",2025,FH JOANNEUM ePUB
+6,Engineering Prompt-Orchestrated LLM Workflows for Automated Test Case Generation in Agile Environments,"Almeyda Alania Fredy Antonio, Barrientos Padilla Alfredo, Siancas Garay Ronald Gustavo",2025,International Journal of Advanced Computer Science and Applications
+7,Reverse-Engineering and Automating BDD for Modern Software Development with LLMs,"Sagar B. Patel, Sajal Nigam, Shrikanth Mahale",2025,N/A
+8,Comprehensive Evaluation and Insights Into the Use of Large Language Models in the Automation of Behavior-Driven Development Acceptance Test Formulation,"Shanthi Karpurapu, Sravanthy Myneni, Unnati Nettur, Likhit Sagar Gajja, Dave Burke, Tom Stiehm, Jeffery Payne",2024,IEEE Access
+9,Agentic AI for Behavior-Driven Development Testing Using Large Language Models,"Ciprian Paduraru, Miruna Zavelca, Alin Stefanescu",2025,N/A
+10,An Experiment with Focus on Security Through Large- Language Models Using Behavior-Driven Development,"Shexmo Santos, Tacyanne Pimentel, Marcus Silva, Luiz Santos, Fabio Rocha, Michel Soares",2025,Preprints.org
+11,An Integrated Framework for Ai-driven Quality Engineering: Scaling Test Automation Through Large Language Models and Behavior-driven Development,Dmytro RUMIANTSEV,2025,Information Technology Computer Science Software Engineering and Cyber Security
+12,Cypress Copilot: Development of an AI Assistant for Boosting Productivity and Transforming Web Application Testing,"Suresh Babu Nettur, Shanthi Karpurapu, Unnati Nettur, Likhit Sagar Gajja",2024,IEEE Access
+13,Comparative Analysis of Large Language Model Tools for Automated Test Data Generation from BDD,"Isela Mendoza, Fernando Silva Filho, Gustavo Medeiros, Aline Paes, Vânia O. Neves",2024,N/A
+14,Unit Test Generation Multi-Agent AI System for Enhancing Software Documentation and Code Coverage,"Dimitrije Stojanović, Bogdan Pavković, Nenad Četić, Momčilo Krunić, Luka Vidaković",2024,N/A
+15,Exploring Large Language Models for Requirements on String Values,"Aren A. Babikian, Boqi Chen, Gunter Mussbacher",2025,N/A
+16,OrionTest: An Agentic AI Driven Automation*,Aaditya Goel,2026,N/A
+17,LLM-based Behaviour Driven Development for Hardware Design,"Drechsler, Rolf, Liu, Qian",2025,arXiv (Cornell University)
+18,Technique to Baseline QE Artefact Generation Aligned to Quality Metrics,"Farchi, Eitan, Nayak, Kiran, Majumdar, Papia Ghosh, Route, Saritha",2025,ArXiv.org
+19,Generative AI-Based Software Testing Implementation Model in Agile Development Methodology: Systematic Literature Review,"Linmas Ditasari, Teguh Raharjo",2026,Ranah Research Journal of Multidisciplinary Research and Development
+20,The Role of Machine Learning and Large Language Models in Software Testing and Validation,"Yassine Hachaïchi, Mohamed Amine Ouerghi",2025,N/A
+21,"SelfBehave, Generating a Synthetic Behaviour-Driven Development Dataset using SELF-INSTRUCT","Manon Galloy, Martin Balfroid, Benoît Vanderose, Xavier Devroey",2025,N/A
+22,Automatisering av Behavior-Driven Development med stora språkmodeller : En undersökning om generering av testfall för Fintech,"Tesfalidet, Noel",2025,KTH Publication Database DiVA (KTH Royal Institute of Technology)
+23,Enhancing Legal Compliance and Regulation Analysis with Large Language Models,"Hassaniahari, Shabnam",2026,University of Ottawa - Library
+24,Special issues on emerging technologies and their importance for software and systems processes,"Xiwei Xu, Jens Heidrich",2024,Journal of Software Evolution and Process
+25,From law to Gherkin: A human-centred quasi-experiment on the quality of LLM-generated behavioral specifications from food-safety regulations,"Shabnam Hassani, Mehrdad Sabetzadeh, Daniel Amyot",2026,Information and Software Technology
+26,Exploratory Study on Private GPTs for LLM-Driven Test Generation in Software and Machine Learning Development,"Jakub Jagielski, Consuelo Rojas, Markus Abel",2025,N/A
+27,Functional test generation from UI test scenarios using reinforcement learning for android applications,"Yavuz Koroglu, Alper Sen",2020,Software Testing Verification and Reliability
+28,Baseline Evaluation of LLM-Facilitated UI Test-Case Generation from Gherkin Specifications,"Alexander Poth, Olsi Rrjolli, Huiyu Wang, Klaus Schmid",2025,Communications in computer and information science
+29,Approach for Generating and Executing Acceptance Tests Based on Computer Vision and GPT-4,"Jonnel Quispe, Heber Cordova, Lenis Wong",2026,N/A
+30,Reversa: A Reverse Documentation Engineering Framework for Converting Legacy Software into Operational Specifications for AI Agents,"de Macedo, Sanderson Oliveira, da Costa, Ronaldo Martins",2026,ArXiv.org
+31,"Specs First, Code Second: Inside Agentic AI's New Era","Rosehill, Daniel, Gemini 3.1 (Flash), Chatterbox TTS",2026,Zenodo (CERN European Organization for Nuclear Research)
+32,Generating Test Scenarios from NL Requirements Using Retrieval-Augmented LLMs: An Industrial Study,"Chetan Arora, Tomas Herda, Verena Homm",2024,N/A
+33,Large Language Model and Behaviour Tree Based Real-World Test Scenario Generation for Autonomous Vehicles,"Yuliang Li, Zhonglin Hou, Hong Liu",2024,N/A
+34,Learning from Risk: LLM-Guided Generation of Safety-Critical Scenarios with Prior Knowledge,"Yuhang Wang, Heye Huang, Zhenhua Xu, Kailai Sun, Guo, Baoshen, Jin-Hua Zhao",2025,ArXiv.org
+35,Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification,"Tuan, Thanh Luong, Sanyal, Abhijit",2026,arXiv (Cornell University)
+36,LLM/VLM-Driven Integrated Testing Framework for Autonomous Driving Assistance Systems: From Requirements to Failure Attribution,"Hao Chen, Feiyang Liu, Bin Li, Zhiyun Li, Yunfei Zhang",2026,N/A
+37,Risk2Scenario: LLM-Assisted Scenario Generation for Autonomous Driving Testing Based on Hierarchical Risk Analysis,"Pin Wang, Junyan Ma",2025,N/A
+38,Resilience Governance of Low-Altitude Logistics Networks: A GenAI-Driven Air-Ground Collaborative Risk-Avoidance Simulation and Policy Stress Testing,"Yuetan Zhang, Honghai Zhang, Chenfeng Zhang",2026,SSRN Electronic Journal
+39,SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents,"Pan, Rangeet, Pavuluri, Raju, Huang, Ruikai, Krishna, Rahul, Stennett, Tyler, Orso, Alessandro, Sinha, Saurabh",2025,arXiv (Cornell University)
+40,AI-Driven Synthetic Test Data and Scenario Generation via GAN-LLM Integration: A Modular Approach for Web Application Testing,"Miraç Emektar, Fatih Mehmet Harmancı, Aysun Güran, Berat Karadavut, Günay Kirmizi, Berkay Öztürk, Ata Emir Karamuk, Mert Güven",2025,N/A
+41,"Architecting Agentic AI for Modern Software Testing: Capabilities, Foundations, and a Proposed Scalable Multi-Agent System for Automated Test Generation",Twinkle Joshi,2025,Journal of Information Systems Engineering & Management
