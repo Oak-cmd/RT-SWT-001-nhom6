@@ -1,0 +1,12 @@
+id,title,year,venue,v2_decision,v2_reason
+1,Pattern-Based Automation of User Stories and Gherkin Scenarios from BPMN Models,2025,Applied Sciences,INCLUDE,Meets all inclusion criteria (IC1-IC5)
+4,BDD Scenario Generation with Large Language Models,2026,arXiv,EXCLUDE,IC3: Venue not clearly peer-reviewed
+5,Comprehensive evaluation of LLMs in BDD acceptance test formulation,2024,IEEE Access,INCLUDE,Meets all inclusion criteria (IC1-IC5)
+7,Comparative analysis of LLM tools for automated test data generation from BDD,2024,SBES,INCLUDE,Meets all inclusion criteria (IC1-IC5)
+12,A Systematic Approach to Derive User Stories and Gherkin Scenarios from BPMN,2023,Business Modeling and Software Design,EXCLUDE,EC2: No publicly available full PDF
+15,Increasing Test Coverage by Automating BDD Tests using LLM,2024,SBQS 2024 (ACM),INCLUDE,Meets all inclusion criteria (IC1-IC5)
+17,Automating BDD with Generative AI: Enhancing Efficiency in Test Automation,2025,Frontiers in Emerging CS,INCLUDE,Meets all inclusion criteria (IC1-IC5)
+38,How to Evaluate BDD Scenarios Quality?,2019,SBES,EXCLUDE,"EC4: Only focuses on quality evaluation of BDD scenarios, not on test generation/automation"
+39,Question-based checklist to evaluate BDD scenarios quality,2018,,EXCLUDE,"EC4: Only proposes manual checklist for evaluating BDD scenario quality, not on generation"
+42,Comparison of Methods for Automated BDD Scenario Generation with NLP and AI,2025,ICECCME,EXCLUDE,EC2: No publicly available full PDF
+45,A Comparative Study of LLMs for Gherkin Generation,2025,SBES,INCLUDE,Meets all inclusion criteria (IC1-IC5)
