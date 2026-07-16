@@ -1,0 +1,211 @@
+;Restaurant System with Order, Preparation, and Delivery Management;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Syntactics;;;Semantics;;Pragmatics;;;;;;;;;;;;;;;;;;;;
+MATR_ALUNO;USER HISTORY;Well-formed;Atomic;Minimal;Solid;Unambiguous;Complete Sentence;Estimable;;TOTAL;;;;;;;;;;;;;;;;;
+22250571;PART I - STANDARD US-PROMPT;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P1 (TOTAL 14);;;;;;;;;;;;;;;;;;;;;;;;;;
+22251394;"User Story 1: Log into the System
+User Story: As someone who wants to place orders, I want to log into the system using my phone number and password, so that I can access my account and place orders.";F;V;F;F;V;V;V;;3;;;;;;;;;;;;;;;;;
+22251390;"User Story 2: Register New User
+User Story: As someone who wants to place orders, I want to register in the system by entering my full name, phone number, password, and password confirmation, so that I can create an account and start placing orders.";F;V;F;F;V;V;V;;3;;;;;;;;;;;;;;;;;
+22351262;"User Story 3: View Shopping Cart
+User Story: As someone who wants to place orders, I want to view my shopping cart, so that I can review the items I have selected before completing the purchase.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+22251395;"User Story 4: Add Product to Cart
+User Story: As someone who wants to place orders, I want to add products to the cart, so that I can select the items I want to buy.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+22250572;"User Story 5: Remove Product from Cart
+User Story: As someone who wants to place orders, I want to remove products from the cart, so that I can adjust the items I no longer want to buy.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+22060132;"User Story 6: Pay for Order
+User Story: As someone who wants to place orders, I want to pay for my order using Pix or card, so that I can complete the purchase quickly and conveniently.";F;F;F;F;V;V;F;;5;;Total Criteria;;98;;;;;;;;;;;;;
+22251392;"User Story 7: Add Note to Order
+User Story: As someone who wants to place orders, I want to add notes to my order, so that I can customize how I want to receive the products.";F;V;V;V;V;V;V;;1;;Total Errors;;22;;;;;;;;;;;;;
+;"User Story 8: Access the Menu
+User Story: As someone who wants to place orders, I want to access the menu with organized categories, so that I can easily view and choose products.";F;V;V;V;F;V;V;;2;;Success Rate;;77,55%;;;;;;;;;;;;;
+;"User Story 9: Manage Orders
+User Story: As an owner or employee of the establishment, I want to view and manage orders placed by users, so that I can check the details of each order and organize them accordingly.";V;F;F;F;V;V;F;;4;;;;;;;;;;;;;;;;;
+;"User Story 10: Mark Order as Completed
+User Story: As an owner or employee of the establishment, I want to mark an order as completed, so that I can inform that the order has been prepared and is ready.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 11: Mark Order as Delivered
+User Story: As an owner or employee of the establishment, I want to mark an order as delivered, so that I can remove the order from the pending list and record its completion.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 12: Edit Menu Item
+User Story: As an owner of the establishment, I want to edit menu items, so that I can update product information as needed.";V;V;V;V;F;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 13: Add New Product to Menu
+User Story: As an owner of the establishment, I want to add new products to the menu, so that I can offer new options to customers.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 14: Remove Product from Menu
+User Story: As an owner of the establishment, I want to remove products from the menu, so that I can take out items that are no longer available for sale.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;ABSOLUTE FREQUENCY;14;;;6;;2;;TOTAL;22;;;;;;;;;;;;;;;;;
+;NORMALIZED FREQUENCY;0,64;;;0,27;;0,09;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+22250569;;;;;;;;;;;;;;;;;;;;;;;;;;;
+22252689;P2  (TOTAL 14) ;;;;;;;;;;;;;;;;;;;;;;;;;;
+22152300;"User Story 1: System Login
+User Story: As a person who places orders, I want to log in to the system, so that I can access my account and place orders.";F;V;V;F;V;V;V;;2;;Total Criteria;;98;;;;;;;;;;;;;
+22250574;"User Story 2: New User Registration
+User Story: As a person who places orders, I want to register as a new user, so that I can create an account and place orders.";F;V;V;F;V;V;V;;2;;Total Errors;;17;;;;;;;;;;;;;
+22252568;"User Story 3: View Shopping Cart
+User Story: As a person who places orders, I want to view my shopping cart, so that I can review the products before completing the purchase.";F;V;V;V;V;V;V;;1;;Success Rate;;82,65%;;;;;;;;;;;;;
+22250575;"User Story 4: Add Product to Cart
+User Story: As a person who places orders, I want to add products to the cart, so that I can select the items I want to buy.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 5: Remove Product from Cart
+User Story: As a person who places orders, I want to remove products from the cart, so that I can adjust my item selection before payment.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 6: Pay for Order
+User Story: As a person who places orders, I want to pay for my order, so that I can complete the purchase and receive my products.";F;V;V;V;V;V;F;;2;;;;;;;;;;;;;;;;;
+;"User Story 7: Access the Menu
+User Story: As a person who places orders, I want to access the menu, so that I can see the available options for purchase.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 8: Add Note to Order
+User Story: As a person who places orders, I want to add notes to my order, so that I can specify details about what I want.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 9: Manage Orders
+User Story: As an owner or employee, I want to manage received orders, so that I can track and fulfill customer orders.";V;F;F;F;V;V;F;;4;;;;;;;;;;;;;;;;;
+;"User Story 10: Mark Order as Completed
+User Story: As an owner or employee, I want to mark an order as completed, so that I can indicate that the order has been finished and is ready for delivery.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 11: Mark Order as Delivered
+User Story: As an owner or employee, I want to mark an order as delivered, so that I can remove orders from the queue and update the status.";V;V;V;F;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 12: Edit Menu Item
+User Story: As an owner or employee, I want to edit products on the menu, so that I can update information about the items offered.";V;V;V;V;F;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 13: Add New Product to Menu
+User Story: As an owner or employee, I want to add new products to the menu, so that I can expand the options available to customers.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 14: Remove Product from Menu
+User Story: As an owner or employee, I want to remove products from the menu, so that I can ensure only available items are listed.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+21853667;ABSOLUTE FREQUENCY;10;;;5;;2;;TOTAL;17;;;;;;;;;;;;;;;;;
+21554873;NORMALIZED FREQUENCY;0,59;;;0,29;;0,12;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+22252689;P3 (TOTAL 16);;;;;;;;;;;;;;;;;;;;;;;;;;
+22152300;"User Story 1: System Login
+User Story: As a user who places orders, I want to log in to the system, so that I can access my information and place orders.";F;V;V;F;V;V;V;;2;;Total Criteria;;112;;;;;;;;;;;;;
+22250574;"User Story 2: New User Registration
+User Story: As a new user, I want to register in the system, so that I can create an account and place orders.";V;V;V;F;V;V;V;;1;;Total Errors;;15;;;;;;;;;;;;;
+22252568;"User Story 3: View Shopping Cart
+User Story: As a user who places orders, I want to view my shopping cart, so that I can review the items I selected before paying.";F;V;V;V;V;V;V;;1;;Success Rate;;87,50%;;;;;;;;;;;;;
+22250575;"User Story 4: Add Product to Cart
+User Story: As a user who places orders, I want to add products to my cart, so that I can buy them later.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 5: Remove Product from Cart
+User Story: As a user who places orders, I want to remove products from my cart, so that I can adjust my choices before completing the purchase.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 6: Pay for Order
+User Story: As a user who places orders, I want to pay for my order, so that I can complete the purchase and receive my products.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 7: Access the Menu
+User Story: As a user who places orders, I want to access the menu, so that I can see all available options before placing an order.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 8: Add Note to Order
+User Story: As a user who places orders, I want to add notes to my order, so that I can communicate specific needs about the delivery.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 9: Manage Orders
+User Story: As an owner or employee, I want to manage orders in the system, so that I can track and organize user orders.";V;F;F;F;V;V;F;;4;;;;;;;;;;;;;;;;;
+;"User Story 10: Mark Order as Completed
+User Story: As an owner or employee, I want to mark an order as completed, so that I can indicate the order has been processed.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 11: Mark Order as Delivered
+User Story: As an owner or employee, I want to mark an order as delivered, so that I can remove orders that have already been completed.";V;V;V;F;F;V;V;;2;;;;;;;;;;;;;;;;;
+;"User Story 12: Edit Menu Item
+User Story: As an owner, I want to edit menu items, so that I can update information about available items.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 13: Add New Product to Menu
+User Story: As an owner, I want to add new products to the menu, so that I can expand the options available to customers.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 14: Remove Product from Menu
+User Story: As an owner, I want to remove products from the menu, so that I can ensure only available items are listed.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 15: View Order Details
+User Story: As an owner or employee, I want to view order details, so that I can verify information and ensure accuracy in delivery.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 16: Register New Product
+User Story: As an owner, I want to register new products, so that I can add items to the system for sale.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+21853667;ABSOLUTE FREQUENCY;4;;;2;;0;;TOTAL;15;;;;;;;;;;;;;;;;;
+21554873;NORMALIZED FREQUENCY;0,27;;;0,13;;0;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+22252689;P7  (TOTAL 15);;;;;;;;;;;;;;;;;;;;;;;;;;
+22152300;"User Story 1: System Login
+User Story: As a user who places orders, I want to log into the system, so that I can access my information and place orders.";F;V;V;F;V;V;V;;2;;Total Criteria;;105;;;;;;;;;;;;;
+22250574;"User Story 2: New User Registration
+User Story: As a new user, I want to register in the system, so that I can create an account and place orders.";V;V;V;F;V;V;V;;1;;Total Errors;;14;;;;;;;;;;;;;
+22252568;"User Story 3: View Shopping Cart
+User Story: As a user who places orders, I want to view my shopping cart, so that I can review the items I selected before paying.";F;V;V;V;V;V;V;;1;;Success Rate;;86,67%;;;;;;;;;;;;;
+22250575;"User Story 4: Add Product to Cart
+User Story: As a user who places orders, I want to add products to my cart, so that I can purchase them later.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 5: Remove Products from Cart
+User Story: As someone who will place orders, I want to remove products from my shopping cart, so that I can adjust my product selection.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 6: Add Order Notes
+User Story: As someone who will place orders, I want to add specific notes to my order, so that the store is aware of important details (such as allergies or preferences).";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 7: Make Payment
+User Story: As someone who will place orders, I want to pay for my order using Pix or card, so that I can complete my purchase conveniently.";F;F;F;F;V;V;F;;5;;;;;;;;;;;;;;;;;
+;"User Story 8: Manage Orders
+User Story: As a store owner, I want to view all orders in a list, so that I can monitor the progress of incoming orders.";V;V;V;F;F;V;V;;2;;;;;;;;;;;;;;;;;
+;"User Story 9: Mark Order as Ready
+User Story: As a store owner, I want to mark an order as ""ready,"" so that the customer knows their order is prepared.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 10: Mark Order as Delivered
+User Story: As a store owner, I want to mark an order as ""delivered,"" so that I can keep orders organized and remove completed ones from the pending list.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 11: Add New Product to Menu
+User Story: As a store owner, I want to add new products to the menu, so that I can offer new items to customers.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 12: Edit Menu Product
+User Story: As a store owner, I want to edit the details of an existing product on the menu, so that I can update information like price or description.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 13: Remove Product from Menu
+User Story: As a store owner, I want to remove products from the menu, so that I can stop offering items that are no longer available.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 14: Customize Menu Categories
+User Story: As a store owner, I want to edit the menu categories, so that I can reorganize the products according to new needs or promotions.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 15: View Order Details
+User Story: As a store owner, I want to click on a specific order to see the details, so that I can better understand each customer's needs.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+21853667;ABSOLUTE FREQUENCY;8;;;5;;1;;TOTAL;14;;;;;;;;;;;;;;;;;
+21554873;NORMALIZED FREQUENCY;0,57;;;0,36;;0,07;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;PART II - MODIFIED US-PROMPT;;;;;;;;;;;;;;;;;;;;;;;;;;
+22152300;"User Story 1: System Login
+As a customer,
+I want to log into the system,
+So that I can access my account and place orders.";F;V;V;F;V;V;V;;2;;Total Criteria;;112;;;;;;;;;;;;;
+22250574;"User Story 2: New User Registration
+As a customer,
+I want to register a new user,
+So that I can create an account and place orders in the system.";F;V;V;F;V;V;V;;2;;Total Errors;;17;;;;;;;;;;;;;
+22252568;"User Story 3: View Shopping Cart
+As a customer,
+I want to view my shopping cart,
+So that I can check the items I selected before paying.";F;V;V;V;V;V;V;;1;;Success Rate;;84,82%;;;;;;;;;;;;;
+22250575;"User Story 4: Add Product to Cart
+As a customer,
+I want to add a product to the cart,
+So that I can include items I want to buy.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 5: Remove Product from Cart
+As a customer,
+I want to remove a product from the cart,
+So that I can adjust my shopping selection.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 6: Pay for Order
+As a customer,
+I want to pay for my order,
+So that I can complete the purchase and receive my products.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 7: Access Menu
+As a customer,
+I want to access the menu,
+So that I can see the available options to purchase.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 8: Add Note to Order
+As a customer,
+I want to add a note to my order,
+So that I can communicate additional details to the seller.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 9: Manage Orders
+As an owner/employee,
+I want to manage orders,
+So that I can track and process customer requests.";V;F;F;F;V;V;F;;4;;;;;;;;;;;;;;;;;
+;"User Story 10: Mark Order as Ready
+As an owner/employee,
+I want to mark an order as ready,
+So that I can indicate that the order has been prepared and is ready for delivery.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 11: Mark Order as Delivered
+As an owner/employee,
+I want to mark an order as delivered,
+So that I can update the order status in the system.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 12: Edit Menu Product
+As an owner/employee,
+I want to edit a menu product,
+So that I can update the information of the offered items.";V;V;V;V;F;V;V;;1;;;;;;;;;;;;;;;;;
+;"User Story 13: Add New Product to Menu
+As an owner/employee,
+I want to add a new product to the menu,
+So that I can offer more options to customers.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"User Story 14: Remove Product from Menu
+As an owner/employee,
+I want to remove a product from the menu,
+So that I can ensure the menu is always up to date.";V;V;V;V;V;V;V;;0;;;;;;;;;;;;;;;;;
+;"TIP: Customer Satisfaction Evaluation
+As a customer,
+I want to rate my experience with the order,
+So that I can provide feedback on the service and products.";F;V;V;V;V;V;V;;2;;;;;;;;;;;;;;;;;
+;"TIP: Repeat Last Order
+As a customer,
+I want to repeat my last order,
+So that I can make a new purchase quickly.";F;V;V;V;V;V;V;;1;;;;;;;;;;;;;;;;;
+21853667;ABSOLUTE FREQUENCY;12;;;4;;1;;TOTAL;17;;;;;;;;;;;;;;;;;
+21554873;NORMALIZED FREQUENCY;0,71;;;0,24;;0,06;;;;;;;;;;;;;;;;;;;;

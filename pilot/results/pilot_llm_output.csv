@@ -1,0 +1,542 @@
+ID;Prompt;Response;;
+User Story 1: Log into the System;"User Story 1: Log into the System
+User Story: As someone who wants to place orders, I want to log into the system using my phone number and password, so that I can access my account and place orders.";"Scenario: User logs into the system using phone number and password
+  Given a user with a registered phone number and password
+  When the user attempts to log in with their phone number and password
+  Then the user should be granted access to their account
+  And the user should be able to place orders";;
+User Story 2: Register New User;"User Story 2: Register New User
+User Story: As someone who wants to place orders, I want to register in the system by entering my full name, phone number, password, and password confirmation, so that I can create an account and start placing orders.";"Scenario: Register a new user successfully
+  Given a user wants to register in the system
+  And the user is on the registration page
+  When the user enters their full name, phone number, password, and password confirmation
+  And the user submits the registration form
+  Then the user should see a confirmation message
+  And the user should be able to log in with the registered credentials";;
+User Story 3: View Shopping Cart;"User Story 3: View Shopping Cart
+User Story: As someone who wants to place orders, I want to view my shopping cart, so that I can review the items I have selected before completing the purchase.";"Scenario: View items in the shopping cart
+  Given a user has selected items to purchase
+  And the user is on the shopping cart page
+  When the user views the shopping cart
+  Then the user should see a list of selected items
+  And the user should see the total price of the items";;
+User Story 4: Add Product to Cart;"User Story 4: Add Product to Cart
+User Story: As someone who wants to place orders, I want to add products to the cart, so that I can select the items I want to buy.";"Scenario: Add a product to the cart
+  Given a user is on the product page
+  When the user clicks the ""Add to Cart"" button
+  Then the product should be added to the cart
+  And the cart should display the added product";;
+User Story 5: Remove Product from Cart;"User Story 5: Remove Product from Cart
+User Story: As someone who wants to place orders, I want to remove products from the cart, so that I can adjust the items I no longer want to buy.";"Scenario: Remove a product from the cart
+  Given a user has products in the cart
+  And the user is on the cart page
+  When the user removes a product from the cart
+  Then the product should no longer be in the cart
+  And the cart total should be updated accordingly";;
+User Story 6: Pay for Order;"User Story 6: Pay for Order
+User Story: As someone who wants to place orders, I want to pay for my order using Pix or card, so that I can complete the purchase quickly and conveniently.";"Scenario: Pay for order using Pix or card
+  Given a user wants to place an order
+  And the user has items in the cart
+  When the user chooses to pay using Pix or card
+  Then the order should be completed successfully
+  And the user should receive a confirmation message";;
+User Story 7: Add Note to Order;"User Story 7: Add Note to Order
+User Story: As someone who wants to place orders, I want to add notes to my order, so that I can customize how I want to receive the products.";"Scenario: Add a note to an order
+  Given a user is on the order page
+  And the user has items in the cart
+  When the user adds a note to the order
+  Then the note should be saved with the order
+  And the note should be visible in the order summary";;
+User Story 8: Access the Menu;"User Story 8: Access the Menu
+User Story: As someone who wants to place orders, I want to access the menu with organized categories, so that I can easily view and choose products.";"Scenario: Access the menu with organized categories
+  Given a user who wants to place orders
+  When the user accesses the menu
+  Then the menu should display organized categories
+  And the user should be able to easily view and choose products";;
+User Story 9: Manage Orders;"User Story 9: Manage Orders
+User Story: As an owner or employee of the establishment, I want to view and manage orders placed by users, so that I can check the details of each order and organize them accordingly.";"Scenario: View and manage orders
+  Given an owner or employee is logged into the system
+  And there are orders placed by users
+  When the owner or employee views the orders
+  Then the details of each order should be displayed
+  And the orders should be organized accordingly";;
+User Story 10: Mark Order as Completed;"User Story 10: Mark Order as Completed
+User Story: As an owner or employee of the establishment, I want to mark an order as completed, so that I can inform that the order has been prepared and is ready.";"Scenario: Mark an order as completed
+  Given an order is in the system
+  And the order is marked as prepared
+  When the owner or employee marks the order as completed
+  Then the order status should be updated to completed
+  And the customer should be informed that the order is ready";;
+User Story 11: Mark Order as Delivered;"User Story 11: Mark Order as Delivered
+User Story: As an owner or employee of the establishment, I want to mark an order as delivered, so that I can remove the order from the pending list and record its completion.";"Scenario: Mark an order as delivered
+  Given an order is in the pending list
+  And the user is an owner or employee
+  When the user marks the order as delivered
+  Then the order should be removed from the pending list
+  And the order should be recorded as completed";;
+User Story 12: Edit Menu Item;"User Story 12: Edit Menu Item
+User Story: As an owner of the establishment, I want to edit menu items, so that I can update product information as needed.";"Scenario: Edit an existing menu item
+  Given the owner is logged into the system
+  And the owner is on the menu management page
+  When the owner selects an existing menu item to edit
+  And the owner updates the product information
+  And the owner saves the changes
+  Then the menu item should be updated with the new information
+  And the updated menu item should be visible on the menu management page";;
+User Story 13: Add New Product to Menu;"User Story 13: Add New Product to Menu
+User Story: As an owner of the establishment, I want to add new products to the menu, so that I can offer new options to customers.";"Scenario: Add a new product to the menu
+  Given the owner is logged into the management system
+  And the owner is on the menu management page
+  When the owner adds a new product with valid details
+  Then the new product should be listed on the menu
+  And customers should see the new product in the menu options";;
+User Story 14: Remove Product from Menu;"User Story 14: Remove Product from Menu
+User Story: As an owner of the establishment, I want to remove products from the menu, so that I can take out items that are no longer available for sale.";"Scenario: Remove a product from the menu
+  Given the owner is logged into the management system
+  And the product ""Spaghetti"" is listed on the menu
+  When the owner removes the product ""Spaghetti"" from the menu
+  Then the product ""Spaghetti"" should no longer be listed on the menu";;
+User Story 1: System Login;"User Story 1: System Login
+User Story: As a person who places orders, I want to log in to the system, so that I can access my account and place orders.";"Scenario: User logs in to access their account and place orders
+  Given a person who places orders is on the login page
+  When the person enters valid login credentials
+  And the person clicks the login button
+  Then the person should be redirected to their account dashboard
+  And the person should be able to place orders";;
+User Story 2: New User Registration;"User Story 2: New User Registration
+User Story: As a person who places orders, I want to register as a new user, so that I can create an account and place orders.";"Scenario: New user registration
+  Given a person who wants to place orders
+  When the person registers as a new user
+  Then the person should have an account created
+  And the person should be able to place orders";;
+User Story 3: View Shopping Cart;"User Story 3: View Shopping Cart
+User Story: As a person who places orders, I want to view my shopping cart, so that I can review the products before completing the purchase.";"Scenario: View shopping cart to review products before purchase
+  Given a user has added products to the shopping cart
+  When the user navigates to the shopping cart page
+  Then the user should see a list of products in the shopping cart
+  And the user should see the total price of the products in the shopping cart";;
+User Story 4: Add Product to Cart;"User Story 4: Add Product to Cart
+User Story: As a person who places orders, I want to add products to the cart, so that I can select the items I want to buy.";"Scenario: Add a product to the cart
+  Given a user is on the product page
+  And the product is available
+  When the user clicks the ""Add to Cart"" button
+  Then the product should be added to the cart
+  And the cart should display the added product";;
+User Story 5: Remove Product from Cart;"User Story 5: Remove Product from Cart
+User Story: As a person who places orders, I want to remove products from the cart, so that I can adjust my item selection before payment.";"Scenario: Remove a product from the cart
+  Given a person who places orders has added products to the cart
+  And the cart contains multiple products
+  When the person removes a product from the cart
+  Then the product should no longer be in the cart
+  And the cart should update to reflect the removal";;
+User Story 6: Pay for Order;"User Story 6: Pay for Order
+User Story: As a person who places orders, I want to pay for my order, so that I can complete the purchase and receive my products.";"Scenario: Pay for an order to complete the purchase
+  Given a person who has placed an order
+  And the order is ready for payment
+  When the person pays for the order
+  Then the purchase should be completed
+  And the person should receive a confirmation of the payment";;
+User Story 7: Access the Menu;"User Story 7: Access the Menu
+User Story: As a person who places orders, I want to access the menu, so that I can see the available options for purchase.";"Scenario: Access the menu to see available options
+  Given a person who places orders is on the homepage
+  When the person selects the menu option
+  Then the menu should be displayed
+  And the person should see the available options for purchase";;
+User Story 8: Add Note to Order;"User Story 8: Add Note to Order
+User Story: As a person who places orders, I want to add notes to my order, so that I can specify details about what I want.";"Scenario: Add a note to an order
+  Given a user has an order in their cart
+  When the user adds a note ""Please deliver between 5-6 PM"" to the order
+  Then the note should be saved with the order
+  And the note should be visible in the order summary";;
+User Story 9: Manage Orders;"User Story 9: Manage Orders
+User Story: As an owner or employee, I want to manage received orders, so that I can track and fulfill customer orders.";"Scenario: Manage received orders
+  Given an owner or employee is logged into the order management system
+  And there are received orders in the system
+  When the owner or employee views the list of received orders
+  Then the system should display all received orders
+  And the owner or employee should be able to track and fulfill customer orders";;
+User Story 10: Mark Order as Completed;"User Story 10: Mark Order as Completed
+User Story: As an owner or employee, I want to mark an order as completed, so that I can indicate that the order has been finished and is ready for delivery.";"Scenario: Mark an order as completed
+  Given an order is in the system
+  And the user is an owner or employee
+  When the user marks the order as completed
+  Then the order status should be updated to completed
+  And the order should be ready for delivery";;
+User Story 11: Mark Order as Delivered;"User Story 11: Mark Order as Delivered
+User Story: As an owner or employee, I want to mark an order as delivered, so that I can remove orders from the queue and update the status.";"Scenario: Mark an order as delivered
+  Given an order is in the queue
+  And the user is an owner or employee
+  When the user marks the order as delivered
+  Then the order should be removed from the queue
+  And the order status should be updated to delivered";;
+User Story 12: Edit Menu Item;"User Story 12: Edit Menu Item
+User Story: As an owner or employee, I want to edit products on the menu, so that I can update information about the items offered.";"Scenario: Edit an existing menu item
+  Given an owner or employee is logged into the system
+  And the menu item to be edited exists
+  When the owner or employee updates the menu item details
+  Then the menu item should reflect the updated information";;
+User Story 13: Add New Product to Menu;"User Story 13: Add New Product to Menu
+User Story: As an owner or employee, I want to add new products to the menu, so that I can expand the options available to customers.";"Scenario: Add a new product to the menu
+  Given the user is logged in as an owner or employee
+  And the user is on the menu management page
+  When the user adds a new product with valid details
+  Then the new product should be added to the menu
+  And the new product should be visible to customers";;
+User Story 14: Remove Product from Menu;"User Story 14: Remove Product from Menu
+User Story: As an owner or employee, I want to remove products from the menu, so that I can ensure only available items are listed.";"Scenario: Remove a product from the menu
+  Given the user is logged in as an owner or employee
+  And the product ""Cheeseburger"" is listed on the menu
+  When the user removes the product ""Cheeseburger"" from the menu
+  Then the product ""Cheeseburger"" should no longer be listed on the menu";;
+User Story 1: System Login;"User Story 1: System Login
+User Story: As a user who places orders, I want to log in to the system, so that I can access my information and place orders.";"Scenario: User logs in to access information and place orders
+  Given a user is on the login page
+  When the user enters valid credentials
+  And the user clicks the login button
+  Then the user should be redirected to the dashboard
+  And the user should see their account information";;
+User Story 2: New User Registration;"User Story 2: New User Registration
+User Story: As a new user, I want to register in the system, so that I can create an account and place orders.";"Scenario: New user registers in the system
+  Given a new user is on the registration page
+  When the user submits valid registration details
+  Then the user should see a confirmation message
+  And the user should be able to log in with the registered credentials";;
+User Story 3: View Shopping Cart;"User Story 3: View Shopping Cart
+User Story: As a user who places orders, I want to view my shopping cart, so that I can review the items I selected before paying.";"Scenario: User views shopping cart to review selected items
+  Given a user has added items to the shopping cart
+  When the user navigates to the shopping cart page
+  Then the user should see a list of items in the shopping cart
+  And the user should see the total price of the items";;
+User Story 4: Add Product to Cart;"User Story 4: Add Product to Cart
+User Story: As a user who places orders, I want to add products to my cart, so that I can buy them later.";"Scenario: Add a product to the cart
+  Given a user is on the product page
+  When the user clicks the ""Add to Cart"" button
+  Then the product should be added to the cart
+  And the cart should display the added product";;
+User Story 5: Remove Product from Cart;"User Story 5: Remove Product from Cart
+User Story: As a user who places orders, I want to remove products from my cart, so that I can adjust my choices before completing the purchase.";"Scenario: Remove a product from the cart
+  Given a user has products in their cart
+  And the user is on the cart page
+  When the user removes a product from the cart
+  Then the product should no longer be in the cart
+  And the cart total should be updated accordingly";;
+User Story 6: Pay for Order;"User Story 6: Pay for Order
+User Story: As a user who places orders, I want to pay for my order, so that I can complete the purchase and receive my products.";"Scenario: User pays for an order to complete the purchase
+  Given a user has placed an order
+  And the order is in the user's cart
+  When the user proceeds to checkout
+  And the user provides valid payment details
+  Then the payment is processed successfully
+  And the order is confirmed";;
+User Story 7: Access the Menu;"User Story 7: Access the Menu
+User Story: As a user who places orders, I want to access the menu, so that I can see all available options before placing an order.";"Scenario: User accesses the menu to view available options
+  Given a user who places orders
+  When the user accesses the menu
+  Then the user should see all available options";;
+User Story 8: Add Note to Order;"User Story 8: Add Note to Order
+User Story: As a user who places orders, I want to add notes to my order, so that I can communicate specific needs about the delivery.";"Scenario: Add a note to an order
+  Given a user has placed an order
+  And the user is on the order details page
+  When the user adds a note to the order
+  Then the note should be saved with the order
+  And the note should be visible on the order details page";;
+User Story 9: Manage Orders;"User Story 9: Manage Orders
+User Story: As an owner or employee, I want to manage orders in the system, so that I can track and organize user orders.";"Scenario: Manage orders in the system
+  Given an owner or employee is logged into the system
+  And there are existing user orders
+  When the owner or employee views the orders
+  Then the system should display a list of user orders
+  And the orders should be organized by date";;
+User Story 10: Mark Order as Completed;"User Story 10: Mark Order as Completed
+User Story: As an owner or employee, I want to mark an order as completed, so that I can indicate the order has been processed.";"Scenario: Mark an order as completed
+  Given an order is in the system
+  And the user is an owner or employee
+  When the user marks the order as completed
+  Then the order status should be updated to completed
+  And the order should be indicated as processed";;
+User Story 11: Mark Order as Delivered;"User Story 11: Mark Order as Delivered
+User Story: As an owner or employee, I want to mark an order as delivered, so that I can remove orders that have already been completed.";"Scenario: Mark an order as delivered
+  Given an order is in the system
+  And the order status is ""In Progress""
+  When the owner or employee marks the order as delivered
+  Then the order status should be updated to ""Delivered""
+  And the order should be removed from the active orders list";;
+User Story 12: Edit Menu Item;"User Story 12: Edit Menu Item
+User Story: As an owner, I want to edit menu items, so that I can update information about available items.";"Scenario: Edit an existing menu item
+  Given the owner is logged into the system
+  And the owner is on the menu management page
+  When the owner selects an existing menu item to edit
+  And the owner updates the item details
+  And the owner saves the changes
+  Then the menu item should be updated with the new details
+  And the updated item should be visible on the menu management page";;
+User Story 13: Add New Product to Menu;"User Story 13: Add New Product to Menu
+User Story: As an owner, I want to add new products to the menu, so that I can expand the options available to customers.";"Scenario: Add a new product to the menu
+  Given the owner is logged into the admin panel
+  And the owner is on the ""Add New Product"" page
+  When the owner fills in the product details and submits the form
+  Then the new product should be added to the menu
+  And the product should be visible to customers on the menu";;
+User Story 14: Remove Product from Menu;"User Story 14: Remove Product from Menu
+User Story: As an owner, I want to remove products from the menu, so that I can ensure only available items are listed.";"Scenario: Remove a product from the menu
+  Given the owner is logged into the system
+  And a product is listed on the menu
+  When the owner removes the product from the menu
+  Then the product should no longer be listed on the menu";;
+User Story 15: View Order Details;"User Story 15: View Order Details
+User Story: As an owner or employee, I want to view order details, so that I can verify information and ensure accuracy in delivery.";"Scenario: View order details to verify information and ensure accuracy in delivery
+  Given an owner or employee is logged into the system
+  And an order exists in the system
+  When the owner or employee views the order details
+  Then the order details should be displayed
+  And the information should be accurate";;
+User Story 16: Register New Product;"User Story 16: Register New Product
+User Story: As an owner, I want to register new products, so that I can add items to the system for sale.";"Scenario: Register a new product
+  Given the owner is logged into the system
+  And the owner is on the ""Add New Product"" page
+  When the owner enters valid product details
+  And the owner submits the product registration form
+  Then the product should be added to the system
+  And the owner should see a confirmation message";;
+User Story 1: System Login;"User Story 1: System Login
+User Story: As a user who places orders, I want to log into the system, so that I can access my information and place orders.";"Scenario: User logs into the system to access information and place orders
+  Given a user is on the login page
+  When the user enters valid credentials
+  And the user clicks the login button
+  Then the user should be redirected to the dashboard
+  And the user should see their account information";;
+User Story 2: New User Registration;"User Story 2: New User Registration
+User Story: As a new user, I want to register in the system, so that I can create an account and place orders.";"Scenario: New user registers in the system
+  Given a new user is on the registration page
+  When the user submits valid registration details
+  Then the user should see a confirmation message
+  And the user should be able to log in with the registered credentials";;
+User Story 3: View Shopping Cart;"User Story 3: View Shopping Cart
+User Story: As a user who places orders, I want to view my shopping cart, so that I can review the items I selected before paying.";"Scenario: User views shopping cart to review selected items
+  Given a user has selected items to purchase
+  And the user is on the shopping cart page
+  When the user views the shopping cart
+  Then the shopping cart should display all selected items
+  And the total price should be correctly calculated";;
+User Story 4: Add Product to Cart;"User Story 4: Add Product to Cart
+User Story: As a user who places orders, I want to add products to my cart, so that I can purchase them later.";"Scenario: Add a product to the cart
+  Given a user is on the product page
+  When the user adds the product to the cart
+  Then the product should be in the cart
+  And the cart should display the correct product details";;
+User Story 5: Remove Products from Cart;"User Story 5: Remove Products from Cart
+User Story: As someone who will place orders, I want to remove products from my shopping cart, so that I can adjust my product selection.";"Scenario: Remove a product from the shopping cart
+  Given a user has products in their shopping cart
+  When the user removes a product from the cart
+  Then the product should no longer be in the cart
+  And the cart total should be updated accordingly";;
+User Story 6: Add Order Notes;"User Story 6: Add Order Notes
+User Story: As someone who will place orders, I want to add specific notes to my order, so that the store is aware of important details (such as allergies or preferences).";"Scenario: Add specific notes to an order
+  Given a user is on the order placement page
+  And the user has filled in the order details
+  When the user adds specific notes to the order
+  Then the notes should be saved with the order
+  And the store should be able to view the notes";;
+User Story 7: Make Payment;"User Story 7: Make Payment
+User Story: As someone who will place orders, I want to pay for my order using Pix or card, so that I can complete my purchase conveniently.";"Scenario: User makes a payment for an order
+  Given a user has items in their cart
+  And the user is on the checkout page
+  When the user selects Pix or card as the payment method
+  And the user confirms the payment
+  Then the payment should be processed successfully
+  And the user should receive a confirmation of the purchase";;
+User Story 8: Manage Orders;"User Story 8: Manage Orders
+User Story: As a store owner, I want to view all orders in a list, so that I can monitor the progress of incoming orders.";"Scenario: View all orders in a list
+  Given a store owner is logged into the store management system
+  When the store owner navigates to the orders page
+  Then the store owner should see a list of all orders
+  And the list should display the status of each order";;
+User Story 9: Mark Order as Ready;"User Story 9: Mark Order as Ready
+User Story: As a store owner, I want to mark an order as ""ready,"" so that the customer knows their order is prepared.";"Scenario: Mark an order as ready
+  Given a store owner is logged into the system
+  And an order is in the ""processing"" state
+  When the store owner marks the order as ""ready""
+  Then the order status should be updated to ""ready""
+  And the customer should be notified that their order is prepared";;
+User Story 10: Mark Order as Delivered;"User Story 10: Mark Order as Delivered
+User Story: As a store owner, I want to mark an order as ""delivered,"" so that I can keep orders organized and remove completed ones from the pending list.";"Scenario: Mark an order as delivered
+  Given a store owner is logged into the order management system
+  And an order is in the pending list
+  When the store owner marks the order as delivered
+  Then the order should be removed from the pending list
+  And the order should be marked as delivered in the system";;
+User Story 11: Add New Product to Menu;"User Story 11: Add New Product to Menu
+User Story: As a store owner, I want to add new products to the menu, so that I can offer new items to customers.";"Scenario: Add a new product to the menu
+  Given the store owner is logged into the admin panel
+  And the store owner is on the ""Add New Product"" page
+  When the store owner enters the product details and submits the form
+  Then the new product should be added to the menu
+  And the store owner should see a confirmation message";;
+User Story 12: Edit Menu Product;"User Story 12: Edit Menu Product
+User Story: As a store owner, I want to edit the details of an existing product on the menu, so that I can update information like price or description.";"Scenario: Edit the details of an existing product on the menu
+  Given a store owner is logged into the store management system
+  And a product exists on the menu
+  When the store owner updates the product details with new price and description
+  Then the product details should be updated on the menu
+  And the updated product information should be visible to customers";;
+User Story 13: Remove Product from Menu;"User Story 13: Remove Product from Menu
+User Story: As a store owner, I want to remove products from the menu, so that I can stop offering items that are no longer available.";"Scenario: Remove a product from the menu
+  Given a store owner is logged into the store management system
+  And a product is listed on the menu
+  When the store owner removes the product from the menu
+  Then the product should no longer be visible on the menu
+  And customers should not be able to order the removed product";;
+User Story 14: Customize Menu Categories;"User Story 14: Customize Menu Categories
+User Story: As a store owner, I want to edit the menu categories, so that I can reorganize the products according to new needs or promotions.";"Scenario: Edit menu categories to reorganize products
+  Given a store owner is logged into the admin panel
+  And the store owner is on the menu categories page
+  When the store owner edits an existing menu category
+  Then the menu category should be updated
+  And the products should be reorganized according to the new category settings";;
+User Story 15: View Order Details;"User Story 15: View Order Details
+User Story: As a store owner, I want to click on a specific order to see the details, so that I can better understand each customer's needs.";"Scenario: View order details
+  Given a store owner is logged into the store management system
+  And the store owner is on the orders page
+  When the store owner clicks on a specific order
+  Then the order details should be displayed
+  And the store owner should see the customer's information";;
+User Story 1: System Login;"User Story 1: System Login
+As a customer,
+I want to log into the system,
+So that I can access my account and place orders.";"Scenario: Customer logs into the system
+  Given a customer is on the login page
+  When the customer enters valid credentials
+  And the customer submits the login form
+  Then the customer should be logged into the system
+  And the customer should see their account dashboard";;
+User Story 2: New User Registration;"User Story 2: New User Registration
+As a customer,
+I want to register a new user,
+So that I can create an account and place orders in the system.";"Scenario: New user registration
+  Given a customer is on the registration page
+  When the customer submits valid registration details
+  Then the customer should see a confirmation message
+  And the customer should be able to log in with the new account";;
+User Story 3: View Shopping Cart;"User Story 3: View Shopping Cart
+As a customer,
+I want to view my shopping cart,
+So that I can check the items I selected before paying.";"Scenario: Customer views shopping cart
+  Given a customer has selected items to purchase
+  And the customer is on the shopping cart page
+  When the customer views the shopping cart
+  Then the shopping cart should display all selected items
+  And the total price of the items should be shown";;
+User Story 4: Add Product to Cart;"User Story 4: Add Product to Cart
+As a customer,
+I want to add a product to the cart,
+So that I can include items I want to buy.";"Scenario: Add a product to the cart
+  Given a customer is on the product page
+  When the customer adds the product to the cart
+  Then the product should be added to the cart
+  And the cart should display the added product";;
+User Story 5: Remove Product from Cart;"User Story 5: Remove Product from Cart
+As a customer,
+I want to remove a product from the cart,
+So that I can adjust my shopping selection.";"Scenario: Remove a product from the cart
+  Given a customer has a product in the cart
+  When the customer removes the product from the cart
+  Then the product should no longer be in the cart
+  And the cart should be updated accordingly";;
+User Story 6: Pay for Order;"User Story 6: Pay for Order
+As a customer,
+I want to pay for my order,
+So that I can complete the purchase and receive my products.";"Scenario: Customer pays for an order
+  Given a customer has items in their cart
+  And the customer is on the checkout page
+  When the customer enters valid payment details
+  And the customer confirms the payment
+  Then the order should be processed
+  And the customer should receive an order confirmation";;
+User Story 7: Access Menu;"User Story 7: Access Menu
+As a customer,
+I want to access the menu,
+So that I can see the available options to purchase.";"Scenario: Customer accesses the menu to see available options
+  Given a customer is on the homepage
+  When the customer clicks on the menu button
+  Then the menu should be displayed
+  And the customer should see the available options to purchase";;
+User Story 8: Add Note to Order;"User Story 8: Add Note to Order
+As a customer,
+I want to add a note to my order,
+So that I can communicate additional details to the seller.";"Scenario: Add a note to an order
+  Given a customer has an active order
+  When the customer adds a note to the order
+  Then the note should be saved with the order
+  And the seller should be able to view the note";;
+User Story 9: Manage Orders;"User Story 9: Manage Orders
+As an owner/employee,
+I want to manage orders,
+So that I can track and process customer requests.";"Scenario: Track and process customer orders
+  Given an owner/employee is logged into the order management system
+  And there are pending customer orders
+  When the owner/employee views the order list
+  Then the pending orders should be displayed
+  And the owner/employee can update the status of each order";;
+User Story 10: Mark Order as Ready;"User Story 10: Mark Order as Ready
+As an owner/employee,
+I want to mark an order as ready,
+So that I can indicate that the order has been prepared and is ready for delivery.";"Scenario: Mark an order as ready for delivery
+  Given an order has been prepared
+  And the order is in the system
+  When the owner/employee marks the order as ready
+  Then the order status should be updated to ""Ready for delivery""
+  And the customer should be notified that the order is ready";;
+User Story 11: Mark Order as Delivered;"User Story 11: Mark Order as Delivered
+As an owner/employee,
+I want to mark an order as delivered,
+So that I can update the order status in the system.";"Scenario: Mark an order as delivered
+  Given an order is in the system
+  And the order status is ""In Progress""
+  When the owner/employee marks the order as delivered
+  Then the order status should be updated to ""Delivered""";;
+User Story 12: Edit Menu Product;"User Story 12: Edit Menu Product
+As an owner/employee,
+I want to edit a menu product,
+So that I can update the information of the offered items.";"Scenario: Edit a menu product to update its information
+  Given an owner/employee is logged into the system
+  And the owner/employee is on the menu management page
+  When the owner/employee selects a product to edit
+  And updates the product information
+  Then the product information should be updated in the system
+  And the updated product information should be displayed on the menu";;
+User Story 13: Add New Product to Menu;"User Story 13: Add New Product to Menu
+As an owner/employee,
+I want to add a new product to the menu,
+So that I can offer more options to customers.";"Scenario: Add a new product to the menu
+  Given an owner/employee is logged into the system
+  And the menu management page is open
+  When the owner/employee adds a new product with valid details
+  Then the new product should be added to the menu
+  And the product should be visible to customers";;
+User Story 14: Remove Product from Menu;"User Story 14: Remove Product from Menu
+As an owner/employee,
+I want to remove a product from the menu,
+So that I can ensure the menu is always up to date.";"Scenario: Remove a product from the menu
+  Given the user is logged in as an owner/employee
+  And the user is on the menu management page
+  When the user selects a product to remove
+  And confirms the removal
+  Then the product should no longer be listed on the menu
+  And the menu should be updated immediately";;
+TIP: Customer Satisfaction Evaluation;"TIP: Customer Satisfaction Evaluation
+As a customer,
+I want to rate my experience with the order,
+So that I can provide feedback on the service and products.";"Scenario: Customer rates their order experience
+  Given a customer has completed an order
+  When the customer rates their experience
+  Then the feedback should be recorded
+  And the customer should see a confirmation message";;
+TIP: Repeat Last Order;"TIP: Repeat Last Order
+As a customer,
+I want to repeat my last order,
+So that I can make a new purchase quickly.";"Scenario: Repeat last order to make a new purchase quickly
+  Given a customer has a previous order
+  And the customer is logged into their account
+  When the customer selects the option to repeat the last order
+  Then the last order is added to the cart
+  And the customer can proceed to checkout";;
