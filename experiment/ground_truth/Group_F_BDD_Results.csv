@@ -1,0 +1,780 @@
+ID;Prompt;Response;;
+User Story 1: Enter Origin and Destination Address;"User Story 1: Enter Origin and Destination Address
+● User Story: As a person who wants a cheap transportation service,
+I want to enter the origin and destination address of the trip,
+So that I can get a list of available trips.";"Scenario: Enter origin and destination address to get available trips
+  Given a person who wants a cheap transportation service
+  When the person enters the origin and destination address of the trip
+  Then the person should get a list of available trips";;
+User Story 2: Selecting Transportation Services;"User Story 2: Selecting Transportation Services
+● User Story: As a person who wants a cheap transportation service,
+I want to select the transportation services I want to pick up for the trip,
+So that I can compare the options of different services.";"Scenario: Selecting transportation services for a trip
+  Given a person who wants a cheap transportation service
+  When the person selects the transportation services for the trip
+  Then the person should be able to compare the options of different services";;
+User Story 3: Choosing Transportation Type;"User Story 3: Choosing Transportation Type
+● User Story: As a person who wants a cheap transportation service,
+I want to choose between motorbike or car as the transportation type,
+So that I can have options that best suit my needs.";"Scenario: Choosing between motorbike or car for transportation
+  Given a person who wants a cheap transportation service
+  When the person chooses the transportation type
+  Then the person should see options for motorbike and car
+  And the person can select the option that best suits their needs";;
+User Story 4: Choosing a Ride Type;"User Story 4: Choosing a Ride Type
+● User Story: As a person who wants a cheap transportation service,
+I want to choose between a passenger ride or a delivery ride,
+so that I can select the type of service that suits my needs.";"Scenario: Choosing between a passenger ride or a delivery ride
+  Given a person who wants a cheap transportation service
+  When the person selects the type of service
+  Then the person should be able to choose between a passenger ride or a delivery ride
+  And the person should select the type of service that suits their needs";;
+User Story 5: Get Trip List;"User Story 5: Get Trip List
+● User Story: As a person who wants a cheap transportation service,
+I want to get a list of trips from each transportation service,
+So that I can choose the most convenient option.";"Scenario: Retrieve a list of trips from transportation services
+  Given a person who wants a cheap transportation service
+  When the person requests a list of trips from each transportation service
+  Then the person should receive a list of trips
+  And the person can choose the most convenient option";;
+User Story 6: Choosing the Best Ride;"User Story 6: Choosing the Best Ride
+● User Story: As a person who wants a cheap transportation service,
+I want to choose the ride that suits me best,
+So that I can be redirected to the app of the chosen service.";"Scenario: Choosing the best ride for cheap transportation
+  Given a person who wants a cheap transportation service
+  When the person chooses the ride that suits them best
+  Then the person should be redirected to the app of the chosen service";;
+User Story 7: Save Ride Search Priorities;"User Story 7: Save Ride Search Priorities
+● User Story: As a person looking for a cheap ride service,
+I want to save my search priorities (such as low price, wait time, driver rating),
+so that the results are organized according to my preferences.";"Scenario: Save ride search priorities for cheap ride service
+  Given a person looking for a cheap ride service
+  And the person has set search priorities for low price, wait time, and driver rating
+  When the person saves their search priorities
+  Then the search results should be organized according to their preferences";;
+User Story 8: Register Favorite Destinations;"User Story 8: Register Favorite Destinations
+● User Story: As a person who wants a cheap transportation service,
+I want to register favorite destinations such as home, work, and school,
+So that I can quickly select these addresses when searching for trips.";"Scenario: Register favorite destinations for quick selection
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations registration page
+  When the user registers home, work, and school as favorite destinations
+  Then the user should see these destinations listed as favorites
+  And the user should be able to quickly select these addresses when searching for trips";;
+User Story 9: View Trip History;"User Story 9: View Trip History
+● User Story: As a person who wants a cheap transportation service,
+I want to view the history of selected trips,
+So that I can check the details such as fare, route, and driver rating.";"Scenario: View trip history to check details
+  Given a user with a registered account
+  And the user has completed multiple trips
+  When the user navigates to the trip history page
+  Then the user should see a list of past trips
+  And each trip should display fare, route, and driver rating";;
+User Story 10: See Most Used Transportation Service;"User Story 10: See Most Used Transportation Service
+● User Story: As a person who wants a cheap transportation service,
+I want to see which transportation service I tend to select the most,
+So that I can identify my preferences and selection tendencies.";"Scenario: Identify most used transportation service
+  Given a user who wants a cheap transportation service
+  And the user has a history of selecting transportation services
+  When the user views their transportation service history
+  Then the most frequently selected transportation service should be displayed
+  And the user should be able to identify their preferences and selection tendencies";;
+User Story 11: Promotion Notifications;"User Story 11: Promotion Notifications
+● User Story: As a person who wants a cheap transportation service,
+I want to receive notifications about promotions from different transportation services,
+So that I can take advantage of offers and discounts on my trips.";"Scenario: Receive promotion notifications from transportation services
+  Given a user who wants a cheap transportation service
+  And the user has subscribed to promotion notifications
+  When a transportation service offers a promotion
+  Then the user should receive a notification about the promotion
+  And the notification should include details of the offer and discount";;
+User Story 12: View Driver Ratings;"User Story 12: View Driver Ratings
+● User Story: As a person who wants a cheap transportation service,
+I want to see the drivers' ratings before choosing a ride,
+So that I can feel more secure and confident in choosing the service.";"Scenario: View driver ratings before choosing a ride
+  Given a person wants a cheap transportation service
+  And the person is on the ride selection page
+  When the person views the list of available drivers
+  Then the person should see the ratings of each driver
+  And the person should feel more secure and confident in choosing the service";;
+User Story 13: Sync with Transportation Apps;"User Story 13: Sync with Transportation Apps
+● User Story: As a person who wants a cheap transportation service,
+I want to sync my information with transportation apps directly,
+So that I can complete reservations and payments without having to leave the comparison app.";"Scenario: Sync user information with transportation apps for seamless reservations and payments
+  Given a user is logged into the comparison app
+  And the user has linked their transportation app accounts
+  When the user initiates a reservation through the comparison app
+  Then the reservation should be completed in the transportation app
+  And the payment should be processed without leaving the comparison app";;
+User Story 14: Offline Mode for Favorite Destinations;"User Story 14: Offline Mode for Favorite Destinations
+● User Story: As a person who wants a cheap transportation service,
+I want to access my favorite destinations even offline,
+So that I can plan my trips quickly even without an internet connection.";"Scenario: Access favorite destinations offline
+  Given a user has favorite destinations saved
+  And the user is offline
+  When the user accesses the favorite destinations
+  Then the favorite destinations should be displayed
+  And the user can plan trips without an internet connection";;
+User Story 15: Historically Based Recommendations;"User Story 15: Historically Based Recommendations
+● User Story: As a person looking for a cheap transportation service,
+I want to receive service recommendations based on my past trips,
+so that I can choose more relevant and faster options.";"Scenario: Receive service recommendations based on past trips
+  Given a user with a history of past trips
+  And the user is looking for a cheap transportation service
+  When the user requests service recommendations
+  Then the user should receive recommendations based on past trips
+  And the recommendations should be relevant and faster options";;
+User Story 1: Enter Origin and Destination Address;"User Story 1: Enter Origin and Destination Address
+• User Story: As a person who wants a cheap transportation service,
+I want to enter my origin and destination address,
+So that I can find available rides based on my location.";"Scenario: Enter origin and destination address to find available rides
+  Given a person who wants a cheap transportation service
+  When the person enters their origin and destination address
+  Then the person should see available rides based on their location";;
+User Story 2: Selecting Transportation Services;"User Story 2: Selecting Transportation Services
+• User Story: As a person who wants a cheap transportation service,
+I want to select the transportation services I want to search for a ride on,
+So that I can compare options and find the best service for my needs.";"Scenario: Selecting transportation services to compare options
+  Given a person who wants a cheap transportation service
+  When the person selects the transportation services to search for a ride
+  Then the person can compare options
+  And the person can find the best service for their needs";;
+User Story 3: Choose Transportation Type (Motorcycle or Car);"User Story 3: Choose Transportation Type (Motorcycle or Car)
+• User Story: As a person who wants a cheap transportation service,
+I want to choose between motorcycle or car as the transportation type,
+So that I can select the most economical or fastest option.";"Scenario: Choose between motorcycle or car for transportation
+  Given a person who wants a cheap transportation service
+  When the person chooses the transportation type
+  Then the person can select between motorcycle or car
+  And the person can choose the most economical or fastest option";;
+User Story 4: Choosing Ride Type (Passenger or Delivery);"User Story 4: Choosing Ride Type (Passenger or Delivery)
+• User Story: As a person who wants a cheap transportation service,
+I want to choose between passenger or delivery ride,
+So that I can use the service that suits my needs at the moment.";"Scenario: Choosing between passenger or delivery ride
+  Given a user wants a cheap transportation service
+  When the user selects the ride type option
+  Then the user should see options for passenger and delivery rides
+  And the user should be able to choose the ride type that suits their needs";;
+User Story 5: Get List of Available Trips;"User Story 5: Get List of Available Trips
+• User Story: As a person who wants a cheap transportation service,
+I want to see a list of available trips from different services,
+So that I can compare the options and choose the most advantageous one.";"Scenario: View list of available trips
+  Given a person who wants a cheap transportation service
+  When they request a list of available trips
+  Then they should see trips from different services
+  And they should be able to compare the options";;
+User Story 6: Sort Trips by Priority;"User Story 6: Sort Trips by Priority
+• User Story: As a person who wants a cheap ride-hailing service,
+I want to save my priorities, such as price, arrival time, or driver rating,
+so that trips are automatically sorted according to what is most important to me.";"Scenario: Sort trips by user-defined priority
+  Given a user has set their trip priorities to price, arrival time, and driver rating
+  When the user views available trips
+  Then the trips should be sorted by price
+  And trips with the same price should be sorted by arrival time
+  And trips with the same price and arrival time should be sorted by driver rating";;
+User Story 7: Getting Redirected to the App of the Service I Chose;"User Story 7: Getting Redirected to the App of the Service I Chose
+• User Story: As a person who wants a cheap transportation service,
+I want to be redirected directly to the app of the transportation service I chose,
+so that I can complete my ride request without any hassle.";"Scenario: Redirecting to the chosen transportation service app
+  Given a person wants a cheap transportation service
+  When the person chooses a transportation service
+  Then the person should be redirected to the app of the chosen transportation service
+  And the person can complete their ride request without any hassle";;
+User Story 8: Register Favorite Destinations;"User Story 8: Register Favorite Destinations
+• User Story: As a person who wants a cheap transportation service,
+I want to register frequent destinations such as home, work and school,
+So that I can speed up the search for trips, without having to enter the addresses every time.";"Scenario: Register frequent destinations to speed up trip searches
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations registration page
+  When the user registers home, work, and school as frequent destinations
+  Then the user should see the destinations saved successfully
+  And the user should be able to select these destinations quickly for future trips";;
+User Story 9: View Trip History;"User Story 9: View Trip History
+• User Story: As a person who wants a cheap transportation service,
+I want to view my trip history, including details such as price and route,
+so that I can easily look up past trip information.";"Scenario: View trip history with details
+  Given a registered user with completed trips
+  When the user navigates to the trip history page
+  Then the user should see a list of past trips
+  And each trip should display the price and route details";;
+User Story 10: View Frequency of Service Selection;"User Story 10: View Frequency of Service Selection
+• User Story: As a person who wants a cheap transportation service,
+I want to see which transportation service I select most often,
+so that I can gain insight into which service I use most and make informed decisions when making future choices.";"Scenario: View the most frequently selected transportation service
+  Given a user who wants a cheap transportation service
+  And the user has selected transportation services multiple times
+  When the user views the frequency of service selection
+  Then the user should see which transportation service is selected most often
+  And the user can make informed decisions for future choices";;
+User Story 11: Rate the Driver;"User Story 11: Rate the Driver
+• User Story: As a person who wants a cheap ride-hailing service,
+I want to rate the driver after the trip is complete,
+so that I can contribute to the quality of the service and help other users make better decisions.";"Scenario: Rate the driver after trip completion
+  Given a completed trip
+  And the user is on the trip summary page
+  When the user rates the driver
+  Then the rating is recorded
+  And the user sees a confirmation message";;
+User Story 12: Best Deal Notifications;"User Story 12: Best Deal Notifications
+• User Story: As a person who wants a cheap transportation service,
+I want to receive notifications when a cheaper ride is available,
+so that I can take advantage of the offer and save even more.";"Scenario: Receive notification for cheaper ride
+  Given a user is looking for a transportation service
+  And the user has opted in for notifications
+  When a cheaper ride becomes available
+  Then the user should receive a notification about the cheaper ride
+  And the user should be able to view the details of the cheaper ride";;
+User Story 13: Compare Estimated Arrival Time;"User Story 13: Compare Estimated Arrival Time
+• User Story: As a person who wants a cheap transportation service,
+I want to compare the estimated arrival time of different services,
+so that I can choose the fastest option when I'm in a hurry.";"Scenario: Compare estimated arrival time of different services
+  Given a user wants a cheap transportation service
+  And the user is in a hurry
+  When the user compares the estimated arrival times of different services
+  Then the user should see the estimated arrival times
+  And the user should be able to choose the fastest option";;
+User Story 14: Filter Services by Driver Rating;"User Story 14: Filter Services by Driver Rating
+• User Story: As a person who wants a cheap ride-hailing service,
+I want to filter drivers by rating,
+so that I can choose highly rated drivers and have a more reliable
+travel experience.";"Scenario: Filter drivers by rating
+  Given a user wants to filter drivers by rating
+  When the user selects a minimum driver rating of 4.5 stars
+  Then the system should display only drivers with a rating of 4.5 stars or higher
+  And the user can choose a highly rated driver for a more reliable travel experience";;
+User Story 1: Entering Travel Address;"User Story 1: Entering Travel Address
+User Story: As a person looking for a cheap transportation service,
+I want to enter the origin and destination address of the trip,
+so that I can start searching for available transportation services.";"Scenario: Entering travel addresses to search for transportation services
+  Given a person looking for a cheap transportation service
+  When the person enters the origin and destination address of the trip
+  Then the person can start searching for available transportation services";;
+User Story 2: Selecting Transportation Services;"User Story 2: Selecting Transportation Services
+User Story: As a person who wants a cheap transportation service,
+I want to select the transportation services I want to search for the trip,
+So that I can compare different options and choose the most advantageous one.";"Scenario: Selecting transportation services for a trip
+  Given a person who wants a cheap transportation service
+  When the person selects the transportation services to search for the trip
+  Then the person can compare different options
+  And the person can choose the most advantageous one";;
+User Story 3: Choosing the Type of Transportation (Motorcycle or Car);"User Story 3: Choosing the Type of Transportation (Motorcycle or Car)
+User Story: As a person who wants a cheap transportation service,
+I want to choose the type of transportation (motorcycle or car),
+So that I can select the transportation method that best suits my needs.";"Scenario: Choosing the type of transportation
+  Given a person who wants a cheap transportation service
+  When the person chooses the type of transportation
+  Then the person can select between motorcycle or car
+  And the person can choose the transportation method that best suits their needs";;
+User Story 4: Choosing Trip Type (Passenger or Delivery);"User Story 4: Choosing Trip Type (Passenger or Delivery)
+User Story: As a person who wants a cheap transportation service,
+I want to choose the trip type (passenger or delivery),
+So that I can use the service according to the purpose of the trip.";"Scenario: Choosing trip type as passenger or delivery
+  Given a user wants a cheap transportation service
+  When the user selects the trip type as passenger or delivery
+  Then the service should be used according to the purpose of the trip";;
+User Story 5: Get List of Available Trips;"User Story 5: Get List of Available Trips
+User Story: As a person who wants a cheap transportation service,
+I want to get the list of trips from each transportation service,
+So that I can compare the options and select the best one.";"Scenario: Get list of available trips from transportation services
+  Given a person who wants a cheap transportation service
+  When the person requests the list of trips from each transportation service
+  Then the person should receive a list of available trips
+  And the person should be able to compare the options and select the best one";;
+User Story 6: Choosing a Trip and Being Redirected to the App;"User Story 6: Choosing a Trip and Being Redirected to the App
+User Story: As a person who wants a cheap transportation service,
+I want to choose the trip that suits me best and be redirected to the chosen transportation service's app,
+so that I can confirm and request the ride conveniently.";"Scenario: Choosing a trip and being redirected to the app
+  Given a person who wants a cheap transportation service
+  When the person chooses the trip that suits them best
+  Then the person should be redirected to the chosen transportation service's app
+  And the person can confirm and request the ride conveniently";;
+User Story 7: Save Search Priorities;"User Story 7: Save Search Priorities
+User Story: As a person who wants a cheap ride-hailing service,
+I want to save my ride-hailing priorities (price, arrival time, driver rating),
+so that I can sort the results according to my preferences and make faster decisions.";"Scenario: Save ride-hailing priorities for sorting results
+  Given a user who wants a cheap ride-hailing service
+  And the user has set their ride-hailing priorities to price, arrival time, and driver rating
+  When the user saves their ride-hailing priorities
+  Then the priorities should be saved successfully
+  And the user should be able to sort ride-hailing results according to their saved priorities";;
+User Story 8: Register Favorite Destinations;"User Story 8: Register Favorite Destinations
+User Story: As a person who wants a cheap transportation service,
+I want to register my favorite destinations (home, work, school),
+So that I can quickly select these destinations on future trips.";"Scenario: Register favorite destinations
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations registration page
+  When the user registers their favorite destinations as home, work, and school
+  Then the favorite destinations should be saved successfully
+  And the user should be able to quickly select these destinations on future trips";;
+User Story 9: View Trip History;"User Story 9: View Trip History
+User Story: As a person who wants a cheap transportation service,
+I want to see my trip history,
+so that I can check details like fare, route, and driver ratings..";"Scenario: View trip history to check details
+  Given a registered user with completed trips
+  When the user navigates to the trip history page
+  Then the user should see a list of past trips
+  And each trip should display fare, route, and driver ratings";;
+User Story 10: Visualize Most Used Transportation Service;"User Story 10: Visualize Most Used Transportation Service
+User Story: As a person who wants a cheap transportation service,
+I want to visualize which transportation service I use most frequently,
+So that I can understand my preferences and optimize my future choices.";"Scenario: Visualize the most frequently used transportation service
+  Given a person who wants a cheap transportation service
+  And the person has a history of using various transportation services
+  When the person views their transportation usage statistics
+  Then the most frequently used transportation service should be displayed
+  And the person should be able to understand their preferences";;
+User Story 1: Enter Origin and Destination Address;"User Story 1: Enter Origin and Destination Address
+● User Story: As a person who wants a cheap transportation service,
+I want to enter the origin and destination address of the trip,
+So that I can see the available transportation options.";"Scenario: Enter origin and destination address to see transportation options
+  Given a person who wants a cheap transportation service
+  When the person enters the origin and destination address of the trip
+  Then the person should see the available transportation options";;
+User Story 2: Selecting Transportation Services;"User Story 2: Selecting Transportation Services
+● User Story: As a person who wants a cheap transportation service,
+I want to select the transportation services I want to pick up the ride from,
+So that I can compare the options between Uber, InDrive and 99.";"Scenario: Compare transportation service options
+  Given a person who wants a cheap transportation service
+  When the person selects transportation services to pick up the ride
+  Then the person should see options for Uber, InDrive, and 99
+  And the person can compare the options";;
+User Story 3: Choosing Transportation Type;"User Story 3: Choosing Transportation Type
+● User Story: As a person who wants a cheap transportation service,
+I want to choose between motorbike or car,
+So that I can choose a transportation that fits my needs and
+budget.";"Scenario: Choosing a transportation type based on budget
+  Given a person who wants a cheap transportation service
+  When the person chooses between motorbike or car
+  Then the person can select a transportation that fits their needs and budget";;
+User Story 4: Choosing a Ride Type;"User Story 4: Choosing a Ride Type
+● User Story: As a person who wants a cheap transportation service,
+I want to choose between passenger ride or delivery,
+So that I can use the service for personal transportation or sending packages.";"Scenario: Choosing between passenger ride or delivery
+  Given a user wants a cheap transportation service
+  When the user selects the ride type option
+  Then the user should see options for passenger ride and delivery
+  And the user can choose either option for personal transportation or sending packages";;
+User Story 5: Get Trip List;"User Story 5: Get Trip List
+● User Story: As a person who wants a cheap transportation service,
+I want to get the trip list of each transportation service,
+So that I can compare the options and choose the one that suits me the most.";"Scenario: Compare trip options from transportation services
+  Given a person who wants a cheap transportation service
+  When the person requests the trip list from each transportation service
+  Then the person should receive a list of available trips
+  And the person should be able to compare the options to choose the most suitable one";;
+User Story 6: Choosing a Trip and Redirection;"User Story 6: Choosing a Trip and Redirection
+● User Story: As a person who wants a cheap transportation service,
+I want to choose the trip that suits me best,
+so that I can be redirected to the chosen transportation service app.";"Scenario: Choosing a trip and being redirected to the transportation service app
+  Given a user wants a cheap transportation service
+  When the user chooses the trip that suits them best
+  Then the user should be redirected to the chosen transportation service app";;
+User Story 7: Save Search Priorities;"User Story 7: Save Search Priorities
+● User Story: As a person who wants a cheap ride-hailing service,
+I want to save my ride-hailing priorities (low price, short time to get to me, driver rating),
+so that the search results are sorted according to my preferences.";"Scenario: Save ride-hailing search priorities
+  Given a user wants a cheap ride-hailing service
+  And the user has set their ride-hailing priorities to low price, short time to get to them, and driver rating
+  When the user saves their ride-hailing priorities
+  Then the search results should be sorted according to the user's preferences";;
+User Story 8: Register Favorite Destinations;"User Story 8: Register Favorite Destinations
+● User Story: As a person who wants a cheap transportation service,
+I want to register favorite destinations, such as home, work, or school,
+So that I can quickly select these locations when planning my trips.";"Scenario: Register favorite destinations for quick selection
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations registration page
+  When the user registers a destination as home
+  Then the destination should be saved as a favorite
+  And the user should be able to quickly select the home destination when planning trips";;
+User Story 9: View Trip History;"User Story 9: View Trip History
+● User Story: As a person who wants a cheap transportation service,
+I want to see the history of selected trips,
+So that I can review details such as fare, route, and driver rating.";"Scenario: View trip history to review trip details
+  Given a registered user with completed trips
+  And the user is logged into the transportation service app
+  When the user navigates to the trip history section
+  Then the user should see a list of past trips
+  And each trip should display fare, route, and driver rating";;
+User Story 10: See Most Used Service;"User Story 10: See Most Used Service
+● User Story: As a person who wants a cheap transportation service,
+I want to see which transportation service I most often select,
+So that I can evaluate my preferences and make informed decisions.";"Scenario: Evaluate most used transportation service
+  Given a user who wants a cheap transportation service
+  And the user has a history of selecting transportation services
+  When the user views their most used transportation service
+  Then the user should see the transportation service they most often select
+  And the user can evaluate their preferences and make informed decisions";;
+User Story 11: Price Notifications;"User Story 11: Price Notifications
+● User Story: As a person who wants a cheap transportation service,
+I want to receive notifications when transportation prices drop,
+so that I can take advantage of deals and save money.";"Scenario: Receive notification when transportation prices drop
+  Given a user who wants a cheap transportation service
+  And the user has subscribed to price notifications
+  When the transportation prices drop
+  Then the user should receive a notification about the price drop
+  And the user can take advantage of the deal to save money";;
+User Story 12: Rating Comparison;"User Story 12: Rating Comparison
+● User Story: As a person who wants a cheap transportation service,
+I want to compare the ratings of drivers between services,
+so that I can choose a driver with a good reputation.";"Scenario: Compare driver ratings between services
+  Given a person who wants a cheap transportation service
+  And the person has access to multiple transportation services
+  When the person compares the ratings of drivers between services
+  Then the person should see the ratings of drivers from each service
+  And the person should be able to choose a driver with a good reputation";;
+User Story 13: View Estimated Arrival Time;"User Story 13: View Estimated Arrival Time
+● User Story: As a person who wants a cheap transportation service,
+I want to see the estimated time it will take for the transportation to reach me,
+so that I can make decisions based on the wait time.";"Scenario: View estimated arrival time for transportation service
+  Given a user is on the transportation service app
+  And the user has selected a transportation option
+  When the user requests the estimated arrival time
+  Then the app displays the estimated time for the transportation to reach the user";;
+User Story 14: Suggesting Alternatives;"User Story 14: Suggesting Alternatives
+● User Story: As a person who wants a cheap transportation service,
+I want to receive suggestions for alternative services when the one I chose is not available,
+so that I can continue my trip without having to manually search for another option.";"Scenario: Suggesting alternative transportation services when the chosen one is unavailable
+  Given a user wants a cheap transportation service
+  And the chosen service is not available
+  When the user requests a suggestion for alternative services
+  Then the user should receive suggestions for alternative transportation services
+  And the user can continue their trip without manually searching for another option";;
+User Story 15: Personalize Alerts;"User Story 15: Personalize Alerts
+● User Story: As a person who wants a cheap ride-hailing service,
+I want to personalize the alerts I receive about rides,
+so that I only get notified about the things that really matter to me, like
+wait time or driver rating.";"Scenario: Personalize ride-hailing alerts
+  Given a user who wants a cheap ride-hailing service
+  And the user is on the alerts settings page
+  When the user selects preferences for wait time and driver rating notifications
+  Then the user should only receive alerts about wait time and driver rating";;
+User Story 16: History-Based Suggestion;"User Story 16: History-Based Suggestion
+● User Story: As a person who wants a cheap transportation service,
+I want to receive travel suggestions based on my history,
+so that I can save time choosing options that I already prefer.";"Scenario: Receive travel suggestions based on history
+  Given a user with a history of travel preferences
+  And the user wants a cheap transportation service
+  When the user requests travel suggestions
+  Then the user should receive suggestions based on their history
+  And the suggestions should help the user save time choosing options";;
+User Story 17: Integration with Other Services;"User Story 17: Integration with Other Services
+● User Story: As someone who wants a cheap transportation service,
+I want the app to integrate with other navigation or mapping apps,
+so that I can view the entire route without having to switch between apps.";"Scenario: View entire route using integrated navigation app
+  Given the user has the transportation app installed
+  And the user has a navigation app installed
+  When the user selects a destination in the transportation app
+  Then the entire route should be displayed within the transportation app
+  And the user should not need to switch to the navigation app";;
+User Story 18: Setting Up Preferred Payments;"User Story 18: Setting Up Preferred Payments
+● User Story: As someone who wants a cheap ride-hailing service,
+I want to set up preferred payment methods in the app,
+so that my transactions are quick and easy when being redirected to the chosen ride-hailing service.";"Scenario: Setting up preferred payment methods
+  Given a user has logged into the ride-hailing app
+  And the user navigates to the payment settings
+  When the user selects a preferred payment method
+  Then the preferred payment method should be saved
+  And the user should see a confirmation message";;
+User Story 19: View Discount Offers;"User Story 19: View Discount Offers
+● User Story: As a person who wants a cheap transportation service,
+I want to view discount offers on transportation services,
+So that I can take advantage of promotions and save money on travel.";"Scenario: View available discount offers on transportation services
+  Given a user is on the transportation service homepage
+  When the user navigates to the discount offers section
+  Then the user should see a list of available discount offers
+  And the offers should include details on the promotion and savings";;
+User Story 20: Filter Options by Transportation Mode;"User Story 20: Filter Options by Transportation Mode
+● User Story: As a person who wants a cheap transportation service,
+I want to filter the options by transportation type, such as motorcycle or car,
+so that I can only see the options that suit my preferences.";"Scenario: Filter transportation options by type
+  Given a user wants a cheap transportation service
+  And the user is on the transportation options page
+  When the user filters the options by motorcycle
+  Then only motorcycle options should be displayed";;
+User Story 1: Entering Travel Address;"User Story 1: Entering Travel Address
+● User Story: As a person who wants a cheap transportation service,
+I want to enter the origin and destination address of the trip,                                                        so that the system can search for transportation options for the desired route.";"Scenario: Entering travel address to search for transportation options
+  Given a person who wants a cheap transportation service
+  When the person enters the origin and destination address of the trip
+  Then the system searches for transportation options for the desired route";;
+User Story 2: Selecting Transportation Services;"User Story 2: Selecting Transportation Services
+● User Story: As a person who wants a cheap transportation service,
+I want to select the transportation services I want to search for the ride from,
+So that I can compare the options from different transportation platforms.";"Scenario: Selecting transportation services to compare options
+  Given a person who wants a cheap transportation service
+  When the person selects the transportation services to search for a ride
+  Then the person can compare the options from different transportation platforms";;
+User Story 3: Choose Transportation Type;"User Story 3: Choose Transportation Type
+● User Story: As a person who wants a cheap transportation service,
+I want to choose the type of transportation (motorbike or car), so that I can filter the
+options according to my transportation need.";"Scenario: Choose transportation type for cheap service
+  Given a person who wants a cheap transportation service
+  When the person chooses the type of transportation as motorbike
+  Then the options should be filtered according to motorbike transportation need";;
+User Story 4: Choosing a Ride Type;"User Story 4: Choosing a Ride Type
+● User Story: As a person who wants a cheap transportation service,
+I want to choose the ride type (passenger or delivery), so that I can
+get the most suitable options for the service I am looking for.";"Scenario: Choosing a ride type for suitable transportation service
+  Given a person who wants a cheap transportation service
+  When the person chooses the ride type as passenger or delivery
+  Then the person should see the most suitable options for the chosen service";;
+User Story 5: Get Trip List;"User Story 5: Get Trip List
+● User Story: As a person who wants a cheap transportation service,
+I want to get the trip list of each transportation service, so that I can
+compare prices, arrival time and driver rating.";"Scenario: Compare trip list for transportation services
+  Given a person who wants a cheap transportation service
+  When the person requests the trip list of each transportation service
+  Then the person should see the prices, arrival times, and driver ratings for each service
+  And the person should be able to compare these details";;
+User Story 6: Choosing the Best Ride;"User Story 6: Choosing the Best Ride
+● User Story: As a person who wants a cheap transportation service,
+I want to choose the trip that suits me best, so that I can be redirected to the
+app of the chosen transportation service and finalize my request.";"Scenario: Choosing the best ride for cheap transportation
+  Given a person wants a cheap transportation service
+  When the person chooses the trip that suits them best
+  Then the person should be redirected to the app of the chosen transportation service
+  And the person should be able to finalize their request";;
+User Story 7: Save Search Priorities;"User Story 7: Save Search Priorities
+● User Story: As a person who wants a cheap ride service,
+I want to save my ride search priorities (low price, short arrival time,
+driver rating), so that I can sort the results according to my preferred ride criteria.";"Scenario: Save ride search priorities
+  Given a user wants a cheap ride service
+  And the user is on the ride search preferences page
+  When the user sets their ride search priorities to low price, short arrival time, and driver rating
+  Then the ride search priorities should be saved
+  And the user should be able to sort ride results according to their preferred criteria";;
+User Story 8: Register Favorite Destinations;"User Story 8: Register Favorite Destinations
+● User Story: As a person who wants a cheap transportation service,
+I want to register my favorite destinations, such as home, work, or school, so
+that I can quickly access these addresses when planning future trips.";"Scenario: Register favorite destinations for quick access
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations registration page
+  When the user registers a destination as home
+  Then the destination should be saved as a favorite
+  And the user should be able to quickly access this address when planning future trips";;
+User Story 9: View Trip History;"User Story 9: View Trip History
+● User Story: As a person who wants a cheap transportation service,
+I want to see the history of selected trips, so that I can review
+information such as fare, route, and driver rating.";"Scenario: View trip history to review trip details
+  Given a user with a registered account
+  And the user has completed at least one trip
+  When the user navigates to the trip history page
+  Then the user should see a list of past trips
+  And each trip should display fare, route, and driver rating";;
+User Story 10: See Most Selected Transportation Service;"User Story 10: See Most Selected Transportation Service
+● User Story: As a person who wants a cheap transportation service,
+I want to see which transportation service I tend to select the most, so that I
+can identify usage patterns and make quicker choices in the future.";"Scenario: See Most Selected Transportation Service
+  Given a user who wants a cheap transportation service
+  And the user has a history of selecting transportation services
+  When the user views their transportation service usage
+  Then the user should see the most selected transportation service
+  And the user can identify usage patterns for quicker choices in the future";;
+User Story 11: Receive Notification of Promotions;"User Story 11: Receive Notification of Promotions
+● User Story: As a person who wants a cheap transportation service,
+I want to receive notifications of promotions or discounts, so that I can
+save on my next trips.";"Scenario: Receive notification of promotions
+  Given a user who wants a cheap transportation service
+  And the user has opted in for notifications
+  When a promotion or discount is available
+  Then the user should receive a notification about the promotion
+  And the notification should include details of the promotion";;
+User Story 12: Compare Driver Ratings;"User Story 12: Compare Driver Ratings
+● User Story: As a person looking for a cheap ride-hailing service,
+I want to compare driver ratings between ride-hailing services,
+so that I can choose the option with the best reputation.";"Scenario: Compare driver ratings between ride-hailing services
+  Given a person looking for a cheap ride-hailing service
+  And the person has access to multiple ride-hailing services
+  When the person compares driver ratings
+  Then the person should see the ratings of drivers from each service
+  And the person should be able to choose the service with the best reputation";;
+User Story 13: See Estimated Arrival Time;"User Story 13: See Estimated Arrival Time
+● User Story: As a person who wants a cheap ride-hailing service,
+I want to see the estimated arrival time of the driver, so that I can
+choose the option that best aligns with my available time.";"Scenario: See estimated arrival time of the driver
+  Given a user is on the ride-hailing app
+  And the user has entered a destination
+  When the user requests a ride
+  Then the app should display the estimated arrival time of the driver
+  And the user can choose the option that best aligns with their available time";;
+User Story 14: Filter Trips by Price;"User Story 14: Filter Trips by Price
+● User Story: As a person looking for a cheap transportation service,
+I want to filter the trip options by price, so that I only see the most affordable
+ones within my budget range.";"Scenario: Filter trips by price within budget
+  Given a user is on the trip options page
+  And the user has a budget of $50
+  When the user filters trips by price
+  Then only trips costing $50 or less should be displayed";;
+User Story 15: Filter Trips by Arrival Time;"User Story 15: Filter Trips by Arrival Time
+● User Story: As a person who wants a cheap transportation service,
+I want to filter the trip options by the time they arrive to me, so that I
+can choose the fastest option when I'm in a hurry.";"Scenario: Filter trips by arrival time to choose the fastest option
+  Given a list of available trip options
+  And the user is in a hurry
+  When the user filters the trips by arrival time
+  Then the trips should be sorted by the earliest arrival time
+  And the user should see the fastest trip option first";;
+User Story 16: Filter Trips by Driver Rating;"User Story 16: Filter Trips by Driver Rating
+● User Story: As a person looking for a cheap ride-hailing service,
+I want to filter the trip options by driver ratings, so that I
+can choose a trip with a highly rated driver.";"Scenario: Filter trips by driver rating
+  Given a user is on the trip options page
+  And there are multiple trip options available
+  When the user filters trips by driver rating of 4.5 stars or higher
+  Then only trips with drivers rated 4.5 stars or higher should be displayed";;
+User Story 17: Add Trip to Favorites;"User Story 17: Add Trip to Favorites
+● User Story: As a person who wants a cheap transportation service,
+I want to add a trip to my favorites, so that I can save the best
+options and access them quickly in the future.";"Scenario: Add a trip to favorites
+  Given a user is logged into the transportation service app
+  And the user has selected a trip
+  When the user adds the trip to their favorites
+  Then the trip should be saved in the user's favorites list
+  And the user should be able to access the trip quickly in the future";;
+User Story 1: Enter Origin Address;"User Story 1: Enter Origin Address
+● User Story: As a person who wants a cheap transportation service, I want to enter the origin address of the trip,
+So that I can set my starting point.";"Scenario: Enter origin address for trip
+  Given a user wants a cheap transportation service
+  When the user enters the origin address of the trip
+  Then the starting point of the trip should be set";;
+User Story 2: Enter Destination Address;"User Story 2: Enter Destination Address
+● User Story: As a person who wants a cheap transportation service, I want to enter the destination address of the trip,
+So that I can know where I am going.";"Scenario: Enter destination address for trip
+  Given a person who wants a cheap transportation service
+  When the person enters the destination address of the trip
+  Then the person should know where they are going";;
+User Story 3: View Transportation Services;"User Story 3: View Transportation Services
+● User Story: As a person who wants a cheap transportation service, I want to view the list of available transportation services,
+so that I can choose between them.";"Scenario: View list of available transportation services
+  Given a person who wants a cheap transportation service
+  When the person views the list of available transportation services
+  Then the person should see a list of transportation services
+  And the person can choose between them";;
+User Story 4: Select Transportation Service;"User Story 4: Select Transportation Service
+● User Story: As a person who wants a cheap transportation service, I want to select a specific transportation service,
+So that I can search for rides only on that service.";"Scenario: Select a specific transportation service for cheap rides
+  Given a person who wants a cheap transportation service
+  When the person selects a specific transportation service
+  Then the person can search for rides only on that service";;
+User Story 5: Choose Transportation Type (Moto);"User Story 5: Choose Transportation Type (Moto)
+● User Story: As a person who wants a cheap transportation service, I want to choose the transportation type (moto),
+So that I can opt for the fastest option.";"Scenario: Choose Moto as Transportation Type
+  Given a user wants a cheap transportation service
+  When the user selects the transportation type as moto
+  Then the user should see moto as the fastest option";;
+User Story 6: Choose Transportation Type (Car);"User Story 6: Choose Transportation Type (Car)
+● User Story: As a person who wants a cheap transportation service, I want to choose the transportation type (car),
+So that I can opt for a more comfortable trip.";"Scenario: Choose car as transportation type for a comfortable trip
+  Given a user who wants a cheap transportation service
+  When the user chooses the transportation type as car
+  Then the user should be able to opt for a more comfortable trip";;
+User Story 7: Choose Ride Type (Passenger);"User Story 7: Choose Ride Type (Passenger) 
+● User Story: As a person who wants a cheap transportation service, I want to choose the ride type (passenger), 
+So that I can request a ride for myself.";"Scenario: Choose ride type as passenger for a cheap transportation service
+  Given a user who wants a cheap transportation service
+  When the user selects the ride type as passenger
+  Then the user should be able to request a ride for themselves";;
+User Story 8: Choose Trip Type (Delivery);"User Story 8: Choose Trip Type (Delivery)
+● User Story: As a person who wants a cheap shipping service, I want to choose the trip type (delivery),
+So that I can send a package.";"Scenario: Choose delivery trip type for cheap shipping service
+  Given a person who wants a cheap shipping service
+  When the person chooses the trip type as delivery
+  Then the person should be able to send a package";;
+User Story 9: View Ride Options for Selected Service;"User Story 9: View Ride Options for Selected Service
+● User Story: As a person who wants a cheap transportation service, I want to view the ride options for the selected transportation service, so that I can compare the offers.";"Scenario: View ride options for selected transportation service
+  Given a person who wants a cheap transportation service
+  And the person has selected a transportation service
+  When the person views the ride options
+  Then the person should see the available ride options for the selected service
+  And the person should be able to compare the offers";;
+User Story 10: See Prices for Each Trip;"User Story 10: See Prices for Each Trip
+● User Story: As a person who wants a cheap transportation service, I want to see the prices for each trip,
+so that I can choose the cheapest option.";"Scenario: Display prices for each trip
+  Given a user is on the trip selection page
+  When the user views the available trips
+  Then the prices for each trip should be displayed
+  And the user can compare the prices to choose the cheapest option";;
+User Story 11: Choosing a Ride;"User Story 11: Choosing a Ride
+● User Story: As a person who wants a cheap transportation service, I want to choose the ride that suits me the most,
+so that I can take it.";"Scenario: Choosing the most suitable ride for cheap transportation
+  Given a person who wants a cheap transportation service
+  When the person chooses a ride
+  Then the ride should suit the person's needs
+  And the person should be able to take the ride";;
+User Story 12: Redirect to the Service App;"User Story 12: Redirect to the Service App
+● User Story: As a person who wants a cheap ride-hailing service, I want to be redirected to the ride-hailing service app after choosing a ride, so that I can confirm the request.";"Scenario: Redirect to the ride-hailing service app after choosing a ride
+  Given a user has selected a ride
+  When the user confirms the ride selection
+  Then the user should be redirected to the ride-hailing service app
+  And the user should be able to confirm the ride request";;
+User Story 13: Save Low Price Priority;"User Story 13: Save Low Price Priority
+● User Story: As a person who wants a cheap transportation service, I want to save my low price priority,
+So that I can get the cheapest options.";"Scenario: Save low price priority for transportation service
+  Given a user who wants a cheap transportation service
+  When the user saves their low price priority
+  Then the user should see the cheapest transportation options";;
+User Story 14: Save Short Time Priority;"User Story 14: Save Short Time Priority
+● User Story: As a person who wants a cheap transportation service, I want to save my short time priority,
+So that I can choose trips that arrive faster.";"Scenario: Save short time priority for faster trips
+  Given a user who wants a cheap transportation service
+  When the user saves their short time priority
+  Then the user should be able to choose trips that arrive faster";;
+User Story 15: Save Driver Rating Priority;"User Story 15: Save Driver Rating Priority
+● User Story: As a person who wants a cheap ride-hailing service, I want to save my driver rating priority,
+So that I can select trips with highly rated drivers.";"Scenario: Save driver rating priority for selecting highly rated drivers
+  Given a user who wants a cheap ride-hailing service
+  And the user is logged into the ride-hailing app
+  When the user saves their driver rating priority
+  Then the user should be able to select trips with highly rated drivers";;
+User Story 16: Register Favorite Destination (Home);"User Story 16: Register Favorite Destination (Home)
+● User Story: As a person who wants a cheap transportation service, I want to register my favorite destination (home),
+So that I can quickly access it in future searches.";"Scenario: Register favorite destination as home
+  Given a user who wants a cheap transportation service
+  And the user is logged into the transportation app
+  When the user registers their favorite destination as home
+  Then the favorite destination should be saved as home
+  And the user should be able to quickly access it in future searches";;
+User Story 17: Register Favorite Destination (Work);"User Story 17: Register Favorite Destination (Work)
+● User Story: As a person who wants a cheap transportation service, I want to register my favorite destination (work),
+So that I can quickly access it in future searches.";"Scenario: Register favorite destination for quick access
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations page
+  When the user registers their work address as a favorite destination
+  Then the work address should be saved as a favorite destination
+  And the user should be able to quickly access it in future searches";;
+User Story 18: Register Favorite Destination (School);"User Story 18: Register Favorite Destination (School)
+● User Story: As a person who wants a cheap transportation service, I want to register my favorite destination (school),
+So that I can quickly access it in future searches.";"Scenario: Register favorite destination (school)
+  Given a user who wants a cheap transportation service
+  And the user is on the favorite destinations page
+  When the user registers their school as a favorite destination
+  Then the school should be saved as a favorite destination
+  And the user should be able to quickly access the school in future searches";;
+User Story 19: View Cost of Previous Trips;"User Story 19: View Cost of Previous Trips
+● User Story: As a person who wants a cheap transportation service, I want to see the cost of previous trips,
+so that I can understand my expenses.";"Scenario: View the cost of previous trips
+  Given a user with a history of trips
+  When the user navigates to the trip history page
+  Then the user should see a list of previous trips
+  And each trip should display its cost";;
+User Story 20: View Routes of Previous Trips;"User Story 20: View Routes of Previous Trips
+● User Story: As a person who wants a cheap transportation service, I want to see the routes of previous trips,
+so that I can evaluate my routes.";"Scenario: View routes of previous trips
+  Given a user with previous trips
+  When the user navigates to the trip history page
+  Then the user should see a list of previous trips
+  And the user should see the routes of each trip";;
+User Story 21: View Driver Ratings;"User Story 21: View Driver Ratings
+● User Story: As a person who wants a cheap transportation service, I want to see the drivers' ratings from previous trips,
+so that I can make better decisions in the future.";"Scenario: View driver ratings to make better decisions
+  Given a user is on the transportation service app
+  And the user has completed previous trips
+  When the user views the driver ratings
+  Then the user should see the ratings from previous trips
+  And the user can make better decisions for future trips";;
+User Story 22: View Most Selected Transportation Service;"User Story 22: View Most Selected Transportation Service
+● User Story: As a person who wants a cheap transportation service, I want to see which transportation service I selected most often, so that I can identify my preferences.";"Scenario: View the most selected transportation service
+  Given a user who wants a cheap transportation service
+  And the user has selected transportation services multiple times
+  When the user views their transportation service history
+  Then the user should see the transportation service they selected most often";;

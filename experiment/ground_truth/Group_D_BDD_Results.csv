@@ -1,0 +1,748 @@
+ID;Prompt;Response;;
+User Story 1: New User Registration;"User Story 1: New User Registration
+● User Story: As an elderly person,
+I want to register in the system,
+So that I can securely and personally access my personal finances.";"Scenario: Elderly person registers in the system
+  Given an elderly person is on the registration page
+  When they enter their personal details
+  And they submit the registration form
+  Then their account should be created
+  And they should be able to securely access their personal finances";;
+User Story 2: Create Personalized Profiles;"User Story 2: Create Personalized Profiles
+● User Story: As an elderly person,
+I want to create a personalized profile,
+So that the system can tailor the interface and functionalities to my personal needs.";"Scenario: Create a personalized profile for an elderly person
+  Given an elderly person is on the profile creation page
+  When the elderly person enters their personal information
+  Then the system should create a personalized profile
+  And the interface and functionalities should be tailored to their personal needs";;
+User Story 3: System Login;"User Story 3: System Login
+● User Story: As an elderly person,
+I want to log in to the system with my username and password,
+So that I can securely access and manage my financial information.";"Scenario: Elderly person logs in to access financial information
+  Given an elderly person has a valid username and password
+  When the elderly person enters their username and password
+  Then the system should log them in
+  And the elderly person should be able to access and manage their financial information";;
+User Story 4: System Logout;"User Story 4: System Logout
+● User Story: As an elderly person,
+I want to log out of the system,
+So that I can ensure my financial data is protected when ending the session.";"Scenario: Elderly person logs out to protect financial data
+  Given the elderly person is logged into the system
+  When the elderly person selects the logout option
+  Then the system should log the elderly person out
+  And the session should be terminated";;
+User Story 5: Add Income Sources;"User Story 5: Add Income Sources
+● User Story: As an elderly person,
+I want to add my income sources,
+So that I can track my monthly earnings.";"Scenario: Add a new income source
+  Given an elderly person is logged into the income tracking system
+  When the elderly person adds a new income source with valid details
+  Then the new income source should be saved
+  And the monthly earnings should be updated";;
+User Story 6: Edit Income Entries;"User Story 6: Edit Income Entries
+● User Story: As an elderly person,
+I want to edit my previously recorded income,
+So that I can keep my financial records updated and accurate.";"Scenario: Edit a previously recorded income entry
+  Given an elderly person has logged into their financial records system
+  And the elderly person has a previously recorded income entry
+  When the elderly person edits the income entry
+  Then the income entry should be updated
+  And the financial records should reflect the updated income accurately";;
+User Story 7: Delete Income Entries;"User Story 7: Delete Income Entries
+● User Story: As an elderly person,
+I want to delete recorded income entries,
+So that I can remove financial entries that are no longer relevant.";"Scenario: Delete an income entry
+  Given an elderly person has recorded income entries
+  And the elderly person is on the income entries page
+  When the elderly person deletes a specific income entry
+  Then the income entry should be removed from the list
+  And the income entries list should be updated accordingly";;
+User Story 8: Add Expenses;"User Story 8: Add Expenses
+● User Story: As an elderly person,
+I want to add my expenses,
+So that I can track my spending and manage my budget..";"Scenario: Add an expense to track spending
+  Given an elderly person is logged into the expense tracking system
+  When they add a new expense with the amount and description
+  Then the expense should be recorded in their account
+  And the total spending should be updated accordingly";;
+User Story 9: Edit Expenses;"User Story 9: Edit Expenses
+● User Story: As an elderly person,
+I want to edit my expenses,
+So that I can update my spending as needed and maintain accurate financial control.";"Scenario: Edit an existing expense
+  Given an elderly person has logged into their financial management account
+  And the elderly person has an existing expense entry
+  When the elderly person edits the expense entry
+  Then the expense entry should be updated with the new details
+  And the updated expense should be reflected in the financial records";;
+User Story 10: Delete Expenses;"User Story 10: Delete Expenses
+● User Story: As an elderly person,
+I want to delete expenses,
+So that I can remove incorrect or no longer necessary expenditures from my financial tracking.";"Scenario: Delete an expense
+  Given an elderly person is logged into the financial tracking system
+  And the elderly person has an expense they want to delete
+  When the elderly person deletes the expense
+  Then the expense should be removed from the financial tracking system
+  And the expense should no longer appear in the list of expenses";;
+User Story 11: Expense Categorization;"User Story 11: Expense Categorization
+● User Story: As an elderly person,
+I want to categorize my expenses,
+So that I can view my spending organized by areas such as food, transportation, and leisure.";"Scenario: Categorize expenses for better organization
+  Given an elderly person with various expenses
+  When the expenses are categorized by areas such as food, transportation, and leisure
+  Then the elderly person should be able to view their spending organized by these categories";;
+User Story 12: Set Savings Goals;"User Story 12: Set Savings Goals
+● User Story: As an elderly person,
+I want to set savings goals,
+So that I can better plan my finances and save money efficiently.";"Scenario: Elderly person sets a savings goal
+  Given an elderly person is logged into their financial planning account
+  When they set a savings goal of $5000 for a vacation
+  Then the savings goal should be saved successfully
+  And the user should see a confirmation message";;
+User Story 13: Receive Payment Alerts;"User Story 13: Receive Payment Alerts
+● User Story: As an elderly person,
+I want to receive payment alerts,
+So that I don’t forget to pay my bills and avoid delinquency.";"Scenario: Receive payment alerts to avoid delinquency
+  Given an elderly person is registered for payment alerts
+  And the person has an upcoming bill due
+  When the bill due date is approaching
+  Then the person should receive a payment alert
+  And the alert should include the bill details and due date";;
+User Story 14: Generate Monthly Reports;"User Story 14: Generate Monthly Reports
+● User Story: As an elderly person,
+I want to generate monthly reports of my income and expenses,
+So that I can analyze my financial balance and make data-driven decisions..";"Scenario: Generate monthly financial report
+  Given an elderly person with recorded income and expenses
+  When the person generates a monthly report
+  Then the report should display the total income and expenses for the month
+  And the report should show the financial balance for the month";;
+User Story 15: Generate Annual Reports;"User Story 15: Generate Annual Reports
+● User Story: As an elderly person,
+I want to generate annual reports of my finances,
+So that I can have a long-term view of my income and expenses.";"Scenario: Generate annual financial report
+  Given an elderly person with a financial account
+  When the user requests to generate an annual report
+  Then the system should generate a report of income and expenses for the year
+  And the user should be able to view the report";;
+User Story 16: View Income Graphs;"User Story 16: View Income Graphs
+● User Story: As an elderly person,
+I want to view income graphs,
+So that I can visually understand how my earnings have varied over time";"Scenario: Elderly person views income graphs to understand earnings variation
+  Given an elderly person is logged into the financial application
+  And the person navigates to the income graphs section
+  When the person views the income graphs
+  Then the person should see a visual representation of their earnings over time
+  And the graphs should clearly show the variation in earnings";;
+User Story 17: View Expense Graphs;"User Story 17: View Expense Graphs
+● User Story: As an elderly person,
+I want to view expense graphs,
+So that I can identify spending patterns and adjust my budget as needed.";"Scenario: Elderly person views expense graphs to identify spending patterns
+  Given an elderly person is logged into the expense tracking application
+  And the person has recorded expenses in the application
+  When the person navigates to the expense graphs section
+  Then the person should see a graphical representation of their expenses
+  And the person should be able to identify spending patterns";;
+User Story 18: View Balance Graphs;"User Story 18: View Balance Graphs
+● User Story: As an elderly person,
+I want to view graphs of my balance,
+So that I can track how my finances are balancing over time.";"Scenario: View balance graphs to track finances over time
+  Given an elderly person is logged into their account
+  When they navigate to the balance graphs section
+  Then they should see graphs of their balance over time
+  And they should be able to track how their finances are balancing over time";;
+User Story 19: Access to FAQs;"User Story 19: Access to FAQs
+● User Story: As an elderly person,
+I want to access a frequently asked questions (FAQs) section,
+So that I can quickly and independently clarify doubts about using the system.";"Scenario: Elderly person accesses FAQs to clarify doubts
+  Given an elderly person is on the system's homepage
+  When they navigate to the FAQs section
+  Then they should see a list of frequently asked questions
+  And they should be able to read the answers independently";;
+User Story 1: New User Registration;"User Story 1: New User Registration
+As an elderly person,
+I want to register in the system,
+So that I can start managing my personal finances.";"Scenario: Elderly person registers in the system
+  Given an elderly person is on the registration page
+  When the elderly person submits the registration form
+  Then the system should create a new user account
+  And the elderly person should be able to manage personal finances";;
+User Story 2: Personalized Profiles;"User Story 2: Personalized Profiles
+As an elderly person,
+I want to have a personalized profile,
+So that I can view financial information tailored to my needs.";"Scenario: View personalized financial profile
+  Given an elderly person with a registered account
+  When the person logs into their profile
+  Then the person should see financial information tailored to their needs";;
+User Story 3: Login;"User Story 3: Login
+As an elderly person,
+I want to log into the system,
+So that I can access my finances securely and quickly.";"Scenario: Elderly person logs into the system to access finances securely and quickly
+  Given an elderly person is on the login page
+  When they enter their username and password
+  And they click the login button
+  Then they should be logged into the system
+  And they should see their financial dashboard";;
+User Story 4: Logout;"User Story 4: Logout
+As an elderly person,
+I want to log out of the system,
+So that I can securely end my session.";"Scenario: Elderly person logs out to securely end session
+  Given an elderly person is logged into the system
+  When the elderly person clicks the logout button
+  Then the system should log the elderly person out
+  And the elderly person should see a confirmation message";;
+User Story 5: Add Income;"User Story 5: Add Income
+As an elderly person,
+I want to add new income sources,
+So that I can track my earnings and have control over my income.";"Scenario: Add a new income source
+  Given an elderly person is logged into the income tracking system
+  When the elderly person adds a new income source
+  Then the new income source should be recorded in the system
+  And the total earnings should be updated accordingly";;
+User Story 6: Edit Income;"User Story 6: Edit Income
+As an elderly person,
+I want to edit previously recorded incomes,
+So that I can correct or update financial information when necessary.";"Scenario: Edit previously recorded income
+  Given an elderly person has logged into their financial account
+  And there is a previously recorded income entry
+  When the elderly person edits the income entry
+  Then the income entry should be updated with the new information
+  And the updated income should be reflected in the financial records";;
+User Story 7: Delete Income;"User Story 7: Delete Income
+As an elderly person,
+I want to delete incomes from the system,
+So that I can remove incorrect or outdated entries.";"Scenario: Delete an income entry
+  Given an elderly person is logged into the system
+  And the elderly person has an income entry
+  When the elderly person deletes the income entry
+  Then the income entry should be removed from the system";;
+User Story 8: Add Expenses;"User Story 8: Add Expenses
+As an elderly person,
+I want to add new expenses,
+So that I can track my spending and better manage my budget.";"Scenario: Add a new expense to track spending
+  Given an elderly person is on the expenses page
+  When they add a new expense with the amount and description
+  Then the expense should be added to the list of expenses
+  And the total spending should be updated";;
+User Story 9: Edit Expenses;"User Story 9: Edit Expenses
+As an elderly person,
+I want to edit expenses already recorded,
+So that I can correct or update spending information when necessary.";"Scenario: Edit an existing expense
+  Given an elderly person has recorded an expense
+  And the expense is visible in the expense list
+  When the elderly person selects the expense to edit
+  And updates the spending information
+  Then the updated expense should be saved
+  And the updated information should be displayed in the expense list";;
+User Story 10: Delete Expenses;"User Story 10: Delete Expenses
+As an elderly person,
+I want to delete expenses from the system,
+So that I can remove incorrect or outdated expenses.";"Scenario: Delete an expense
+  Given an elderly person is logged into the system
+  And the elderly person has an expense listed
+  When the elderly person deletes the expense
+  Then the expense should be removed from the system
+  And the expense should no longer be visible in the list of expenses";;
+User Story 11: Expense Categorization;"User Story 11: Expense Categorization
+As an elderly person,
+I want to categorize my expenses (food, transportation, leisure),
+So that I can organize my spending and better understand where my money goes.";"Scenario: Categorize expenses into food, transportation, and leisure
+  Given an elderly person with a list of expenses
+  When the expenses are categorized
+  Then the expenses should be organized into food, transportation, and leisure categories
+  And the elderly person should understand where their money goes";;
+User Story 12: Set Savings Goals;"User Story 12: Set Savings Goals
+As an elderly person,
+I want to set savings goals,
+So that I can plan and track my financial progress.";"Scenario: Elderly person sets a savings goal
+  Given an elderly person is logged into their financial account
+  When they set a new savings goal
+  Then the savings goal should be saved
+  And the savings goal should be displayed in their account summary";;
+User Story 13: Payment Alerts;"User Story 13: Payment Alerts
+As an elderly person,
+I want to receive payment alerts,
+So that I don’t forget to pay my bills and avoid fines.";"Scenario: Elderly person receives payment alerts to avoid fines
+  Given an elderly person has registered for payment alerts
+  When a bill is due
+  Then the elderly person should receive a payment alert
+  And the alert should include the bill amount and due date";;
+User Story 14: Generate Monthly Reports;"User Story 14: Generate Monthly Reports
+As an elderly person,
+I want to generate monthly reports of income and expenses,
+So that I can view and analyze my financial performance over the month.";"Scenario: Generate monthly financial report
+  Given an elderly person has recorded income and expenses for the month
+  When the elderly person generates the monthly report
+  Then the monthly report should display the total income and expenses
+  And the monthly report should allow the elderly person to analyze financial performance over the month";;
+User Story 15: Generate Annual Reports;"User Story 15: Generate Annual Reports
+As an elderly person,
+I want to generate annual reports of income and expenses,
+So that I can review my finances throughout the year and identify trends.";"Scenario: Generate annual financial report
+  Given an elderly person has recorded income and expenses for the year
+  When the elderly person generates the annual report
+  Then the report should include all income and expenses for the year
+  And the report should highlight financial trends";;
+User Story 16: View Income and Expense Charts;"User Story 16: View Income and Expense Charts
+As an elderly person,
+I want to view charts of income and expenses,
+So that I can visually understand how my finances are distributed..";"Scenario: View income and expense charts
+  Given an elderly person is logged into the financial application
+  When the user navigates to the charts section
+  Then the user should see a chart of income distribution
+  And the user should see a chart of expense distribution";;
+User Story 17: View Current Balance;"User Story 17: View Current Balance
+As an elderly person,
+I want to view my current balance,
+So that I can know how much money I have available in real time.";"Scenario: View current balance as an elderly person
+  Given an elderly person is logged into their bank account
+  When they navigate to the balance overview page
+  Then they should see their current balance displayed
+  And the balance should be updated in real time";;
+User Story 18: Access FAQs;"User Story 18: Access FAQs
+As an elderly person,
+I want to access a Frequently Asked Questions (FAQs) section,
+So that I can resolve common doubts without needing technical support.";"Scenario: Elderly person accesses FAQs to resolve common doubts
+  Given an elderly person is on the homepage
+  When they navigate to the FAQs section
+  Then they should see a list of frequently asked questions
+  And they should be able to read the answers to resolve their doubts";;
+User Story 1: New User Registration;"User Story 1: New User Registration
+As an elderly person,
+I want to register in the system,
+So that I can access my personal finances.";"Scenario: Elderly person registers in the system
+  Given an elderly person wants to access personal finances
+  When the elderly person registers in the system
+  Then the elderly person should be registered successfully
+  And the elderly person should be able to access personal finances";;
+User Story 2: Personalized Profiles;"User Story 2: Personalized Profiles
+As an elderly person,
+I want to have a personalized profile,
+So that the system reflects my preferences and needs.";"Scenario: Elderly person creates a personalized profile
+  Given an elderly person is logged into the system
+  When the elderly person sets their preferences and needs in their profile
+  Then the system should save the personalized profile
+  And the system should reflect the elderly person's preferences and needs";;
+User Story 3: Login;"User Story 3: Login
+As an elderly person,
+I want to log in to the system,
+So that I can securely access my information.";"Scenario: Elderly person logs in to access information
+  Given an elderly person is on the login page
+  When they enter their username and password
+  And they click the login button
+  Then they should be logged into the system
+  And they should see their personal information";;
+User Story 4: Logout;"User Story 4: Logout
+As an elderly person,
+I want to log out,
+So that my financial information remains protected when I am not using the system.";"Scenario: Elderly person logs out to protect financial information
+  Given the elderly person is logged into the system
+  When the elderly person clicks the logout button
+  Then the elderly person should be logged out of the system
+  And the financial information should no longer be accessible";;
+User Story 5: Add Income;"User Story 5: Add Income
+As an elderly person,
+I want to add my income to the system,
+So that I can track my incoming cash flow.";"Scenario: Add income to track incoming cash flow
+  Given an elderly person is logged into the system
+  When the elderly person adds their income
+  Then the system should record the income
+  And the income should be visible in the cash flow tracking section";;
+User Story 6: Edit Income;"User Story 6: Edit Income
+As an elderly person,
+I want to edit an added income,
+So that I can correct or update information when necessary.";"Scenario: Edit an added income
+  Given an elderly person has logged into their account
+  And the elderly person has an existing income entry
+  When the elderly person edits the income entry
+  Then the income entry should be updated with the new information
+  And the updated income information should be saved successfully";;
+User Story 7: Delete Income;"User Story 7: Delete Income
+As an elderly person,
+I want to delete an income that is no longer relevant,
+So that my financial information is always up to date.";"Scenario: Delete an income entry
+  Given an elderly person has logged into their financial account
+  And the account contains an income entry
+  When the elderly person deletes the income entry
+  Then the income entry should be removed from the account
+  And the financial information should be updated";;
+User Story 8: Add Expenses;"User Story 8: Add Expenses
+As an elderly person,
+I want to add my expenses in the system,
+So that I can keep track of my spending.";"Scenario: Add an expense to track spending
+  Given an elderly person is logged into the system
+  And the expenses page is open
+  When the elderly person adds a new expense
+  Then the expense should be recorded in the system
+  And the total spending should be updated";;
+User Story 9: Edit Expenses;"User Story 9: Edit Expenses
+As an elderly person,
+I want to edit an added expense,
+So that I can correct or update spending information.";"Scenario: Edit an added expense
+  Given an elderly person has added an expense
+  And the expense is visible in the expense list
+  When the elderly person edits the expense
+  Then the expense should be updated with the new information
+  And the updated expense should be visible in the expense list";;
+User Story 10: Delete Expenses;"User Story 10: Delete Expenses
+As an elderly person,
+I want to delete an expense that is no longer relevant,
+So that my finances reflect only current spending.";"Scenario: Delete an irrelevant expense
+  Given an elderly person has logged into their finance application
+  And the elderly person has an expense that is no longer relevant
+  When the elderly person deletes the irrelevant expense
+  Then the expense should be removed from their list of expenses
+  And the list of expenses should reflect only current spending";;
+User Story 11: Expense Categorization;"User Story 11: Expense Categorization
+As an elderly person,
+I want to categorize my expenses,
+So that I can better understand where I am spending my money.";"Scenario: Categorize expenses to understand spending
+  Given an elderly person with a list of expenses
+  When the person categorizes the expenses
+  Then the expenses should be grouped by category
+  And the person should see a summary of spending by category";;
+User Story 12: Set Savings Goals;"User Story 12: Set Savings Goals
+As an elderly person,
+I want to set savings goals in the system,
+So that I can monitor my progress and save money.";"Scenario: Elderly person sets a savings goal
+  Given an elderly person is logged into the system
+  And the savings goals feature is available
+  When the elderly person sets a new savings goal
+  Then the system should save the new savings goal
+  And the elderly person should see a confirmation message";;
+User Story 13: Payment Alerts;"User Story 13: Payment Alerts
+As an elderly person,
+I want to receive payment alerts,
+So that I can be reminded to pay bills on time.";"Scenario: Elderly person receives payment alerts
+  Given an elderly person is registered for payment alerts
+  When a bill is due
+  Then the elderly person should receive a payment alert
+  And the alert should remind them to pay the bill on time";;
+User Story 14: Monthly Reports;"User Story 14: Monthly Reports
+As an elderly person,
+I want to generate monthly reports,
+So that I can analyze my finances in more detail and make adjustments.";"Scenario: Generate monthly financial report
+  Given an elderly person with a financial account
+  When the user generates a monthly report
+  Then the user should see a detailed analysis of their finances
+  And the user should be able to make adjustments based on the report";;
+User Story 15: Annual Reports;"User Story 15: Annual Reports
+As an elderly person,
+I want to generate annual reports,
+So that I can review my complete financial history throughout the year.";"Scenario: Generate annual financial report
+  Given an elderly person with a financial account
+  When the user requests to generate an annual report
+  Then the system should generate a report of the complete financial history for the year
+  And the user should be able to review the report";;
+User Story 16: Income and Expense Charts;"User Story 16: Income and Expense Charts
+As an elderly person,
+I want to view income and expense charts,
+So that I can easily understand my current financial situation.";"Scenario: View income and expense charts
+  Given an elderly person is logged into the financial application
+  When the user navigates to the income and expense charts section
+  Then the user should see a chart displaying their income
+  And the user should see a chart displaying their expenses";;
+User Story 17: Balance Charts;"User Story 17: Balance Charts
+As an elderly person,
+I want to view balance charts,
+So that I can monitor how my balance changes over time.";"Scenario: Elderly person views balance charts to monitor changes over time
+  Given an elderly person is logged into their account
+  And the balance charts feature is available
+  When the elderly person views the balance charts
+  Then the balance charts should display the changes in balance over time
+  And the elderly person should be able to understand the balance changes";;
+User Story 18: Access to FAQs;"User Story 18: Access to FAQs
+As an elderly person,
+I want to access FAQs in the system,
+So that I can quickly clarify doubts without needing technical support.";"Scenario: Access FAQs to clarify doubts
+  Given an elderly person is on the system's homepage
+  When the user navigates to the FAQs section
+  Then the user should see a list of frequently asked questions
+  And the user should be able to read the answers to clarify doubts";;
+User Story 1: New User Registration;"User Story 1: New User Registration
+As an elderly person,
+I want to register a new account,
+So that I can start managing my finances in the system.";"Scenario: Elderly person registers a new account
+  Given an elderly person is on the registration page
+  When they fill in the required registration details
+  And they submit the registration form
+  Then their new account should be created
+  And they should be able to start managing their finances in the system";;
+User Story 2: System Login;"User Story 2: System Login
+As an elderly person,
+I want to log in to the system,
+So that I can access my personalized profile and manage my finances.";"Scenario: Elderly person logs in to access profile and manage finances
+  Given an elderly person is on the login page
+  When they enter their username and password
+  And they click the login button
+  Then they should be redirected to their personalized profile
+  And they should be able to manage their finances";;
+User Story 3: System Logout;"User Story 3: System Logout
+As an elderly person,
+I want to log out of the system,
+To ensure the security of my personal and financial data.";"Scenario: Elderly person logs out to secure personal and financial data
+  Given an elderly person is logged into the system
+  When the elderly person clicks the logout button
+  Then the system should log the elderly person out
+  And the elderly person should see a confirmation message";;
+User Story 4: Add Income;"User Story 4: Add Income
+As an elderly person,
+I want to add a new income,
+So that I can record my money inflow and track my finances.";"Scenario: Add a new income to track finances
+  Given an elderly person is on the income management page
+  When they add a new income entry
+  Then the new income should be recorded
+  And the total income should be updated";;
+User Story 5: Edit Income;"User Story 5: Edit Income
+As an elderly person,
+I want to edit an existing income,
+So that I can correct or update financial information as needed.";"Scenario: Edit an existing income
+  Given an elderly person has logged into their financial account
+  And the elderly person has an existing income entry
+  When the elderly person edits the income entry
+  Then the income entry should be updated with the new information
+  And the updated income should be reflected in the financial summary";;
+User Story 6: Delete Income;"User Story 6: Delete Income
+As an elderly person,
+I want to delete an income entry,
+So that I can remove incorrect or outdated financial records.";"Scenario: Delete an income entry
+  Given an elderly person has logged into their financial account
+  And there is an existing income entry
+  When the elderly person deletes the income entry
+  Then the income entry should be removed from the financial records
+  And the financial records should be updated accordingly";;
+User Story 7: Add Expense;"User Story 7: Add Expense
+As an elderly person,
+I want to add a new expense,
+So that I can record my spending and track my budget.";"Scenario: Add a new expense to track budget
+  Given an elderly person is on the expense tracking page
+  When they add a new expense with the amount and description
+  Then the expense should be recorded in their spending log
+  And the budget should be updated accordingly";;
+User Story 8: Edit Expense;"User Story 8: Edit Expense
+● User Story: As a senior,
+I want to edit an existing expense,
+So that I can correct or update information about my spending.";"Scenario: Edit an existing expense
+  Given a senior user is logged into the expense management system
+  And the user has an existing expense entry
+  When the user edits the expense entry
+  Then the expense entry should be updated with the new information
+  And the updated expense should be saved in the system";;
+User Story 9: Delete Expense;"User Story 9: Delete Expense
+● User Story: As a senior citizen,
+I want to delete an expense,
+So that I can remove records of incorrect or unnecessary expenses.";"Scenario: Senior citizen deletes an expense
+  Given a senior citizen has logged into the expense management system
+  And the senior citizen has an existing expense record
+  When the senior citizen deletes the expense
+  Then the expense should be removed from the expense list
+  And the expense list should be updated accordingly";;
+User Story 10: Expense Categorization;"User Story 10: Expense Categorization
+● User Story: As a senior citizen,
+I want to categorize my expenses (e.g. food, transportation, entertainment),
+so that I can better understand my spending habits and plan my budget.";"Scenario: Categorize expenses to understand spending habits
+  Given a senior citizen with various expenses
+  When the senior citizen categorizes expenses into food, transportation, and entertainment
+  Then the senior citizen should see categorized expenses
+  And the senior citizen should understand their spending habits";;
+User Story 11: Set Savings Goals;"User Story 11: Set Savings Goals
+● User Story: As a senior,
+I want to set savings goals,
+so I can track my progress and stay focused on saving money for the future.";"Scenario: Senior sets a savings goal to track progress
+  Given a senior is logged into their savings account
+  And the senior is on the savings goals page
+  When the senior sets a new savings goal
+  Then the savings goal should be saved
+  And the senior should see the new savings goal in their list of goals";;
+User Story 12: Payment Alerts;"User Story 12: Payment Alerts
+● User Story: As a senior,
+I want to receive alerts for upcoming payments,
+So that I can remember to pay bills on time and avoid late fees or interest.";"Scenario: Senior receives alerts for upcoming payments
+  Given a senior has upcoming payments
+  And the senior has opted to receive payment alerts
+  When the payment due date is approaching
+  Then the senior should receive an alert
+  And the alert should remind the senior to pay the bill on time";;
+User Story 13: Generate Monthly Reports;"User Story 13: Generate Monthly Reports
+● User Story: As a senior,
+I want to generate a monthly income and expense report,
+so that I can review my finances in a consolidated manner and identify areas for adjustments.";"Scenario: Generate a monthly income and expense report
+  Given a senior user is logged into the financial management system
+  And the user has financial data for the month
+  When the user requests to generate a monthly income and expense report
+  Then the system should generate a consolidated report of income and expenses for the month
+  And the report should highlight areas for financial adjustments";;
+User Story 14: Generate Annual Reports;"User Story 14: Generate Annual Reports
+● User Story: As a senior citizen,
+I want to generate an annual report of income and expenses,
+so that I can evaluate my financial performance throughout the year and plan for the upcoming year.";"Scenario: Generate annual report of income and expenses
+  Given a senior citizen with recorded income and expenses for the year
+  When the senior citizen requests to generate an annual report
+  Then the system generates a report of income and expenses for the year
+  And the report shows the financial performance throughout the year";;
+User Story 15: Financial Charts;"User Story 15: Financial Charts
+● User Story: As a senior citizen,
+I want to view charts of income, expenses, and balances,
+so that I can quickly understand my financial situation in a visual
+and intuitive way.";"Scenario: Senior citizen views financial charts
+  Given a senior citizen is logged into the financial dashboard
+  When the senior citizen navigates to the charts section
+  Then the senior citizen should see charts of income, expenses, and balances
+  And the charts should be visual and intuitive";;
+User Story 16: Consulting FAQs;"User Story 16: Consulting FAQs
+● User Story: As a senior,
+I want to consult a list of frequently asked questions (FAQs),
+so that I can resolve common questions without needing additional support.";"Scenario: Senior consults FAQs to resolve common questions
+  Given a senior user is on the FAQ page
+  When the senior user views the list of frequently asked questions
+  Then the senior user should see answers to common questions
+  And the senior user should be able to resolve common questions without additional support";;
+User Story 17: Recover Password;"User Story 17: Recover Password
+● User Story: As a senior citizen,
+I want to recover my password,
+So that I can access my account again if I forget my credentials.";"Scenario: Recover password for senior citizen
+  Given a senior citizen has forgotten their password
+  And the senior citizen is on the login page
+  When the senior citizen clicks on the ""Forgot Password"" link
+  Then the senior citizen should be prompted to enter their email address
+  And the senior citizen should receive a password recovery email";;
+User Story 18: System Accessibility;"User Story 18: System Accessibility
+● User Story: As a senior citizen with low vision,
+I want to be able to increase the font size in the system,
+so that I can read financial information clearly and comfortably.";"Scenario: Increase font size for better readability
+  Given a senior citizen with low vision is logged into the system
+  When the user increases the font size
+  Then the financial information should be displayed in a larger font
+  And the user should be able to read the information clearly and comfortably";;
+User Story 19: Personalizing Notifications;"User Story 19: Personalizing Notifications
+● User Story: As a senior,
+I want to personalize the notifications I receive,
+so that I only receive the reminders and alerts that are important to me.";"Scenario: Senior personalizes notifications to receive important reminders and alerts
+  Given a senior user is logged into their account
+  And the user navigates to the notification settings page
+  When the user selects the types of notifications they want to receive
+  Then the user should only receive the selected types of reminders and alerts";;
+User Story 20: Exporting Reports;"User Story 20: Exporting Reports
+● User Story: As a senior citizen,
+I want to export my financial reports in formats such as PDF or Excel,
+So that I can share my financial information with family members or advisors.";"Scenario: Export financial reports in PDF or Excel format
+  Given a senior citizen with financial reports
+  When the senior citizen exports the reports in PDF or Excel format
+  Then the reports should be available in the selected format
+  And the senior citizen can share the reports with family members or advisors";;
+User Story 1: New User Registration;"User Story 1: New User Registration
+● User Story: As a senior citizen, I want to register a new user, so that
+I can access the personal finance management system.";"Scenario: Senior citizen registers a new user
+  Given a senior citizen is on the registration page
+  When they fill in the required registration details
+  And they submit the registration form
+  Then the new user account should be created
+  And the senior citizen should be able to access the personal finance management system";;
+User Story 2: Login;"User Story 2: Login
+● User Story: As a senior citizen, I want to log in to the system, so that I can access my profile and finances.";"Scenario: Senior citizen logs in to access profile and finances
+  Given a senior citizen is on the login page
+  When the senior citizen enters valid credentials
+  And clicks the login button
+  Then the senior citizen should be redirected to their profile page
+  And the senior citizen should see their financial information";;
+User Story 3: Logout;"User Story 3: Logout
+● User Story: As a senior citizen, I want to log out of the system, So that I can log out of my account safely.";"Scenario: Senior citizen logs out of the system
+  Given the senior citizen is logged into the system
+  When the senior citizen clicks the logout button
+  Then the senior citizen should be logged out of the system
+  And the login page should be displayed";;
+User Story 4: Create Custom Profile;"User Story 4: Create Custom Profile
+● User Story: As a senior citizen, I want to create a custom profile, so that I can manage my finances according to my needs.";"Scenario: Senior citizen creates a custom profile to manage finances
+  Given a senior citizen is on the profile creation page
+  When the senior citizen enters their personal information
+  And the senior citizen selects custom financial preferences
+  And the senior citizen submits the profile form
+  Then the custom profile should be created
+  And the senior citizen should see a confirmation message";;
+User Story 5: Adding Income;"User Story 5: Adding Income
+● User Story: As a senior citizen, I want to add income to the system, so that I can track my monthly earnings.";"Scenario: Adding income to track monthly earnings
+  Given a senior citizen is logged into the system
+  And the income section is accessible
+  When the senior citizen adds a new income entry
+  Then the income should be recorded in the system
+  And the monthly earnings should be updated";;
+User Story 6: Editing Recipes;"User Story 6: Editing Recipes
+● User Story: As a senior citizen, I want to edit existing recipes, so that
+I can correct information or adjust values.";"Scenario: Senior citizen edits an existing recipe
+  Given a senior citizen is logged into the recipe application
+  And the senior citizen has an existing recipe
+  When the senior citizen edits the recipe
+  Then the recipe should be updated with the new information";;
+User Story 7: Deleting Recipes;"User Story 7: Deleting Recipes
+● User Story: As a senior citizen, I want to delete recipes, so that I can
+remove outdated or incorrect entries.";"Scenario: Deleting a recipe
+  Given a senior citizen is logged into the recipe management system
+  And the senior citizen has a list of saved recipes
+  When the senior citizen deletes a recipe
+  Then the recipe should be removed from the list of saved recipes";;
+User Story 8: Adding Expenses;"User Story 8: Adding Expenses
+● User Story: As a senior citizen, I want to add expenses to the system, so that I can monitor my monthly spending.";"Scenario: Senior citizen adds an expense to monitor monthly spending
+  Given a senior citizen is logged into the expense tracking system
+  And the senior citizen is on the ""Add Expense"" page
+  When the senior citizen enters the expense details and submits the form
+  Then the expense should be added to the system
+  And the senior citizen should see the updated list of expenses";;
+User Story 9: Editing Expenses;"User Story 9: Editing Expenses
+● User Story: As a senior, I want to edit existing expenses, so that
+I can correct information or adjust amounts.";"Scenario: Senior edits an existing expense
+  Given a senior has logged into the expense management system
+  And the senior has an existing expense entry
+  When the senior edits the expense entry
+  Then the expense entry should be updated with the new information
+  And the updated expense should be saved in the system";;
+User Story 10: Deleting Expenses;"User Story 10: Deleting Expenses
+● User Story: As a senior citizen, I want to delete expenses, so that I can remove entries that are no longer relevant.";"Scenario: Senior citizen deletes an expense
+  Given a senior citizen is logged into the expense management system
+  And the senior citizen has an existing expense entry
+  When the senior citizen deletes the expense entry
+  Then the expense entry should be removed from the list of expenses
+  And the total expense amount should be updated accordingly";;
+User Story 11: Expense Categorization;"User Story 11: Expense Categorization
+● User Story: As a senior citizen, I want to categorize my expenses, so that I can better understand where I am spending my money.";"Scenario: Categorize expenses to understand spending
+  Given a senior citizen with a list of expenses
+  When the senior citizen categorizes the expenses
+  Then the expenses should be grouped by category
+  And the senior citizen should see a summary of spending by category";;
+User Story 12: Setting Savings Goals;"User Story 12: Setting Savings Goals
+● User Story: As a senior, I want to set savings goals, so that
+I can better plan my spending and save more.";"Scenario: Senior sets a savings goal
+  Given a senior is logged into their account
+  And the senior is on the savings goals page
+  When the senior sets a new savings goal
+  Then the savings goal should be saved
+  And the senior should see a confirmation message";;
+User Story 13: Payment Alerts;"User Story 13: Payment Alerts
+● User Story: As a senior citizen, I want to receive payment alerts, so that I don’t miss due dates and avoid fines.";"Scenario: Senior citizen receives payment alerts to avoid missing due dates
+  Given a senior citizen is registered for payment alerts
+  And the senior citizen has an upcoming payment due
+  When the payment due date is approaching
+  Then the senior citizen should receive a payment alert
+  And the alert should include the due date and amount due";;
+User Story 14: Generating Monthly Reports;"User Story 14: Generating Monthly Reports
+● User Story: As a senior citizen, I want to generate monthly income and expense reports, so that I can analyze my financial situation over time.";"Scenario: Generating monthly income and expense reports
+  Given a senior citizen with financial data for the month
+  When the senior citizen generates the monthly report
+  Then the monthly income and expense report should be created
+  And the report should display the financial situation over time";;
+User Story 15: Generating Annual Reports;"User Story 15: Generating Annual Reports
+● User Story: As a senior citizen, I want to generate annual income and expense reports, so that I can have an overview of my finances throughout the year.";"Scenario: Generating annual income and expense reports
+  Given a senior citizen with financial data for the year
+  When the senior citizen generates the annual report
+  Then the annual income and expense report should be created
+  And the report should provide an overview of finances throughout the year";;
+User Story 16: Income and Expense Charts;"User Story 16: Income and Expense Charts
+● User Story: As a senior citizen, I want to view income and expense charts, so I can quickly understand my financial health.";"Scenario: View income and expense charts
+  Given a senior citizen is logged into the financial application
+  When the senior citizen navigates to the income and expense charts section
+  Then the senior citizen should see a chart displaying income and expenses
+  And the chart should clearly show the financial health";;
+User Story 17: Access to FAQs;"User Story 17: Access to FAQs
+● User Story: As a senior citizen, I want to access a FAQ section, so that I can find answers to common questions about using the system.";"Scenario: Senior citizen accesses FAQ section
+  Given a senior citizen is on the homepage
+  When the senior citizen navigates to the FAQ section
+  Then the FAQ section should be displayed
+  And the senior citizen should see answers to common questions about using the system";;

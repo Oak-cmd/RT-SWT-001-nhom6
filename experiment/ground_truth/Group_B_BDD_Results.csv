@@ -1,0 +1,367 @@
+ID;Prompt;Response;;
+User Story 1: Submitting Extracurricular Activities;"User Story 1: Submitting Extracurricular Activities
+• User Story: As a student,
+I want to submit extracurricular activities,
+so that I can prove that I have completed extracurricular activities.";"Scenario: Submitting extracurricular activities
+  Given a student is logged into the school portal
+  And the student has completed extracurricular activities
+  When the student submits the extracurricular activities
+  Then the activities should be recorded in the student's profile
+  And the student should receive a confirmation message";;
+User Story 2: Checking Accumulated Hours;"User Story 2: Checking Accumulated Hours
+• User Story: As a student,
+I want to check my accumulated hours,
+So that I can track the progress of my complementary
+activities.";"Scenario: Student checks accumulated hours
+  Given a student is logged into the complementary activities tracking system
+  And the student has completed some activities
+  When the student navigates to the accumulated hours section
+  Then the system should display the total accumulated hours
+  And the student should see a breakdown of hours by activity type";;
+User Story 3: Track Submission Status;"User Story 3: Track Submission Status
+• User Story: As a student,
+I want to track the status of my submissions,
+so I know if my assignments are approved, pending, or
+rejected.";"Scenario: Track the status of assignment submissions
+  Given a student has submitted an assignment
+  When the student checks the submission status
+  Then the student should see the status as approved, pending, or rejected";;
+User Story 4: Edit Submissions;"User Story 4: Edit Submissions
+• User Story: As a student,
+I want to edit submitted submissions,
+so that I can correct incorrect information or documents before
+grading.";"Scenario: Student edits a submitted submission
+  Given a student has submitted a submission
+  And the submission is pending grading
+  When the student edits the submission
+  Then the submission should be updated with the new information
+  And the updated submission should be available for grading";;
+User Story 5: Cancel Submissions;"User Story 5: Cancel Submissions
+• User Story: As a student,
+I want to cancel submitted submissions,
+so that I can remove incorrect or duplicate assignments.";"Scenario: Cancel a submitted assignment
+  Given a student has submitted an assignment
+  And the student is on the submissions page
+  When the student cancels the submitted assignment
+  Then the assignment should be removed from the submissions list
+  And the student should see a confirmation message";;
+User Story 6: View Submission Rules;"User Story 6: View Submission Rules
+• User Story: As a student,
+I want to view the submission rules,
+so that I can understand what is allowed and the time limits for each activity.";"Scenario: Student views submission rules
+  Given a student is on the course page
+  When the student navigates to the submission rules section
+  Then the student should see the allowed activities
+  And the student should see the time limits for each activity";;
+User Story 7: Evaluating Student Submissions;"User Story 7: Evaluating Student Submissions
+• User Story: As a teacher,
+I want to evaluate assignment submissions,
+so that I can validate or reject assignments submitted by students.";"Scenario: Teacher evaluates a student's assignment submission
+  Given a student has submitted an assignment
+  And the teacher is logged into the evaluation system
+  When the teacher reviews the assignment
+  Then the teacher should be able to validate the assignment
+  And the teacher should be able to reject the assignment";;
+User Story 8: Check Activity Documentation;"User Story 8: Check Activity Documentation
+• User Story: As a teacher,
+I want to check the documentation attached by students,
+so that I can verify that the documents prove completion
+of the activities.";"Scenario: Teacher checks documentation attached by students
+  Given a teacher is logged into the system
+  And students have submitted their activity documentation
+  When the teacher views the submitted documentation
+  Then the teacher should see the documents attached by students
+  And the teacher should be able to verify the completion of the activities";;
+User Story 9: Sending Feedback to Students;"User Story 9: Sending Feedback to Students
+• User Story: As a teacher,
+I want to send feedback on submitted assignments,
+so that I can justify approvals or rejections.";"Scenario: Teacher sends feedback on a submitted assignment
+  Given a teacher is logged into the system
+  And a student has submitted an assignment
+  When the teacher sends feedback on the assignment
+  Then the student should receive the feedback
+  And the feedback should justify the approval or rejection of the assignment";;
+User Story 10: View Grading History;"User Story 10: View Grading History
+• User Story: As a teacher,
+I want to see the grading history of my students,
+so I can see all previously approved and rejected assignments.";"Scenario: View grading history of students
+  Given a teacher is logged into the grading system
+  And the teacher has students with previously graded assignments
+  When the teacher navigates to the grading history page
+  Then the teacher should see a list of all previously approved assignments
+  And the teacher should see a list of all previously rejected assignments";;
+User Story 11: Manage User Profiles;"User Story 11: Manage User Profiles
+• User Story: As an administrator,
+I want to manage student and teacher profiles,
+so that I can create, edit, or remove users as needed";"Scenario: Administrator manages user profiles
+  Given an administrator is logged into the system
+  And there are existing student and teacher profiles
+  When the administrator creates a new user profile
+  Then the new user profile should be added to the system
+  And the administrator should see a confirmation message";;
+User Story 12: Configure Submission Rules;"User Story 12: Configure Submission Rules
+• User Story: As an administrator,
+I want to configure submission rules for activities,
+so that I can set limits and restrictions for each activity type.";"Scenario: Configure submission rules for activities
+  Given an administrator is logged into the system
+  And the administrator navigates to the submission rules configuration page
+  When the administrator sets limits and restrictions for an activity type
+  Then the submission rules for that activity type should be updated successfully
+  And the new rules should be visible in the activity settings";;
+User Story 13: View General Reports;"User Story 13: View General Reports
+• User Story: As an administrator,
+I want to view general reports of supplemental activities,
+so that I can have a consolidated view of all submissions and
+approvals.";"Scenario: Administrator views general reports of supplemental activities
+  Given an administrator is logged into the system
+  When the administrator navigates to the general reports section
+  Then the administrator should see a consolidated view of all submissions and approvals";;
+User Story 14: Manage User Permissions;"User Story 14: Manage User Permissions
+• User Story: As an administrator,
+I want to manage permissions for students and teachers,
+so that I can control what each type of user can access and do in the system.";"Scenario: Administrator manages permissions for students and teachers
+  Given an administrator is logged into the system
+  And there are existing users classified as students and teachers
+  When the administrator updates the permissions for a student
+  Then the student's access rights should reflect the new permissions
+  And the changes should be saved in the system";;
+User Story 1: Submitting Assignments;"User Story 1: Submitting Assignments
+User Story: As a student,
+I want to submit assignments,
+so that I can earn extra hours.";"Scenario: Submitting an assignment to earn extra hours
+  Given a student is logged into the assignment portal
+  And the student has an assignment ready for submission
+  When the student submits the assignment
+  Then the assignment should be marked as submitted
+  And the student should earn extra hours";;
+User Story 2: Checking Available Hours;"User Story 2: Checking Available Hours
+User Story: As a student,
+I want to check my available additional hours,
+so that I know how many hours I have already accumulated.";"Scenario: Checking available additional hours
+  Given a student is logged into the system
+  And the student has accumulated additional hours
+  When the student checks their available additional hours
+  Then the system displays the total number of additional hours accumulated";;
+User Story 3: Checking missing hours and types;"User Story 3: Checking missing hours and types
+User Story: As a student,
+I want to check the complementary hours that are still missing and their types, so that I can plan the activities that I need to carry out.";"Scenario: Student checks missing complementary hours and their types
+  Given a student is logged into the academic portal
+  And the student has a record of completed and pending complementary hours
+  When the student navigates to the complementary hours section
+  Then the system displays the total missing complementary hours
+  And the system displays the types of activities required to complete the missing hours";;
+User Story 4: Approving Assignments;"User Story 4: Approving Assignments
+User Story: As a teacher,
+I want to approve or disapprove submitted assignments,
+so that I can ensure that students complete their hours with valid assignments.";"Scenario: Approving a submitted assignment
+  Given a teacher is logged into the system
+  And a student has submitted an assignment
+  When the teacher approves the assignment
+  Then the assignment status should be marked as approved
+  And the student should be notified of the approval";;
+User Story 5: Pass/Fail Notification;"User Story 5: Pass/Fail Notification
+User Story: As a teacher,
+I want to notify students about the passing or failing of their assignments,
+so that they know whether their submitted assignments were accepted.";"Scenario: Notify students about assignment pass/fail status
+  Given a student has submitted an assignment
+  And the assignment has been graded
+  When the teacher notifies the student about the result
+  Then the student should receive a notification
+  And the notification should indicate whether the assignment is passed or failed";;
+User Story 6: View Submitted Activities;"User Story 6: View Submitted Activities
+User Story: As a teacher,
+I want to view the activities submitted by students,
+So that I can review and assess the pending activities.";"Scenario: Teacher views submitted activities
+  Given a teacher is logged into the system
+  And there are activities submitted by students
+  When the teacher navigates to the submitted activities page
+  Then the teacher should see a list of submitted activities
+  And the teacher should be able to review and assess each activity";;
+User Story 7: Pending Submission Notifications;"User Story 7: Pending Submission Notifications
+User Story: As a student,
+I want to be notified when an assignment I submitted is still pending grading,
+so that I know my request is being processed.";"Scenario: Notify student of pending assignment grading
+  Given a student has submitted an assignment
+  And the assignment is pending grading
+  When the student checks their notifications
+  Then the student should see a notification about the pending grading";;
+User Story 8: Graded Assignment History;"User Story 8: Graded Assignment History
+User Story: As a student,
+I want to access the history of assignments that have already been graded,
+so that I can track the status of my previous submissions.";"Scenario: Access graded assignment history
+  Given a student is logged into the student portal
+  And the student has previously submitted assignments
+  When the student navigates to the graded assignments section
+  Then the student should see a list of previously graded assignments
+  And each assignment should display its grade and feedback";;
+User Story 9: Filter Assignments by Status;"User Story 9: Filter Assignments by Status
+User Story: As a teacher,
+I want to filter submitted assignments by status (passed, failed, pending),
+so that I can prioritize assessments that have not yet been completed.";"Scenario: Filter assignments by status
+  Given a teacher is on the assignments page
+  And there are assignments with statuses passed, failed, and pending
+  When the teacher filters assignments by status ""pending""
+  Then only assignments with status ""pending"" should be displayed";;
+User Story 1: Student Registration;"User Story 1: Student Registration
+User Story: As a student,
+I want to register in the system,
+So that I can access and record my extra hours activities.";"Scenario: Student registers in the system
+  Given a student is on the registration page
+  When the student submits the registration form
+  Then the student should be registered in the system
+  And the student should be able to access the extra hours activities section";;
+User Story 2: Teacher Registration;"User Story 2: Teacher Registration
+User Story: As a teacher,
+I want to register in the system,
+So that I can review and approve student activities.";"Scenario: Teacher registers in the system
+  Given a teacher is on the registration page
+  When the teacher submits valid registration details
+  Then the teacher should be registered in the system
+  And the teacher should be able to review and approve student activities";;
+User Story 3: Student Activity Registration;"User Story 3: Student Activity Registration
+User Story: As a student,
+I want to register my activities with certificates and complementary hours,
+So that I can account for my hours in the system.";"Scenario: Student registers an activity with certificates and complementary hours
+  Given a student is logged into the system
+  And the student has an activity with certificates and complementary hours to register
+  When the student submits the activity registration
+  Then the activity should be recorded in the system
+  And the complementary hours should be accounted for in the student's total hours";;
+User Story 4: Checking Completed Activities;"User Story 4: Checking Completed Activities
+User Story: As a student,
+I want to check which activities have been completed,
+so that I can track the progress of my approved extra hours.";"Scenario: Student checks completed activities to track progress
+  Given a student has logged into the system
+  And the student has completed some activities
+  When the student views the list of activities
+  Then the system should display the completed activities
+  And the student should see the progress of their approved extra hours";;
+User Story 5: Checking Declined Assignments;"User Story 5: Checking Declined Assignments
+User Story: As a student,
+I want to check the assignments that have been declined,
+So that I can understand and correct the reasons for the decline.";"Scenario: Student checks declined assignments
+  Given a student has assignments that have been declined
+  When the student views the declined assignments
+  Then the student should see the reasons for the decline
+  And the student should understand how to correct the issues";;
+User Story 6: Total Complementary Hours Completed;"User Story 6: Total Complementary Hours Completed
+User Story: As a student,
+I want to view the total number of complementary hours approved,
+so that I can monitor my progress and meet the hour requirements.";"Scenario: View total number of complementary hours approved
+  Given a student is logged into the student portal
+  And the student has completed some complementary hours
+  When the student navigates to the progress tracking page
+  Then the total number of approved complementary hours should be displayed
+  And the student should be able to see if they meet the hour requirements";;
+User Story 7: Review of Pending Activities;"User Story 7: Review of Pending Activities
+User Story: As a teacher,
+I want to view the activities pending review,
+So that I can organize and prioritize the students' assessments.";"Scenario: Teacher views pending activities for review
+  Given a teacher is logged into the system
+  And there are activities pending review
+  When the teacher navigates to the pending activities section
+  Then the teacher should see a list of activities pending review
+  And the teacher can organize and prioritize the students' assessments";;
+User Story 8: Approve or Reject Assignments;"User Story 8: Approve or Reject Assignments
+User Story: As a teacher,
+I want to approve or reject assignments submitted by students,
+So that I can ensure the validity of the additional hours submitted.";"Scenario: Approve a student's assignment
+  Given a teacher is logged into the system
+  And a student has submitted an assignment
+  When the teacher approves the assignment
+  Then the assignment status should be marked as approved";;
+User Story 9: Feedback on Assignment Rejection;"User Story 9: Feedback on Assignment Rejection
+User Story: As a teacher,
+I want to add feedback when rejecting an assignment,
+so that the student can understand the reasons and adjust the submission.";"Scenario: Teacher adds feedback when rejecting an assignment
+  Given a teacher is logged into the system
+  And the teacher has an assignment to review
+  When the teacher rejects the assignment
+  Then the teacher should be prompted to add feedback
+  And the feedback should be saved with the rejection";;
+User Story 10: Teacher Registration Request;"User Story 10: Teacher Registration Request
+User Story: As an administrator,
+I want to check teacher registration requests,
+So that I can validate permissions and register new reviewers in the system.";"Scenario: Validate teacher registration request
+  Given an administrator is logged into the system
+  And there are pending teacher registration requests
+  When the administrator reviews a teacher registration request
+  Then the system should display the teacher's details
+  And the administrator should be able to approve or reject the request";;
+User Story 11: Teacher Registration Approval;"User Story 11: Teacher Registration Approval
+User Story: As an administrator,
+I want to approve registration requests,
+so that teachers can start reviewing student activity.";"Scenario: Approve teacher registration request
+  Given an administrator is logged into the system
+  And there is a pending teacher registration request
+  When the administrator approves the registration request
+  Then the teacher should be notified of the approval
+  And the teacher should be able to access the system to review student activity";;
+User Story 12: Editing a User;"User Story 12: Editing a User
+User Story: As an administrator,
+I want to edit a user's details,
+so that I can correct or update registration information.";"Scenario: Administrator edits a user's details
+  Given an administrator is logged into the system
+  And a user exists with incorrect registration information
+  When the administrator updates the user's details
+  Then the user's information should be updated in the system
+  And the updated information should be displayed correctly";;
+User Story 13: User Deletion;"User Story 13: User Deletion
+User Story: As an administrator,
+I want to delete users from the system,
+so that I can remove records of users who are no longer part of the staff or student body.";"Scenario: Administrator deletes a user from the system
+  Given an administrator is logged into the system
+  And a user exists in the system
+  When the administrator deletes the user
+  Then the user should be removed from the system
+  And the user should no longer have access to the system";;
+User Story 14: Create User;"User Story 14: Create User
+User Story: As an administrator,
+I want to create new users,
+so that I can manually add teachers or students to the system as needed.";"Scenario: Administrator creates a new user
+  Given an administrator is logged into the system
+  When the administrator creates a new user
+  Then the new user should be added to the system
+  And the new user should be able to log in";;
+User Story 15: Activity Approval Notification;"User Story 15: Activity Approval Notification
+User Story: As a student,
+I want to receive activity approval notifications,
+So that I know when an activity has been successfully approved.";"Scenario: Receive activity approval notification
+  Given a student has submitted an activity for approval
+  When the activity is approved by the administrator
+  Then the student should receive a notification of the approval";;
+User Story 16: Assignment Rejection Notification;"User Story 16: Assignment Rejection Notification
+User Story: As a student,
+I want to be notified when an assignment is rejected,
+so that I can quickly review and correct my submission.";"Scenario: Notify student when assignment is rejected
+  Given a student has submitted an assignment
+  And the assignment is reviewed by the instructor
+  When the instructor rejects the assignment
+  Then the student should receive a notification about the rejection
+  And the notification should include the reason for rejection";;
+User Story 17: Filtering Pending Assignments;"User Story 17: Filtering Pending Assignments
+User Story: As a teacher,
+I want to filter assignments by submission date,
+so that I can prioritize the oldest or most urgent assignments.";"Scenario: Filter assignments by submission date
+  Given a teacher is logged into the assignment dashboard
+  And there are multiple assignments with different submission dates
+  When the teacher filters assignments by submission date
+  Then the assignments should be sorted by the selected submission date
+  And the oldest or most urgent assignments should be prioritized";;
+User Story 18: Complementary Hours Report;"User Story 18: Complementary Hours Report
+User Story: As a student,
+I want to generate a report of my complementary hours,
+So that I can track my progress and present it when necessary.";"Scenario: Generate complementary hours report
+  Given a student is logged into the system
+  And the student has completed some complementary hours
+  When the student requests to generate a complementary hours report
+  Then the system should generate a report of the student's complementary hours
+  And the report should display the total hours completed";;
+User Story 19: Admin Dashboard;"User Story 19: Admin Dashboard
+User Story: As an administrator,
+I want to access a dashboard,
+so that I can quickly view registration requests and the number of active users in the system.";"Scenario: Admin views dashboard for registration requests and active users
+  Given an administrator is logged into the system
+  When the administrator navigates to the dashboard
+  Then the administrator should see the registration requests
+  And the administrator should see the number of active users in the system";;

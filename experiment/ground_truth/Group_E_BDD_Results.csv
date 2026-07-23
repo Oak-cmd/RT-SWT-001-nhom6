@@ -1,0 +1,536 @@
+ID;Prompt;Response;;
+User Story 1: Teacher and Student Registration;"User Story 1: Teacher and Student Registration
+● As a teacher or student,
+I want to register with an email and password,
+So that I can access the system and participate in discussions.";"Scenario: Teacher or student registers with email and password
+  Given a user is on the registration page
+  And the user is either a teacher or a student
+  When the user registers with an email and password
+  Then the user should be able to access the system
+  And the user should be able to participate in discussions";;
+User Story 2: Categorizing Users;"User Story 2: Categorizing Users
+● As an administrator,
+I want to categorize users as either ""teachers"" or ""students"",
+so that I can grant appropriate permissions to each type of user.";"Scenario: Categorize users as teachers or students
+  Given an administrator is logged into the system
+  And there are users in the system
+  When the administrator categorizes a user as a teacher
+  Then the user should be granted teacher permissions
+  And the user should be listed under the teachers category";;
+User Story 3: Creating Discussion Rooms;"User Story 3: Creating Discussion Rooms
+● As a teacher,
+I want to create discussion rooms with title, description, number of theses and due date,
+So that I can organize and manage academic discussions efficiently.";"Scenario: Teacher creates a discussion room
+  Given a teacher is logged into the academic platform
+  When the teacher creates a discussion room with a title, description, number of theses, and due date
+  Then the discussion room should be created successfully
+  And the teacher should see the new discussion room in the list of discussion rooms";;
+User Story 4: Add or Remove Students from the Room;"User Story 4: Add or Remove Students from the Room
+● As a teacher,
+I want to be able to add or remove students from a discussion room at any time, so that I can maintain control and flexibility over the participants.";"Scenario: Add a student to the discussion room
+  Given a teacher is logged into the system
+  And the teacher is viewing the discussion room
+  When the teacher adds a student to the room
+  Then the student should be listed as a participant in the room";;
+User Story 5: Adjusting Assignment Due Dates;"User Story 5: Adjusting Assignment Due Dates
+● As a teacher,
+I want to adjust assignment due dates during the discussion,
+so that I can ensure that the schedule is met and meets the
+students' needs.";"Scenario: Adjusting assignment due dates during discussion
+  Given a teacher is in a discussion with students
+  And an assignment due date needs adjustment
+  When the teacher adjusts the assignment due date
+  Then the schedule should be updated
+  And the new due date should meet the students' needs";;
+User Story 6: Visualize Participant Progress;"User Story 6: Visualize Participant Progress
+● As a teacher,
+I want to visualize the progress of each participant and reviewer,
+so that I can track the development of theses and revisions in real time.";"Scenario: Visualize participant and reviewer progress
+  Given a teacher is logged into the system
+  And participants and reviewers have submitted theses and revisions
+  When the teacher views the progress dashboard
+  Then the teacher should see the progress of each participant and reviewer in real time
+  And the teacher should be able to track the development of theses and revisions";;
+User Story 7: Reports of Arguments and Revisions;"User Story 7: Reports of Arguments and Revisions
+● As a teacher,
+I want to generate reports with the content of the arguments and revisions made,
+so that I can analyze and archive the debate history.";"Scenario: Generate report with arguments and revisions
+  Given a teacher is logged into the debate platform
+  And there are existing arguments and revisions in the debate history
+  When the teacher requests to generate a report
+  Then the report should include the content of the arguments and revisions
+  And the report should be available for analysis and archiving";;
+User Story 8: Track Student Interactions;"User Story 8: Track Student Interactions
+● As a teacher,
+I want to track student interactions, comments, and arguments,
+so that I can ensure active participation and quality of discussion.";"Scenario: Track student interactions for active participation
+  Given a teacher is logged into the classroom management system
+  And students are participating in a discussion
+  When a student makes a comment or argument
+  Then the interaction should be recorded in the system
+  And the teacher should be able to view the recorded interactions";;
+User Story 9: Ensuring Anonymity;"User Story 9: Ensuring Anonymity
+● As a student,
+I want my interactions and reviews to be anonymous,
+So that I can participate in the discussion without being influenced by personal opinions.";"Scenario: Student interactions and reviews are anonymous
+  Given a student is logged into the discussion platform
+  And the student is on the review submission page
+  When the student submits a review
+  Then the review should be posted anonymously
+  And the student's identity should not be visible to other users";;
+User Story 10: Submitting Thesis and Revisions;"User Story 10: Submitting Thesis and Revisions
+● As a student,
+I want to submit my thesis and the revisions assigned by the reviewers,
+so that I can complete my participation in the debate according to the
+schedule.";"Scenario: Submitting thesis and revisions
+  Given a student has completed their thesis
+  And the reviewers have assigned revisions
+  When the student submits the thesis and revisions
+  Then the submission should be accepted
+  And the student should be eligible to participate in the debate according to the schedule";;
+User Story 11: Deadline Notifications;"User Story 11: Deadline Notifications
+● As a student,
+I want to receive notifications about thesis submission and review deadlines,
+so that I can stay organized and turn in my assignments on time.";"Scenario: Student receives notifications about thesis deadlines
+  Given a student is registered in the thesis management system
+  And the student has a thesis submission deadline
+  When the deadline is approaching
+  Then the student should receive a notification about the thesis submission deadline
+  And the student should receive a notification about the thesis review deadline";;
+User Story 12: Reviewer Reassignment;"User Story 12: Reviewer Reassignment
+● As a system,
+I want to automatically reassign reviewers in case of delays or
+withdrawals,
+so that I can ensure the discussion continues without interruptions.";"Scenario: Automatically reassign reviewers in case of delays or withdrawals
+  Given a review process is ongoing
+  And a reviewer is delayed or withdraws
+  When the system detects the delay or withdrawal
+  Then the system reassigns the reviewer
+  And the discussion continues without interruptions";;
+User Story 13: Accessing and Exporting Completed Discussions;"User Story 13: Accessing and Exporting Completed Discussions
+● As a teacher,
+I want to access and export completed discussions in PDF or other format,
+so that I can archive and review the content later.";"Scenario: Teacher accesses and exports completed discussions
+  Given a teacher is logged into the discussion platform
+  And there are completed discussions available
+  When the teacher selects a completed discussion to export
+  Then the discussion should be available for export in PDF or other formats
+  And the teacher should be able to download the exported discussion";;
+User Story 14: Viewing Discussion History;"User Story 14: Viewing Discussion History
+● As a student,
+I want to see the history of arguments after the debate has ended,
+so that I can access the content discussed and improve my learning.";"Scenario: Viewing discussion history after debate ends
+  Given a student has participated in a debate
+  And the debate has ended
+  When the student views the discussion history
+  Then the student should see the history of arguments
+  And the student should be able to access the content discussed";;
+User Story 15: Automatic Reviewer Assignment;"User Story 15: Automatic Reviewer Assignment
+● As a system,
+I want to assign two random reviewers to each thesis,
+So that the debate is fair and without conflicts of interest.";"Scenario: Assign two random reviewers to each thesis
+  Given a thesis is submitted
+  When the system assigns reviewers
+  Then two random reviewers should be assigned to the thesis
+  And the assignment should ensure fairness and no conflicts of interest";;
+User Story 16: Submitting a Closing Argument;"User Story 16: Submitting a Closing Argument
+● As a student,
+I want to submit a closing argument based on reviewers' feedback,
+so that I can conclude the debate process with suggested improvements.";"Scenario: Submitting a closing argument based on reviewers' feedback
+  Given a student has received feedback from reviewers
+  And the student has prepared a closing argument
+  When the student submits the closing argument
+  Then the closing argument should be submitted successfully
+  And the student should see a confirmation message";;
+User Story 1: User Registration;"User Story 1: User Registration
+● User Story: As a user,
+I want to register with an email and password,
+So that I can access the TeseLab system.";"Scenario: User registers with email and password
+  Given a user is on the registration page
+  When the user enters a valid email and password
+  And the user submits the registration form
+  Then the user should be registered successfully
+  And the user should be able to access the TeseLab system";;
+User Story 2: Creating Discussion Rooms;"User Story 2: Creating Discussion Rooms
+● User Story: As a teacher,
+I want to create new discussion rooms,
+so that I can start and manage discussions about dissertations.";"Scenario: Teacher creates a new discussion room
+  Given a teacher is logged into the system
+  When the teacher creates a new discussion room
+  Then the discussion room should be created successfully
+  And the teacher should be able to manage the discussion room";;
+User Story 3: Add Students to the Room ● User Story: As a teacher,;"User Story 3: Add Students to the Room ● User Story: As a teacher,
+I want to add students to a discussion room,
+so that I can include all the necessary participants in the discussion.";"Scenario: Add students to a discussion room
+  Given a teacher is logged into the system
+  And the teacher is on the discussion room page
+  When the teacher adds a student to the room
+  Then the student should be listed as a participant in the discussion room
+  And the student should receive a notification about being added to the room";;
+User Story 4: Removing Students from the Room;"User Story 4: Removing Students from the Room
+● User Story: As a teacher,
+I want to remove students from a discussion room,
+so that I can adjust the team composition as needed.";"Scenario: Remove a student from the discussion room
+  Given a teacher is logged into the system
+  And a discussion room with students is open
+  When the teacher removes a student from the room
+  Then the student should no longer be in the discussion room
+  And the team composition should be updated accordingly";;
+User Story 5: Adjusting Deadlines;"User Story 5: Adjusting Deadlines
+● User Story: As a teacher,
+I want to adjust the deadlines for assignments,
+so that I can ensure that discussions and reviews are completed within the appropriate time.";"Scenario: Adjusting assignment deadlines
+  Given a teacher is logged into the assignment management system
+  And there are existing assignments with set deadlines
+  When the teacher adjusts the deadline for an assignment
+  Then the new deadline should be saved
+  And students should be notified of the deadline change";;
+User Story 6: Visualize Participant Progress;"User Story 6: Visualize Participant Progress
+● User Story: As a teacher,
+I want to visualize the progress of each participant and reviewer,
+So that I can track the progress of discussions and interventions.";"Scenario: Visualize participant progress
+  Given a teacher is logged into the system
+  And participants and reviewers are enrolled in a course
+  When the teacher views the progress dashboard
+  Then the teacher should see the progress of each participant and reviewer
+  And the teacher should be able to track discussions and interventions";;
+User Story 7: Generate Debate Reports;"User Story 7: Generate Debate Reports
+● User Story: As a teacher,
+I want to generate reports with the content of the arguments and revisions made,
+So that I can review and document the progress of the debates.";"Scenario: Generate debate reports with arguments and revisions
+  Given a teacher is logged into the debate platform
+  And there are completed debates with arguments and revisions
+  When the teacher requests to generate a report
+  Then the report should include the content of the arguments
+  And the report should include the revisions made";;
+User Story 8: Submit Initial Pitch;"User Story 8: Submit Initial Pitch
+● User Story: As a student,
+I want to submit my initial pitch in the tab corresponding to my thesis,
+so that I can begin the process of revising my thesis.";"Scenario: Submit initial pitch for thesis
+  Given a student is on the thesis submission page
+  And the student has selected the tab corresponding to their thesis
+  When the student submits their initial pitch
+  Then the initial pitch should be recorded
+  And the student should be notified that the pitch has been submitted successfully";;
+User Story 9: Submit Revisions;"User Story 9: Submit Revisions
+● User Story: As a reviewer,
+I want to submit my revisions on assigned theses,
+so that I can provide feedback to the thesis author.";"Scenario: Reviewer submits revisions on assigned theses
+  Given a reviewer is logged into the review system
+  And the reviewer has an assigned thesis to review
+  When the reviewer submits their revisions
+  Then the thesis author should receive the feedback
+  And the thesis status should be updated to ""Revised""";;
+User Story 10: Plot Deadline Notification;"User Story 10: Plot Deadline Notification
+● User Story: As a student,
+I want to receive notifications about the deadlines for submissions of plots and revisions,
+so that I can ensure that all assignments are completed on time.";"Scenario: Student receives notification for plot submission deadline
+  Given a student is enrolled in a course
+  And the course has an upcoming plot submission deadline
+  When the deadline is approaching
+  Then the student should receive a notification about the plot submission deadline
+  And the notification should include the submission date and time";;
+User Story 11: Ensure Anonymity in Interactions;"User Story 11: Ensure Anonymity in Interactions
+● User Story: As a student,
+I want to ensure that all interactions between students are anonymous,
+so that feedback and reviews are impartial and objective.";"Scenario: Ensure anonymity in student interactions
+  Given a student is logged into the feedback system
+  And another student has submitted feedback
+  When the first student views the feedback
+  Then the feedback should not reveal the identity of the submitting student
+  And the feedback should appear impartial and objective";;
+User Story 12: Editing Closing Arguments;"User Story 12: Editing Closing Arguments
+● User Story: As a student,
+I want to edit and finalize my closing arguments after review,
+so that I can improve my thesis based on the feedback I received.";"Scenario: Student edits and finalizes closing arguments after review
+  Given a student has received feedback on their thesis
+  And the student has access to the thesis editing tool
+  When the student edits the closing arguments based on the feedback
+  Then the closing arguments should be updated in the thesis
+  And the student should be able to finalize the thesis";;
+User Story 13: Checking for Missed Assignments;"User Story 13: Checking for Missed Assignments
+● User Story: As a teacher,
+I want to check which students have not completed their assignments by the due date,
+So that I can take appropriate action to ensure that all assignments are completed.";"Scenario: Teacher checks for missed assignments
+  Given a teacher is logged into the assignment management system
+  And there are assignments with due dates that have passed
+  When the teacher views the list of assignments
+  Then the system should display a list of students who have not completed their assignments by the due date";;
+User Story 14: Reviewer Reassignment;"User Story 14: Reviewer Reassignment
+● User Story: As a student,
+I want reviewer roles to be automatically reassigned in case of dropouts or lateness,
+so that the review process can continue without interruption.";"Scenario: Reassign reviewer roles automatically in case of dropouts or lateness
+  Given a student is assigned a reviewer
+  And the reviewer drops out or is late
+  When the system detects the dropout or lateness
+  Then the reviewer role should be automatically reassigned
+  And the review process should continue without interruption";;
+User Story 15: Accessing Discussion History;"User Story 15: Accessing Discussion History
+● User Story: As a student,
+I want to access the discussion history and my arguments after the discussion has ended,
+so that I can review previous feedback and contributions.";"Scenario: Student accesses discussion history after discussion ends
+  Given a student has participated in a discussion
+  And the discussion has ended
+  When the student accesses the discussion history
+  Then the student should see their previous feedback
+  And the student should see their contributions";;
+User Story 1: User Registration;"User Story 1: User Registration
+• User Story: As a teacher,
+I want to register students and teachers with email and password,
+So that all participants can access the system securely.";"Scenario: Register a new student
+  Given a teacher is logged into the system
+  And the teacher has the student's email and password
+  When the teacher registers the student
+  Then the student should be able to access the system securely";;
+User Story 2: Setting Permissions;"User Story 2: Setting Permissions
+• User Story: As an administrator (teacher),
+I want to categorize users as either ""teachers"" or ""students"",
+so that each user has permissions appropriate to their role in the system.";"Scenario: Categorize users as teachers or students
+  Given an administrator is logged into the system
+  And there are users without assigned roles
+  When the administrator categorizes a user as a teacher
+  Then the user should have teacher permissions
+  And the user should not have student permissions";;
+User Story 3: Creating Discussion Rooms • User Story: As a teacher,;"User Story 3: Creating Discussion Rooms • User Story: As a teacher,
+I want to create new discussion rooms,
+so that I can organize academic discussions in a structured way.";"Scenario: Teacher creates a new discussion room
+  Given a teacher is logged into the academic platform
+  And the teacher is on the discussion rooms page
+  When the teacher creates a new discussion room
+  Then the new discussion room should be listed on the discussion rooms page
+  And the teacher should see a confirmation message";;
+User Story 4: Add Students to the Discussion Room;"User Story 4: Add Students to the Discussion Room
+• User Story: As a teacher,
+I want to add or remove students from a room at any time,
+so that I can manage who participates in the discussion.";"Scenario: Add a student to the discussion room
+  Given a teacher is logged into the system
+  And a discussion room is created
+  When the teacher adds a student to the discussion room
+  Then the student should be listed as a participant in the discussion room";;
+User Story 5: Adjusting Deadlines;"User Story 5: Adjusting Deadlines
+• User Story: As a teacher,
+I want to be able to adjust assignment deadlines at any time,
+so that I can adapt the schedule as needed.";"Scenario: Adjusting assignment deadlines
+  Given a teacher is logged into the system
+  And an assignment is available with a set deadline
+  When the teacher adjusts the assignment deadline
+  Then the new deadline should be saved
+  And students should see the updated deadline";;
+User Story 6: View Participant Progress;"User Story 6: View Participant Progress
+• User Story: As a teacher,
+I want to view the progress of each participant and reviewer,
+so that I can track participation and meeting deadlines.";"Scenario: View progress of each participant and reviewer
+  Given a teacher is logged into the system
+  And participants and reviewers have submitted their work
+  When the teacher views the progress report
+  Then the teacher should see the progress of each participant
+  And the teacher should see the progress of each reviewer";;
+User Story 7: Review Reports;"User Story 7: Review Reports
+• User Story: As a teacher,
+I want to generate reports with the content of the arguments and revisions
+made,
+so that I can review and archive the debate history.";"Scenario: Generate and review debate history reports
+  Given a teacher is logged into the system
+  And the debate has arguments and revisions
+  When the teacher generates a report
+  Then the report should include the content of the arguments
+  And the report should include the revisions made";;
+User Story 8: Tracking Arguments;"User Story 8: Tracking Arguments
+• User Story: As a teacher,
+I want to track the interactions and comments made by students,
+so that I can assess the quality of the ongoing debate.";"Scenario: Track student interactions and comments
+  Given a teacher is logged into the debate platform
+  And students are participating in a debate
+  When students make interactions and comments
+  Then the teacher should see a log of all interactions and comments
+  And the teacher should be able to assess the quality of the debate";;
+User Story 9: Student Anonymity;"User Story 9: Student Anonymity
+• User Story: As a teacher,
+I want to ensure that student identities are anonymous during
+discussion,
+so that the process is impartial.";"Scenario: Ensure student identities are anonymous during discussion
+  Given a discussion forum for students
+  And students are participating in the discussion
+  When a student posts a comment
+  Then the student's identity should be anonymous
+  And the comment should be visible to all participants";;
+User Story 10: Exporting Completed Discussions;"User Story 10: Exporting Completed Discussions
+• User Story: As a teacher,
+I want to export the content of completed discussions as a PDF,
+so that I can archive or share the material.";"Scenario: Export completed discussions as a PDF
+  Given a teacher is logged into the discussion platform
+  And there are completed discussions available
+  When the teacher selects the option to export a completed discussion as a PDF
+  Then the system generates a PDF of the selected discussion
+  And the PDF is available for download";;
+User Story 11: Automatic Dissertation Distribution;"User Story 11: Automatic Dissertation Distribution
+• User Story: As a student,
+I want to automatically receive a dissertation for debate,
+so that I can start participating.";"Scenario: Automatic dissertation distribution for debate
+  Given a student is registered in the debate system
+  When the student requests a dissertation for debate
+  Then the student should automatically receive a dissertation
+  And the student can start participating in the debate";;
+User Story 12: Assign Reviewers                                                                                                     • User Story: As a student,;"User Story 12: Assign Reviewers                                                                                                     • User Story: As a student,
+I want two reviewers to be randomly assigned to review my thesis,
+so that I can receive impartial feedback from peers.";"Scenario: Assign two random reviewers to a student's thesis
+  Given a student has submitted a thesis for review
+  When the system assigns reviewers
+  Then two reviewers should be randomly assigned to the thesis
+  And the reviewers should be impartial peers";;
+User Story 13: Reviewer Reassignment;"User Story 13: Reviewer Reassignment
+• User Story: As a student,
+I want reviewers to be automatically reassigned in case of lateness or abandonment,
+so that the discussion is not derailed by unexpected events.";"Scenario: Automatic reassignment of reviewers due to lateness or abandonment
+  Given a student has submitted an assignment
+  And the assigned reviewer has not provided feedback within the expected timeframe
+  When the system detects the reviewer's lateness or abandonment
+  Then the system reassigns the assignment to a new reviewer
+  And the student is notified of the reassignment";;
+User Story 14: Deadline Notifications;"User Story 14: Deadline Notifications
+• User Story: As a student,
+I want to be notified about submission deadlines for arguments and
+reviews,
+so that I can meet the deadlines.";"Scenario: Notify student about submission deadlines
+  Given a student is enrolled in a course
+  And the student has upcoming submission deadlines for arguments and reviews
+  When the deadline is approaching
+  Then the student should receive a notification about the submission deadline
+  And the notification should include the deadline date and time";;
+User Story 15: Submitting Initial Argumentation;"User Story 15: Submitting Initial Argumentation
+• User Story: As a student,
+I want to submit my initial argument for the received thesis,
+so that I can contribute to the debate.";"Scenario: Submitting initial argument for received thesis
+  Given a student has received a thesis
+  When the student submits their initial argument
+  Then the initial argument should be recorded
+  And the student should be able to contribute to the debate";;
+User Story 16: Reviewing Assigned Theses;"User Story 16: Reviewing Assigned Theses
+• User Story: As a reviewer (student),
+I want to submit reviews for the theses that have been assigned to me,
+So that the author can improve his/her work based on my feedback.";"Scenario: Reviewer submits a review for an assigned thesis
+  Given a reviewer has been assigned a thesis
+  And the reviewer has logged into the review system
+  When the reviewer submits a review for the thesis
+  Then the review should be recorded in the system
+  And the author should be notified of the new review";;
+User Story 17: Anonymity in Interactions;"User Story 17: Anonymity in Interactions
+• User Story: As a student,
+I want my interactions with other participants to be anonymous,
+so that the discussion can be impartial and free from personal bias.";"Scenario: Ensure anonymity in student interactions
+  Given a student is participating in a discussion
+  And the discussion platform supports anonymous interactions
+  When the student posts a comment
+  Then the comment should be displayed anonymously
+  And other participants should not see the student's identity";;
+User Story 18: Final Argument with Feedback;"User Story 18: Final Argument with Feedback
+• User Story: As a student,
+I want to submit my final argument considering the feedback from the
+reviewers,
+so that I can improve my thesis before the debate closes.";"Scenario: Submit final argument with feedback
+  Given a student has received feedback from reviewers
+  And the debate is still open
+  When the student submits the final argument
+  Then the final argument should be considered for the thesis
+  And the thesis should be improved before the debate closes";;
+User Story 19: Reassign Reviewers Due to Withdrawals;"User Story 19: Reassign Reviewers Due to Withdrawals
+• User Story: As a student,
+I want reviewer roles to be automatically reassigned if
+any reviewer withdraws or misses the deadline,
+so that my thesis receives proper review without delays.";"Scenario: Automatically reassign reviewers if a reviewer withdraws or misses the deadline
+  Given a student has submitted a thesis for review
+  And reviewers have been assigned to the thesis
+  When a reviewer withdraws or misses the deadline
+  Then the reviewer role should be automatically reassigned
+  And the thesis should receive proper review without delays";;
+User Story 20: Accessing Discussion History                                                                                   • User Story: As a student,;"User Story 20: Accessing Discussion History                                                                                   • User Story: As a student,
+I want to access the discussion history after it has ended,
+so that I can review my contributions and those of my peers.";"Scenario: Accessing discussion history after it has ended
+  Given a student has participated in a discussion
+  And the discussion has ended
+  When the student accesses the discussion history
+  Then the student should see their contributions
+  And the student should see the contributions of their peers";;
+User Story 1: Register;"User Story 1: Register
+Description: As a user, I want to be able to register on the platform so that I can use all the system's features.";"Scenario: User registers on the platform
+  Given a user is on the registration page
+  When the user submits valid registration details
+  Then the user should be registered successfully
+  And the user should be able to access all system features";;
+User Story 2: Logging Into the System;"User Story 2: Logging Into the System
+Description: As a user, I want to be able to log into the system using
+my credentials to access my account.";"Scenario: User logs into the system with valid credentials
+  Given the user is on the login page
+  And the user has valid credentials
+  When the user enters their credentials and clicks the login button
+  Then the user should be redirected to their account dashboard
+  And the user should see a welcome message";;
+User Story 3: Recover Password;"User Story 3: Recover Password
+Description: As a user, I want to be able to recover my password if I forget it, so I can continue using the system.";"Scenario: Recover forgotten password
+  Given a user is on the login page
+  And the user has forgotten their password
+  When the user clicks on the ""Forgot Password"" link
+  Then the user should be redirected to the password recovery page
+  And the user should be prompted to enter their registered email address";;
+User Story 4: Update Profile;"User Story 4: Update Profile
+Description: As a user, I want to be able to update my profile, including name and email, to keep my data up to date.";"Scenario: User updates profile with new name and email
+  Given a user is logged into their account
+  And the user is on the profile update page
+  When the user updates their name and email
+  Then the profile should be updated with the new name and email
+  And a confirmation message should be displayed";;
+User Story 5: Create Discussion Room;"User Story 5: Create Discussion Room
+Description: As a user, I want to be able to create a discussion room with a title, description, theses, and deadlines, so that participants can debate.";"Scenario: User creates a discussion room
+  Given a user is logged in
+  When the user creates a discussion room with a title, description, theses, and deadlines
+  Then the discussion room should be created successfully
+  And participants should be able to debate in the room";;
+User Story 6: Joining a Discussion Room;"User Story 6: Joining a Discussion Room
+Description: As a user, I want to be able to join an existing discussion room
+using an alphanumeric code, so that I can contribute to the
+discussion.";"Scenario: User joins an existing discussion room using a code
+  Given a user has an alphanumeric code for a discussion room
+  When the user enters the code to join the discussion room
+  Then the user should be added to the discussion room
+  And the user should be able to contribute to the discussion";;
+User Story 7: Start Debate Round;"User Story 7: Start Debate Round
+Description: As a moderator, I want to be able to start the debate round when there are at least 3 participants, so that the debate can begin.";"Scenario: Moderator starts debate round with sufficient participants
+  Given there are at least 3 participants
+  When the moderator starts the debate round
+  Then the debate should begin";;
+User Story 8: Submit Initial Pitch;"User Story 8: Submit Initial Pitch
+Description: As a participant, I want to be able to submit my initial pitch
+for each thesis so that reviewers can evaluate it.";"Scenario: Submit initial pitch for thesis
+  Given a participant is logged into the system
+  And the participant has selected a thesis topic
+  When the participant submits the initial pitch
+  Then the pitch should be saved in the system
+  And the reviewers should be notified of the new pitch";;
+User Story 9: Reviewing Theses;"User Story 9: Reviewing Theses
+Description: As a reviewer, I want to be able to review theses assigned to me and provide critical feedback to help improve my colleagues' arguments.";"Scenario: Reviewer provides feedback on assigned thesis
+  Given a reviewer is logged into the review system
+  And the reviewer has an assigned thesis to review
+  When the reviewer submits feedback on the thesis
+  Then the feedback should be saved in the system
+  And the thesis status should be updated to ""Reviewed""";;
+User Story 10: Adjusting Activity Deadlines;"User Story 10: Adjusting Activity Deadlines
+Description: As a moderator, I want to be able to adjust activity deadlines at any time to ensure that the discussion continues to flow.";"Scenario: Moderator adjusts activity deadlines
+  Given a moderator is logged into the system
+  And there is an ongoing activity with a set deadline
+  When the moderator changes the activity deadline
+  Then the new deadline should be saved
+  And the participants should be notified of the deadline change";;
+User Story 11: Sending Replies to Reviews;"User Story 11: Sending Replies to Reviews
+Description: As a participant, I want to be able to send replies to reviewers after receiving their feedback, to justify my argument.";"Scenario: Participant sends a reply to a review
+  Given a participant has received feedback on their submission
+  And the participant is logged into the system
+  When the participant sends a reply to the review
+  Then the reply should be visible to the reviewer
+  And the reply should be saved in the system";;
+User Story 12: Exporting a Completed Discussion;"User Story 12: Exporting a Completed Discussion
+Description: As a moderator, I want to be able to export the contents of a completed debate in PDF format, to archive or share the results.";"Scenario: Exporting a completed discussion in PDF format
+  Given a completed debate exists
+  And the user is a moderator
+  When the moderator exports the debate
+  Then the debate should be saved as a PDF file
+  And the PDF file should be available for download";;

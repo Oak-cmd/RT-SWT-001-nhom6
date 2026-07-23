@@ -1,0 +1,690 @@
+ID;Prompt;Response;;
+User Story 1: User Registration;"User Story 1: User Registration
+• User Story: As a regular user,
+I want to register in the system,
+So that I can create an account and access personalized features.";"Scenario: User registers in the system
+  Given a regular user is on the registration page
+  When the user submits valid registration details
+  Then the user should be registered successfully
+  And the user should be able to access personalized features";;
+User Story 2: User Login;"User Story 2: User Login
+• User Story: As a regular user,
+I want to log in to the system,
+So that I can access my account and pick up where I left off.";"Scenario: Regular user logs in to access their account
+  Given a regular user is on the login page
+  When the user enters valid credentials
+  And the user clicks the login button
+  Then the user should be redirected to their account dashboard
+  And the user should see their account information";;
+User Story 3: Fill in Preferences Profile;"User Story 3: Fill in Preferences Profile
+• User Story: As a regular user,
+I want to fill in my preferences profile (genres, favorite movies,
+directors),
+so that the system can provide me with suggestions for movies that are more appropriate to my tastes.";"Scenario: Fill in preferences profile to receive tailored movie suggestions
+  Given a regular user is logged into the system
+  When the user fills in their preferences profile with genres, favorite movies, and directors
+  Then the system should save the user's preferences
+  And the system should provide movie suggestions based on the user's preferences";;
+User Story 4: View Movie Suggestions;"User Story 4: View Movie Suggestions
+• User Story: As a regular user,
+I want to view movie suggestions,
+So that I can find movies that are relevant to me.";"Scenario: View movie suggestions
+  Given a regular user is logged into the movie recommendation system
+  When the user navigates to the movie suggestions page
+  Then the user should see a list of movie suggestions relevant to their preferences";;
+User Story 5: Rate Watched Movies;"User Story 5: Rate Watched Movies
+• User Story: As a regular user,
+I want to rate the movies I’ve watched,
+So that I can record my opinion and help improve future suggestions";"Scenario: Rate a watched movie
+  Given a regular user has watched a movie
+  And the user is on the movie's detail page
+  When the user rates the movie
+  Then the rating is recorded
+  And future movie suggestions are improved";;
+User Story 6: Commenting on Movies I've Watched;"User Story 6: Commenting on Movies I've Watched
+• User Story: As a regular user,
+I want to comment on the movies I've watched,
+So that other users can see my detailed opinion and I can
+interact with the community.";"Scenario: Commenting on a watched movie
+  Given a regular user has watched a movie
+  And the user is logged into their account
+  When the user submits a comment on the movie
+  Then the comment should be visible to other users
+  And the user should be able to interact with the community through the comment";;
+User Story 7: Save Movies to Watch;"User Story 7: Save Movies to Watch
+• User Story: As a regular user,
+I want to save movies as ""to watch"",
+so that I can create a list of movies that I want to watch in the future.";"Scenario: Save a movie to the watchlist
+  Given a regular user is logged in
+  And the user is on the movie details page
+  When the user clicks the ""Save to Watchlist"" button
+  Then the movie should be added to the user's watchlist
+  And the user should see a confirmation message";;
+User Story 8: Mark Movies as Watched;"User Story 8: Mark Movies as Watched
+• User Story: As a regular user,
+I want to mark movies as ""watched"",
+So that I can keep a record of the movies I’ve already seen and get suggestions based on them.";"Scenario: Mark a movie as watched
+  Given a regular user is logged in
+  And the user has a list of movies
+  When the user marks a movie as watched
+  Then the movie should be marked as watched in the user's list
+  And the user should see suggestions based on watched movies";;
+User Story 9: Get Suggestions Based on History;"User Story 9: Get Suggestions Based on History
+• User Story: As a regular user,
+I want to get movie suggestions based on my viewing history and preferences,
+so that I can discover new movies that align with my tastes.";"Scenario: Get movie suggestions based on viewing history and preferences
+  Given a regular user with a viewing history and set preferences
+  When the user requests movie suggestions
+  Then the user should receive a list of suggested movies
+  And the suggestions should align with the user's tastes";;
+User Story 10: Search for Movies Specifically;"User Story 10: Search for Movies Specifically
+• User Story: As a regular user,
+I want to search for specific movies by name, genre, or director,
+So that I can quickly find movies that I'm interested in
+watching.";"Scenario: Search for movies by name, genre, or director
+  Given a regular user is on the movie search page
+  When the user searches for a movie by name, genre, or director
+  Then the user should see a list of movies matching the search criteria
+  And the user can select a movie from the list to view more details";;
+User Story 11: View Detailed Movie Information;"User Story 11: View Detailed Movie Information
+• User Story: As a regular user,
+I want to view detailed movie information,
+So that I can make informed decisions about which movie to watch based
+on reviews, cast, and synopsis.";"Scenario: View detailed movie information
+  Given a regular user is on the movie details page
+  When the user selects a movie
+  Then the user should see the movie's synopsis
+  And the user should see the movie's cast
+  And the user should see the movie's reviews";;
+User Story 12: Receive Notifications for New Releases;"User Story 12: Receive Notifications for New Releases
+• User Story: As a regular user,
+I want to receive notifications for new movie releases,
+So that I can stay up to date with the latest and most popular releases.";"Scenario: Receive notifications for new movie releases
+  Given a regular user is logged into the system
+  And the user has opted in to receive notifications
+  When a new movie is released
+  Then the user should receive a notification about the new release";;
+User Story 13: Filter Suggestions by Specific Preferences;"User Story 13: Filter Suggestions by Specific Preferences
+• User Story: As a regular user,
+I want to filter movie suggestions by genres, directors, or
+ratings,
+so that I can see more specific suggestions that suit my current interests.";"Scenario: Filter movie suggestions by specific preferences
+  Given a regular user is on the movie suggestions page
+  And the user has preferences for genres, directors, or ratings
+  When the user applies filters for genres, directors, or ratings
+  Then the movie suggestions should be updated to match the selected preferences";;
+User Story 14: Receive Recommendations Based on Feedback;"User Story 14: Receive Recommendations Based on Feedback
+• User Story: As a regular user,
+I want to receive movie recommendations based on the ratings and
+comments I have previously given,
+so that the suggestions can be increasingly tailored to my
+personal taste.";"Scenario: Receive movie recommendations based on previous feedback
+  Given a regular user with previous ratings and comments
+  When the user requests movie recommendations
+  Then the user should receive movie suggestions tailored to their personal taste";;
+User Story 15: Edit Profile Preferences;"User Story 15: Edit Profile Preferences
+• User Story: As a regular user,
+I want to edit my movie preferences,
+so that movie suggestions can be adjusted as my tastes evolve.";"Scenario: Edit movie preferences to adjust suggestions
+  Given a regular user is logged into their account
+  And the user is on the profile preferences page
+  When the user updates their movie preferences
+  Then the movie suggestions should be adjusted according to the new preferences";;
+User Story 1: Registering in the System;"User Story 1: Registering in the System
+· User Story: As a regular user,
+I want to register in the system,
+So that I can access the personalized movie suggestion features.";"Scenario: Registering in the system
+  Given a regular user is on the registration page
+  When the user submits valid registration details
+  Then the user should be registered successfully
+  And the user should be able to access personalized movie suggestions";;
+User Story 2: Fill Out Preferences Profile;"User Story 2: Fill Out Preferences Profile
+· User Story: As a regular user,
+I want to fill out my preferences profile,
+so that I can receive movie recommendations that are more aligned with my tastes.";"Scenario: Fill out preferences profile for personalized movie recommendations
+  Given a regular user is logged into their account
+  When the user fills out their preferences profile
+  Then the user should receive movie recommendations aligned with their tastes";;
+User Story 3: View Movie Suggestions;"User Story 3: View Movie Suggestions
+· User Story: As a regular user,
+I want to view movie suggestions,
+So that I can quickly find new movies to watch.";"Scenario: View movie suggestions
+  Given a regular user is logged in
+  When the user navigates to the movie suggestions page
+  Then the user should see a list of movie suggestions
+  And the list should contain new movies to watch";;
+User Story 4: Rate Watched Movies;"User Story 4: Rate Watched Movies
+· User Story: As a regular user,
+I want to rate the movies I have watched,
+So that the system can refine its suggestions based on my ratings.";"Scenario: Rate a watched movie
+  Given a regular user has watched a movie
+  And the user is logged into the system
+  When the user rates the movie
+  Then the system should save the rating
+  And the system should refine its movie suggestions based on the rating";;
+User Story 5: Commenting on Watched Movies;"User Story 5: Commenting on Watched Movies
+· User Story: As a regular user,
+I want to comment on the movies I have watched,
+So that I can share my opinions with other users.";"Scenario: Commenting on a watched movie
+  Given a regular user has watched a movie
+  And the user is logged into their account
+  When the user navigates to the movie's page
+  And the user submits a comment on the movie
+  Then the comment should be visible on the movie's page
+  And other users should be able to see the comment";;
+User Story 6: Save Movies to Watch Later;"User Story 6: Save Movies to Watch Later
+· User Story: As a regular user,
+I want to save movies as “to watch,”
+so that I can organize movies that I plan to watch in the future.";"Scenario: Save a movie to watch later
+  Given a regular user is logged in
+  And the user is on the movie details page
+  When the user clicks the ""Save to Watch Later"" button
+  Then the movie should be added to the ""Watch Later"" list
+  And the user should see a confirmation message";;
+User Story 7: Mark Movies as Watched;"User Story 7: Mark Movies as Watched
+· User Story: As a regular user,
+I want to mark movies as ""watched"",
+so that the system can exclude these movies from future recommendations and suggest new titles.";"Scenario: Mark a movie as watched
+  Given a regular user is logged into the system
+  And the user has a list of movies
+  When the user marks a movie as ""watched""
+  Then the movie should be marked as ""watched"" in the system
+  And the movie should be excluded from future recommendations";;
+User Story 8: Search for Specific Movies;"User Story 8: Search for Specific Movies
+· User Story: As a regular user,
+I want to search for specific movies,
+So that I can quickly find information about titles that interest me.";"Scenario: Search for a specific movie
+  Given a regular user is on the movie search page
+  When the user searches for ""Inception""
+  Then the search results should display the movie ""Inception""
+  And the user should see detailed information about ""Inception""";;
+User Story 9: Get Recommendations Based on History;"User Story 9: Get Recommendations Based on History
+· User Story: As a regular user,
+I want to get recommendations based on my viewing history,
+so that I can discover movies related to the ones I've already watched and enjoyed.";"Scenario: Get movie recommendations based on viewing history
+  Given a regular user with a viewing history
+  When the user requests recommendations
+  Then the user should receive a list of recommended movies
+  And the recommendations should be related to the movies the user has already watched and enjoyed";;
+User Story 10: Filter Recommendations by Genre;"User Story 10: Filter Recommendations by Genre
+· User Story: As a regular user,
+I want to filter recommendations by genre,
+So that I can see movie suggestions that match my taste at the moment.";"Scenario: Filter movie recommendations by genre
+  Given a regular user is on the recommendations page
+  And the user has a list of movie recommendations
+  When the user selects a genre filter
+  Then the recommendations should be filtered by the selected genre
+  And the user should see only movies that match the selected genre";;
+User Story 11: Receive Notifications for New Movies;"User Story 11: Receive Notifications for New Movies
+· User Story: As a regular user,
+I want to receive notifications about new movies released,
+So that I can keep up with the latest releases.";"Scenario: Receive notifications for new movie releases
+  Given a regular user is logged into the application
+  And the user has opted in to receive notifications
+  When a new movie is released
+  Then the user should receive a notification about the new movie";;
+User Story 12: Integrate Director and Actor Preferences;"User Story 12: Integrate Director and Actor Preferences
+· User Story: As a regular user,
+I want to personalize my recommendations based on favorite directors and actors,
+so that I can watch more movies that feature my favorite actors.";"Scenario: Personalize recommendations based on favorite directors and actors
+  Given a regular user with favorite directors and actors
+  When the user personalizes their recommendations
+  Then the user should see more movies featuring their favorite actors
+  And the user should see more movies directed by their favorite directors";;
+User Story 1: User Registration;"User Story 1: User Registration
+User Story: As a customer, I want to register in the system, so that I can have access to all the personalized features.";"Scenario: Successful user registration
+  Given a customer is on the registration page
+  When the customer submits valid registration details
+  Then the customer should be registered in the system
+  And the customer should have access to personalized features";;
+User Story 2: Fill in Preference Profile;"User Story 2: Fill in Preference Profile
+User Story: As a customer, I want to fill in my preference profile, so that the system can recommend movies to me according to my tastes.";"Scenario: Customer fills in preference profile to receive movie recommendations
+  Given a customer is logged into their account
+  And the customer is on the preference profile page
+  When the customer fills in their movie preferences
+  Then the system should save the preferences
+  And the system should use the preferences to recommend movies to the customer";;
+História de Usuário 3: Visualizar Sugestões de Filmes;"História de Usuário 3: Visualizar Sugestões de Filmes
+User Story 3: View Movie Suggestions
+User Story: As a customer, I want to view movie suggestions based on my profile and history, so that I can easily find movies that interest me.";"Scenario: View movie suggestions based on profile and history
+  Given a customer with a profile and viewing history
+  When the customer views movie suggestions
+  Then the customer should see movies that match their interests";;
+User Story 4: Rate Movies Watched;"User Story 4: Rate Movies Watched
+User Story: As a customer, I want to rate the movies I've watched, so that I can help the system improve its future recommendations.";"Scenario: Customer rates a movie they have watched
+  Given a customer has watched a movie
+  And the movie is listed in their watched history
+  When the customer rates the movie
+  Then the rating is saved
+  And the system updates future recommendations based on the rating";;
+User Story 5: Comment on Watched Movies;"User Story 5: Comment on Watched Movies
+User Story: As a customer,
+I want to comment on the movies I’ve watched,
+So that I can share my opinion with other users.";"Scenario: Comment on a watched movie
+  Given a customer has watched a movie
+  And the customer is logged into their account
+  When the customer submits a comment on the movie
+  Then the comment should be visible to other users
+  And the comment should be associated with the movie";;
+User Story 6: Save Movies to Watch Later;"User Story 6: Save Movies to Watch Later
+User Story: As a customer, I want to save movies to my ""to watch"" list, so that I can keep a record of movies I want to watch in the future.";"Scenario: Save a movie to the ""to watch"" list
+  Given a customer is logged into their account
+  And the customer is on the movie details page
+  When the customer clicks the ""Save to Watch Later"" button
+  Then the movie should be added to the customer's ""to watch"" list";;
+User Story 7: Mark Movies as Watched;"User Story 7: Mark Movies as Watched
+User Story: As a customer, I want to mark movies as ""watched"", so that I can organize my viewing history.";"Scenario: Mark a movie as watched
+  Given a customer is logged into their account
+  And the customer has a movie in their watchlist
+  When the customer marks the movie as watched
+  Then the movie should be marked as watched in their viewing history
+  And the movie should be removed from their watchlist";;
+User Story 8: Get Personalized Recommendations;"User Story 8: Get Personalized Recommendations
+User Story: As a customer, I want to receive movie recommendations based on my ratings and preferences, so that I can discover new movies that match my taste.";"Scenario: Receive personalized movie recommendations
+  Given a customer with rated movies and set preferences
+  When the customer requests movie recommendations
+  Then the customer should receive a list of recommended movies
+  And the recommended movies should match the customer's taste";;
+User Story 9: Insert Movies into the Database;"User Story 9: Insert Movies into the Database
+User Story: As an admin, I want to insert new movies into the database, so that the system catalog is always updated and with more options.";"Scenario: Admin inserts a new movie into the database
+  Given the admin is logged into the system
+  And the admin is on the ""Add New Movie"" page
+  When the admin submits the movie details
+  Then the movie should be added to the database
+  And the system catalog should be updated with the new movie";;
+User Story 10: Generate Usage Reports;"User Story 10: Generate Usage Reports
+User Story: As an admin, I want to generate reports on system usage and user interaction, so that I can understand how users are using the platform and optimize the content.";"Scenario: Admin generates a system usage report
+  Given an admin is logged into the system
+  When the admin requests a usage report
+  Then the system should generate a report on system usage and user interaction
+  And the report should be available for download";;
+User Story 11: Manage User Generated Content;"User Story 11: Manage User Generated Content
+User Story: As an admin, I want to manage user comments and reviews, so that I can ensure that the content generated is relevant and appropriate.";"Scenario: Admin manages user comments and reviews
+  Given an admin is logged into the admin panel
+  And there are user comments and reviews available
+  When the admin reviews a user comment or review
+  Then the admin should be able to approve or reject the content
+  And the content status should be updated accordingly";;
+User Story 12: Offer Technical Support;"User Story 12: Offer Technical Support
+User Story: As an admin, I want to offer technical support to users, so they can resolve issues with the platform quickly and efficiently.";"Scenario: Admin offers technical support to users
+  Given an admin is logged into the platform
+  And a user has reported an issue
+  When the admin provides technical support
+  Then the user should receive assistance
+  And the issue should be resolved quickly and efficiently";;
+User Story 13: Update Preference Profile;"User Story 13: Update Preference Profile
+User Story: As a customer, I want to update my preferences profile regularly, so that the system can adjust movie recommendations as my tastes change.";"Scenario: Customer updates preference profile to adjust movie recommendations
+  Given a customer with an existing preference profile
+  When the customer updates their preferences
+  Then the system should save the updated preferences
+  And the movie recommendations should be adjusted based on the new preferences";;
+User Story 14: View History of Movies Watched;"User Story 14: View History of Movies Watched
+User Story: As a customer, I want to view my history of movies watched, so that I can review the movies I've already watched and find similar recommendations.";"Scenario: View history of movies watched
+  Given a customer is logged into their account
+  And the customer has previously watched movies
+  When the customer navigates to the ""History"" section
+  Then the customer should see a list of movies they have watched
+  And the list should include the titles and dates watched";;
+User Story 15: Receive Notifications for New Movies;"User Story 15: Receive Notifications for New Movies
+User Story: As a customer, I want to receive notifications for new movies that match my preferences, so that I can always stay up to date with releases that interest me.";"Scenario: Receive notifications for new movies matching preferences
+  Given a customer has set their movie preferences
+  And new movies matching the customer's preferences are released
+  When the new movies are added to the system
+  Then the customer should receive notifications about the new movies";;
+User Story 1: User Registration;"User Story 1: User Registration
+● As a regular user,
+I want to create an account,
+So that I can access the system and customize my preferences";"Scenario: User creates an account to access the system
+  Given a regular user is on the registration page
+  When the user submits valid registration details
+  Then the user account should be created
+  And the user should be able to access the system";;
+User Story 2: Customize Profile;"User Story 2: Customize Profile
+● As a regular user,
+I want to fill out my profile with my preferences for genres and favorite movies,
+So that the system can recommend movies to me according to my tastes.";"Scenario: User customizes profile with preferences
+  Given a regular user is logged into the system
+  When the user fills out their profile with preferred genres and favorite movies
+  Then the system should save the user's preferences
+  And the system should recommend movies according to the user's tastes";;
+User Story 3: View Personalized Suggestions;"User Story 3: View Personalized Suggestions
+● As a regular user,
+I want to view movie suggestions,
+So that I can discover new movies based on my profile and
+history.";"Scenario: View personalized movie suggestions
+  Given a regular user with a profile and viewing history
+  When the user views movie suggestions
+  Then the user should see new movie suggestions based on their profile and history";;
+User Story 4: Rate Movies I've Watched;"User Story 4: Rate Movies I've Watched
+● As a regular user,
+I want to rate movies I've watched,
+so I can record my feedback and improve future recommendations.";"Scenario: Rate a movie the user has watched
+  Given a regular user has watched a movie
+  When the user rates the movie
+  Then the rating is recorded
+  And future recommendations are improved";;
+User Story 5: Commenting on Movies;"User Story 5: Commenting on Movies
+● As a regular user,
+I want to comment on the movies I've watched,
+So I can share my opinions and interact with other
+users.";"Scenario: Commenting on a movie
+  Given a regular user is logged in
+  And the user has watched a movie
+  When the user submits a comment on the movie
+  Then the comment should be visible under the movie's comments section
+  And other users should be able to see the comment";;
+User Story 6: Search for Movies;"User Story 6: Search for Movies
+● As a regular user,
+I want to search for movies by name or director,
+So that I can find specific movies that I want to watch.";"Scenario: Search for movies by name or director
+  Given a regular user is on the movie search page
+  When the user searches for a movie by name or director
+  Then the user should see a list of movies matching the search criteria
+  And the user should be able to select a movie from the list";;
+User Story 7: Save Movies to Watch Later;"User Story 7: Save Movies to Watch Later
+● As a regular user,
+I want to save movies to my ""to watch"" list,
+so that I can organize them and watch them later.";"Scenario: Save a movie to the ""to watch"" list
+  Given a regular user is logged in
+  And the user is on the movie details page
+  When the user clicks the ""Save to Watch Later"" button
+  Then the movie should be added to the user's ""to watch"" list";;
+User Story 8: Mark Movies as Watched;"User Story 8: Mark Movies as Watched
+● As a regular user,
+I want to mark movies as ""watched,""
+so that I can keep track of what I've watched and get suggestions
+based on that.";"Scenario: Mark a movie as watched
+  Given a regular user is logged in
+  And the user has a list of movies
+  When the user marks a movie as watched
+  Then the movie should be marked as watched in the user's list
+  And the user should receive suggestions based on watched movies";;
+User Story 9: Receive Notifications for New Releases;"User Story 9: Receive Notifications for New Releases
+● As a regular user,
+I want to receive notifications about new releases related to
+my preferences,
+so that I can stay informed about the latest movies that may
+interest me.";"Scenario: Receive notifications for new releases related to user preferences
+  Given a regular user with set preferences
+  When a new release matches the user's preferences
+  Then the user should receive a notification about the new release";;
+User Story 10: Filter Suggestions;"User Story 10: Filter Suggestions
+● As a regular user,
+I want to filter movie suggestions by genre, year, or rating,
+so that I can explore movies more efficiently and specifically.";"Scenario: Filter movie suggestions by genre
+  Given a regular user is on the movie suggestions page
+  When the user filters suggestions by genre ""Action""
+  Then the user should see a list of movies in the ""Action"" genre";;
+User Story 11: Recommendation Based on History;"User Story 11: Recommendation Based on History
+● As a regular user,
+I want to receive recommendations based on my viewing history,
+so that the suggestions are more accurate and personalized.";"Scenario: Receive personalized recommendations based on viewing history
+  Given a regular user with a viewing history
+  When the user requests recommendations
+  Then the user should receive suggestions based on their viewing history
+  And the suggestions should be accurate and personalized";;
+User Story 12: Access Detailed Movie Information;"User Story 12: Access Detailed Movie Information
+● As a regular user,
+I want to access detailed information about each movie, such as synopsis, cast, and reviews,
+so that I can better decide which movie to watch.";"Scenario: Access detailed movie information
+  Given a regular user is on the movie details page
+  When the user selects a movie
+  Then the user should see the synopsis of the movie
+  And the user should see the cast of the movie
+  And the user should see the reviews of the movie";;
+User Story 1: User Registration;"User Story 1: User Registration
+- As a regular user,
+I want to register in the system,
+So that I can access my personalized movie recommendations.";"Scenario: User registers in the system
+  Given a regular user is on the registration page
+  When the user submits valid registration details
+  Then the user should be registered successfully
+  And the user should be able to access personalized movie recommendations";;
+User Story 2: User Login;"User Story 2: User Login
+- As a regular user,
+I want to log in to the system,
+So that I can access my profile and saved preferences.";"Scenario: Regular user logs in to access profile and preferences
+  Given a regular user is on the login page
+  When the user enters valid credentials
+  And the user clicks the login button
+  Then the user should be redirected to their profile page
+  And the user should see their saved preferences";;
+User Story 3: Fill in Preferences Profile;"User Story 3: Fill in Preferences Profile
+As a regular user,
+I want to fill in my profile with my favorite genres, directors, and movies,
+So that the system can recommend movies that are relevant to my preferences.";"Scenario: Fill in Preferences Profile
+  Given a regular user is logged into their account
+  When the user fills in their profile with favorite genres, directors, and movies
+  Then the system should save the user's preferences
+  And the system should recommend movies relevant to the user's preferences";;
+User Story 4: View Movie Recommendations;"User Story 4: View Movie Recommendations
+- As a regular user,
+I want to view movie suggestions on the home page,
+So that I can discover new movies according to my tastes.";"Scenario: View movie recommendations on the home page
+  Given a regular user is logged in
+  And the user is on the home page
+  When the user views the movie recommendations section
+  Then the user should see movie suggestions based on their tastes";;
+User Story 5: Rate Watched Movies;"User Story 5: Rate Watched Movies
+- As a regular user,
+I want to rate the movies I've watched,
+so that the system can learn from my preferences and improve future recommendations.";"Scenario: Rate a watched movie
+  Given a regular user has watched a movie
+  When the user rates the movie
+  Then the system should record the rating
+  And the system should use the rating to improve future recommendations";;
+User Story 6: Commenting on Movies;"User Story 6: Commenting on Movies
+- As a regular user,
+I want to comment on the movies I've watched,
+So I can share my opinion with other users and see what they think.";"Scenario: Commenting on a watched movie
+  Given a regular user has watched a movie
+  And the user is logged into their account
+  When the user submits a comment on the movie
+  Then the comment should be visible under the movie's comments section
+  And other users should be able to see the comment";;
+"User Story 7: Mark Movies as ""To Watch""";"User Story 7: Mark Movies as ""To Watch""
+- As a regular user,
+I want to save movies to my ""To Watch"" list,
+so that I can organize the movies I want to watch in the future.";"Scenario: Save a movie to the ""To Watch"" list
+  Given a regular user is logged into the movie app
+  And the user is on the movie details page
+  When the user clicks the ""Add to To Watch"" button
+  Then the movie should be added to the user's ""To Watch"" list
+  And the user should see a confirmation message";;
+"User Story 8: Mark Movies as ""Watched""";"User Story 8: Mark Movies as ""Watched""
+- As a regular user,
+I want to mark movies as ""Watched"",
+so that the system stops recommending me movies that I've already watched and keeps a history of what I've watched.";"Scenario: Mark a movie as ""Watched""
+  Given a regular user is logged in
+  And the user has a list of movies
+  When the user marks a movie as ""Watched""
+  Then the movie should be marked as ""Watched"" in the system
+  And the movie should no longer be recommended to the user
+  And the movie should be added to the user's watched history";;
+User Story 9: Get Personalized Recommendations;"User Story 9: Get Personalized Recommendations
+- As a regular user, I want to get personalized recommendations based on my viewing history and preferences,
+so that I can discover movies that really interest me.";"Scenario: Get personalized movie recommendations
+  Given a regular user with a viewing history and preferences
+  When the user requests personalized recommendations
+  Then the user should receive a list of recommended movies
+  And the recommendations should be based on the user's viewing history and preferences";;
+User Story 10: Search for Specific Movies;"User Story 10: Search for Specific Movies
+- As a regular user,
+I want to search for specific movies or by genre,
+So that I can quickly find movies that I'm already interested in watching.";"Scenario: Search for specific movies by title or genre
+  Given a regular user is on the movie search page
+  When the user searches for a movie by title or genre
+  Then the user should see a list of movies matching the search criteria
+  And the user should be able to select a movie from the list";;
+User Story 11: Edit Profile Preferences;"User Story 11: Edit Profile Preferences
+- As a regular user,
+I want to edit my movie and director preferences,
+so that I can adjust my recommendations as my tastes change.";"Scenario: Edit movie and director preferences
+  Given a regular user is logged in
+  And the user is on the profile preferences page
+  When the user updates their movie and director preferences
+  Then the user's preferences should be saved
+  And the recommendations should be adjusted based on the new preferences";;
+User Story 12: Get Notifications for New Releases;"User Story 12: Get Notifications for New Releases
+- As a regular user,
+I want to get notifications for new movie releases on my profile,
+So that I can stay updated about new movies according to my interests.";"Scenario: Regular user receives notifications for new movie releases
+  Given a regular user is logged into their profile
+  And the user has set their movie interests
+  When a new movie is released
+  Then the user should receive a notification about the new release
+  And the notification should match the user's interests";;
+User Story 13: Filter Recommendations by Category;"User Story 13: Filter Recommendations by Category
+As a regular user,
+I want to filter recommendations by categories such as genre or rating,
+So that I can view only the types of movies I want to watch at a given time.";"Scenario: Filter recommendations by category
+  Given a regular user is on the recommendations page
+  And the user sees a list of movie recommendations
+  When the user selects a category filter such as genre or rating
+  Then the recommendations should be filtered to show only movies that match the selected category";;
+User Story 14: View Movie Details;"User Story 14: View Movie Details
+- As a regular user,
+I want to view full details of a recommended movie (synopsis, cast, trailer),
+so that I can decide whether to watch it or not.";"Scenario: View full details of a recommended movie
+  Given a regular user is on the movie recommendations page
+  When the user selects a recommended movie
+  Then the user should see the movie synopsis
+  And the user should see the cast details
+  And the user should see the movie trailer";;
+User Story 15: Favorite Movies;"User Story 15: Favorite Movies
+- As a regular user,
+I want to favorite specific movies,
+So that I can easily access them and watch them later.";"Scenario: User favorites a specific movie
+  Given a regular user is logged in
+  And the user is on the movie details page
+  When the user clicks the ""Favorite"" button
+  Then the movie should be added to the user's favorites list
+  And the user should see a confirmation message";;
+User Story 1: Create User Account;"User Story 1: Create User Account
+● User Story: As a Movie Buff,
+I want to create an account with a personalized avatar,
+So that I can access the platform and have a personalized visual experience.";"Scenario: Create a user account with a personalized avatar
+  Given a Movie Buff wants to join the platform
+  When the Movie Buff creates an account with a personalized avatar
+  Then the account should be created successfully
+  And the Movie Buff should have a personalized visual experience";;
+User Story 2: Quick Login;"User Story 2: Quick Login
+● User Story: As a Casual User,
+I want to log in using social networks,
+So that I can quickly access the system without having to remember my password.";"Scenario: Quick login using social networks
+  Given a casual user is on the login page
+  When the user selects a social network login option
+  And the user authorizes the social network login
+  Then the user should be logged into the system
+  And the user should see the dashboard";;
+User Story 3: Customize Preferences;"User Story 3: Customize Preferences
+● User Story: As a parent,
+I want to set preferences for family and kids movies,
+so that I can receive appropriate recommendations to watch with my kids..";"Scenario: Set preferences for family and kids movies
+  Given a parent is logged into the movie recommendation system
+  And the parent navigates to the preferences section
+  When the parent sets preferences for family and kids movies
+  Then the system should save the preferences
+  And the parent should receive appropriate movie recommendations for family and kids";;
+User Story 4: Rate Movies;"User Story 4: Rate Movies
+● User Story: As a cinephile,
+I want to rate the movies I’ve watched with scores and comments,
+So that I can share my opinion and help other users decide what to watch.";"Scenario: Rate a movie with a score and comment
+  Given a logged-in cinephile
+  And a movie the cinephile has watched
+  When the cinephile rates the movie with a score and a comment
+  Then the rating and comment should be saved
+  And other users should be able to see the rating and comment";;
+User Story 5: Discuss Movies;"User Story 5: Discuss Movies
+● User Story: As a film student,
+I want to participate in discussions about filmmaking techniques in the forums,
+So that I can deepen my knowledge and exchange ideas with other enthusiasts.";"Scenario: Film student participates in filmmaking discussions
+  Given a film student is logged into the forum
+  And the student is on the filmmaking techniques discussion page
+  When the student posts a comment about a filmmaking technique
+  Then the comment should be visible in the discussion thread
+  And other users should be able to reply to the comment";;
+User Story 6: Save Movies to Watch;"User Story 6: Save Movies to Watch
+● User Story: As a casual user,
+I want to save movies to my ""To Watch"" list,
+So that I can organize them to watch when I have time.";"Scenario: Save a movie to the ""To Watch"" list
+  Given a casual user is logged into the movie app
+  And the user is on the movie details page
+  When the user clicks the ""Save to To Watch"" button
+  Then the movie should be added to the user's ""To Watch"" list
+  And the user should see a confirmation message";;
+User Story 7: Receive Personalized Recommendations;"User Story 7: Receive Personalized Recommendations
+● User Story: As a series enthusiast,
+I want to receive movie suggestions based on the series I watch,
+So that I can find films with narratives similar to the ones I enjoy.";"Scenario: Receive personalized movie recommendations based on series watched
+  Given a user who is a series enthusiast
+  And the user has watched several series
+  When the user requests movie suggestions
+  Then the user should receive movie recommendations
+  And the recommendations should be based on the series the user has watched";;
+User Story 8: View Filtered Catalog;"User Story 8: View Filtered Catalog
+● User Story: As a cinephile,
+I want to filter the movie catalog by genre and director,
+So that I can explore works by directors and genres that interest me the most.";"Scenario: Filter movie catalog by genre and director
+  Given a user is on the movie catalog page
+  And the catalog contains movies of various genres and directors
+  When the user filters the catalog by genre ""Action"" and director ""Christopher Nolan""
+  Then the catalog should display only movies of the genre ""Action"" directed by ""Christopher Nolan""";;
+User Story 9: Detailed Technical Sheet;"User Story 9: Detailed Technical Sheet
+● User Story: As a film student,
+I want to access the complete technical sheet of a movie,
+So that I can use this information in my academic work..";"Scenario: Access the complete technical sheet of a movie
+  Given a film student is on the movie details page
+  When the film student requests the technical sheet
+  Then the complete technical sheet of the movie should be displayed
+  And the film student can use this information in their academic work";;
+User Story 10: Manage Movie Lists;"User Story 10: Manage Movie Lists
+● User Story: As a cinephile,
+I want to manage my watched and to-watch movie lists,
+So that I can better organize my entertainment choices.";"Scenario: Add a movie to the watched list
+  Given a user has a to-watch movie list
+  And the movie ""Inception"" is in the to-watch list
+  When the user marks the movie ""Inception"" as watched
+  Then the movie ""Inception"" should be moved to the watched list
+  And the movie ""Inception"" should be removed from the to-watch list";;
+User Story 11: Recommendations Based on Watch History;"User Story 11: Recommendations Based on Watch History
+● User Story: As a casual user,
+I want to receive suggestions based on the movies I’ve already watched,
+So that the recommendations match my personal taste.";"Scenario: Receive movie recommendations based on watch history
+  Given a casual user has watched several movies
+  When the user views the recommendations page
+  Then the user should see movie suggestions that match their personal taste";;
+User Story 12: Set Content Restrictions;"User Story 12: Set Content Restrictions
+● User Story: As a parent,
+I want to set age-based content restrictions,
+So that my children do not have access to inappropriate movies.";"Scenario: Set age-based content restrictions
+  Given a parent is logged into the parental control settings
+  And the parent has access to the content restriction options
+  When the parent sets the content restriction to ""PG-13""
+  Then the system should save the content restriction settings
+  And children should not have access to movies rated above ""PG-13""";;
+User Story 13: Simple and Intuitive Interface;"User Story 13: Simple and Intuitive Interface
+● User Story: As a casual user,
+I want a simple and intuitive interface,
+So that I can navigate the system easily without complications.";"Scenario: Navigate the system easily
+  Given a casual user is on the homepage
+  When the user interacts with the interface
+  Then the user should find the interface simple and intuitive
+  And the user should navigate the system without complications";;
+User Story 14: New Movie Notifications;"User Story 14: New Movie Notifications
+● User Story: As a cinephile,
+I want to receive notifications when new movies in my favorite genre are added,
+So that I’m always up to date with the latest catalog additions.";"Scenario: Receive notifications for new movies in favorite genre
+  Given a user is a registered cinephile
+  And the user has selected a favorite genre
+  When a new movie in the favorite genre is added to the catalog
+  Then the user should receive a notification about the new movie";;
+User Story 15: Write Detailed Reviews;"User Story 15: Write Detailed Reviews
+● User Story: As a film student,
+I want to publish detailed reviews of the movies I watch,
+So that I can share in-depth analyses with the community.";"Scenario: Publish a detailed movie review
+  Given a film student is logged into the review platform
+  And the student has watched a movie
+  When the student writes a detailed review of the movie
+  Then the review should be published on the platform
+  And the review should be visible to the community";;
